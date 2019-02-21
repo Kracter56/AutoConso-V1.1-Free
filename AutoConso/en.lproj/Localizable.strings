@@ -1,0 +1,161 @@
+/* deleteCarAlertMessage */
+"Attention ! Si vous supprimez cette voiture, vous supprimerez tous les ravitaillements associés. Etes-vous sûr de vouloir continuer ?" = "Caution ! If you delete this vehicle, you will delete also all the fuellings attached to that. Are you sure you want to delete ?";
+
+/* deleteConsoAlertMessage */
+"Etes-vous sûr de vouloir supprimer la ligne sélectionnée ?" = "Are you sure you want to delete the selected line ?";
+
+/* confirmConsoDeleteConso */
+"La ligne a bien été supprimée de la base" = "The line has been deleted from the database";
+
+/* confirmCarDeleteToastMessage */
+"La voiture et ses données associées ont bien été supprimés de la base" = "The vehicle and its associated fuellings have been deleted from the database";
+
+/* AddCarAlertNoAnswer
+ */
+"Non" = "No";
+
+/* AddCarAlertYesAnswer */
+"Oui" = "Yes";
+
+/* deleteConsoAlertYes */
+"Oui je confirme" = "Yes I confirm";
+
+/* deleteCarAlertYes */
+"Oui, j'efface tout" = "Yes, erase all";
+
+/* deleteCarAlertNo */
+"Oups, Non je laisse tout." = "Oops, No let the data as it is.";
+
+/* AddCarAlertTitle */
+"Saisir une voiture" = "Add a new vehicle";
+
+/* deleteConsoAlertTitle */
+"Suppression conso" = "Fuelling deletion";
+
+/* deleteCarAlertTitle */
+"Suppression voiture et données associées" = "Car deletion and its associated data";
+
+/* noCarMessage */
+"Vous n'avez pas encore ajouté de véhicule. Touchez le bouton + pour en ajouter un." = "You have not added a vehicle yet. PLease tap on + button to add one.";
+
+/* AddCarAlertMessage */
+"Vous n'avez pas encore de voiture. Voulez-vous en saisir une ?" = "You have no added a vehicle yet. Do you want to add on now ?";
+
+/* noConsoMessage */
+"Vous n'avez pas encore saisi de ravitaillement" = "You have not added a fuelling item yet";
+
+/* popupCheckTitle */
+"Consentement utilisateur" = "User Agreement";
+
+/* popupCheckMessage */
+"Veuillez confirmer votre consentement en cochant la case avant de valider" = "Please confirm by ticking the checkbox before continuing";
+
+/* popupCheckYes */
+"J'ai compris" = "I understand";
+
+/* CGUDeclineTitle */
+"Réinitialisation" = "App Reset";
+
+/* CGUDeclineMessage */
+"En refusant les conditions générales d'utilisation, vous êtes sur le point d'effacer toutes les données de l'application. Voulez-vous continuer ?" = "Declining the terms and conditions, your action will erase the app data. Do you want to continue ?";
+
+/* CGUDeclineYes */
+"Oui, je le confirme" = "Yes I confirm";
+
+/* CGUDeclineNo */
+"Non, je reviens sur ma décision" = "No, I revert my decision";
+
+/* deleteBtn */
+"Supprimer" = "Delete";
+
+/* editBtn */
+"Editer" = "Edit";
+
+/* popupVehicleNotSelectedTitle */
+"Vehicule non sélectionné" = "Vehicle not selected";
+
+/* popupVehicleNotSelectedMessage */
+"Veuillez sélectionner le type de véhicule avant de choisir une marque" = "Please select a vehicle type before choosing a brand";
+
+/* warnSelectCar */
+"Veuillez sélectionner une voiture" = "Select a car";
+
+/* warnSelectFuelStation */
+"Veuillez sélectionner une station service" = "Select a fuel station";
+
+/* warnPromptKM */
+"Veuillez saisir le kilometrage vehicule" = "Prompt the vehicle mileage";
+
+/* errorCoveredDistance */
+"Distance parcourue erronée" = "Error distance";
+
+/* warnPrixIncorrect */
+"Veuillez saisir un montant valide" = "Prompt a valid price float";
+
+/* warnIncorrectCarburant */
+"Veuillez saisir un volume de carburant correct" = "Prompt a correct volume";
+
+/* titleAddOneCar */
+"En cours de développement" = "Hard work ongoing...";
+
+/* messageAddOneCar */
+"Oops, petit problème...Dans cette version, vous ne pourrez gérer qu'un seul véhicule" = "Oops...in this version, you can manage only one vehicle";
+
+/* doneBtn */
+"Choisir" = "Choose";
+
+/* cancelBtn */
+"Fermer" = "Close";
+
+/* warnTypeVeh */
+"Veuillez sélectionner un type" = "Select a vehicle";
+
+/* warnMarqueVeh */
+"Veuillez sélectionner une marque" = "Select a car make";
+
+/* warnModeleVeh */
+"Veuillez saisir le modèle de voiture" = "Prompt the car model";
+
+/* warnKMVeh */
+"Veuillez saisir le kilometrage vehicule" = "Prompt the car mileage";
+
+/* warnDateAchat */
+"Date d'achat" = "Date of purchase";
+
+/* warnDateImmatriculation */
+"Date Immatriculation" = "Date of registration";
+
+/* warnVolReservoir */
+"Veuillez saisir le volume de votre reservoir" = "Tank Volume";
+
+/* warnImmatriculation */
+"Saisir l'immatriculation" = "Registration plate";
+
+/* lblDeviseAlertTitle */
+"Saisie de la devise" = "Currency entry";
+
+/* alertDeviseMessage */
+"Saisir une devise" = "Please prompt a currency";
+
+/* textFieldHint */
+"Devise" = "Currency";
+
+/* lblDistanceAlertTitle */
+"Saisie de l'unité de distance" = "Distance Unit Entry";
+
+/* alertDistanceMessage */
+"Saisir une unité de distance" = "Please prompt a Distance Unit";
+
+/* textFieldDistanceHint */
+"Distance" = "Distance";
+
+/* lblVolAlertTitle */
+"Saisie de l'unité de volume" = "Volume Unit Entry";
+
+/* alertVolMessage */
+"Saisir une unité de volume" = "Please prompt a Volume Unit";
+
+/* textFieldVolHint */
+"Unité de Volume" = "Volume Unit";
+
+

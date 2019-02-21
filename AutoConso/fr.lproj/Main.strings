@@ -1,0 +1,366 @@
+
+/* Class = "UIButton"; normalTitle = "Suggérer"; ObjectID = "0uk-dH-2Uk"; */
+"0uk-dH-2Uk.normalTitle" = "Suggérer";
+
+/* Class = "UITextField"; placeholder = "Marque"; ObjectID = "1DX-sH-LWr"; */
+"1DX-sH-LWr.placeholder" = "Marque";
+
+/* Class = "UITableViewSection"; headerTitle = "Voiture"; ObjectID = "25t-Bf-AqI"; */
+"25t-Bf-AqI.headerTitle" = "Voiture";
+
+/* Class = "UILabel"; text = "En cochant la case, j'accepte les conditions générales d'utilisation"; ObjectID = "2c8-RM-ydD"; Note = "textConfirmCheck"; */
+"2c8-RM-ydD.text" = "En cochant la case, j'accepte les conditions générales d'utilisation";
+
+/* Class = "UINavigationItem"; title = "Détails Voiture"; ObjectID = "4cB-QM-dBE"; */
+"4cB-QM-dBE.title" = "Détails Voiture";
+
+/* Class = "UITextField"; placeholder = "Code Postal"; ObjectID = "4yJ-fB-SIc"; */
+"4yJ-fB-SIc.placeholder" = "Code Postal";
+
+/* Class = "UITextField"; placeholder = "Adresse"; ObjectID = "5A1-vr-P4w"; */
+"5A1-vr-P4w.placeholder" = "Adresse";
+
+/* Class = "UITableViewSection"; headerTitle = "KILOMETRAGE AUTO"; ObjectID = "5dk-Vo-NHy"; */
+"5dk-Vo-NHy.headerTitle" = "KILOMETRAGE AUTO";
+
+/* Class = "UITextField"; placeholder = "remarques"; ObjectID = "6Rb-My-dkk"; */
+"6Rb-My-dkk.placeholder" = "remarques";
+
+/* Class = "UITableViewSection"; headerTitle = "Informations sur la station"; ObjectID = "7Bb-Pc-ryS"; */
+"7Bb-Pc-ryS.headerTitle" = "Informations sur la station";
+
+/* Class = "UITextField"; placeholder = "Pseudo"; ObjectID = "8Dl-vQ-kRX"; */
+"8Dl-vQ-kRX.placeholder" = "Pseudo";
+
+/* Class = "UILabel"; text = "Aucune donnée"; ObjectID = "8OG-p5-PMS"; */
+"8OG-p5-PMS.text" = "Aucune donnée";
+
+/* Class = "UIButton"; normalTitle = "Calculer"; ObjectID = "B8s-z4-dPE"; */
+"B8s-z4-dPE.normalTitle" = "Calculer";
+
+/* Class = "UILabel"; text = "Nom : PETRUS Edgar"; ObjectID = "BoX-Oy-aQh"; */
+"BoX-Oy-aQh.text" = "Nom : PETRUS Edgar";
+
+/* Class = "UITextField"; placeholder = "Date d'achat"; ObjectID = "CSl-XD-cRx"; */
+"CSl-XD-cRx.placeholder" = "Date d'achat";
+
+/* Class = "UIBarButtonItem"; title = "Enregistrer"; ObjectID = "DuQ-ty-NvV"; */
+"DuQ-ty-NvV.title" = "Enregistrer";
+
+/* Class = "UIBarButtonItem"; title = "Retour"; ObjectID = "Dut-nP-TGd"; */
+"Dut-nP-TGd.title" = "Retour";
+
+/* Class = "UIBarButtonItem"; title = "Retour"; ObjectID = "DzJ-92-nuI"; */
+"DzJ-92-nuI.title" = "Retour";
+
+/* Class = "UITableViewController"; title = "Add New Car"; ObjectID = "Ech-dc-wV2"; */
+"Ech-dc-wV2.title" = "Add New Car";
+
+/* Class = "UITextField"; placeholder = "Commentaires"; ObjectID = "EkP-YZ-7Uk"; */
+"EkP-YZ-7Uk.placeholder" = "Commentaires";
+
+/* Class = "UITextField"; placeholder = "Numéro d'immatriculation"; ObjectID = "FFN-az-mMt"; */
+"FFN-az-mMt.placeholder" = "Numéro d'immatriculation";
+
+/* Class = "UITextField"; placeholder = "Ville"; ObjectID = "Hci-4G-WCt"; */
+"Hci-4G-WCt.placeholder" = "Ville";
+
+/* Class = "UILabel"; text = "Aucune donnée"; ObjectID = "JcU-3x-jun"; */
+"JcU-3x-jun.text" = "Aucune donnée";
+
+/* Class = "UITextField"; placeholder = "Kilométrage véhicule"; ObjectID = "KFn-6R-Zgq"; */
+"KFn-6R-Zgq.placeholder" = "Kilométrage véhicule";
+
+/* Class = "UIViewController"; title = "Conditions générales d'utilisation"; ObjectID = "Ksh-Jf-SJi"; */
+"Ksh-Jf-SJi.title" = "Conditions générales d'utilisation";
+
+/* Class = "UIButton"; normalTitle = "Calculer"; ObjectID = "L5I-G6-6Re"; */
+"L5I-G6-6Re.normalTitle" = "Calculer";
+
+/* Class = "UILabel"; text = "Unité de Distance :"; ObjectID = "LJL-CN-0X0"; */
+"LJL-CN-0X0.text" = "Unité de Distance :";
+
+/* Class = "UITextField"; placeholder = "Prix au litre"; ObjectID = "LVl-Tm-e9v"; */
+"LVl-Tm-e9v.placeholder" = "Prix au litre";
+
+/* Class = "UIBarButtonItem"; title = "Retour"; ObjectID = "LkY-Jp-kAo"; */
+"LkY-Jp-kAo.title" = "Retour";
+
+/* Class = "UILabel"; text = "Frais de carburant depuis achat :"; ObjectID = "LnC-2B-Zsh"; */
+"LnC-2B-Zsh.text" = "Frais de carburant depuis achat :";
+
+/* Class = "UITextField"; placeholder = "Modele"; ObjectID = "MOZ-88-dIx"; */
+"MOZ-88-dIx.placeholder" = "Modele";
+
+/* Class = "UIBarButtonItem"; title = "Retour"; ObjectID = "Mld-e7-fhg"; */
+"Mld-e7-fhg.title" = "Retour";
+
+/* Class = "UILabel"; text = "Nombre de jours depuis achat :"; ObjectID = "O6z-RV-KoG"; */
+"O6z-RV-KoG.text" = "Nombre de jours depuis achat :";
+
+/* Class = "UIBarButtonItem"; title = "Fermer"; ObjectID = "O9f-4s-kdq"; */
+"O9f-4s-kdq.title" = "Fermer";
+
+/* Class = "UILabel"; text = "Aucune donnée"; ObjectID = "OBQ-p8-uGh"; */
+"OBQ-p8-uGh.text" = "Aucune donnée";
+
+/* Class = "UILabel"; text = "MODELE VEHICULE"; ObjectID = "ONT-RE-R45"; */
+"ONT-RE-R45.text" = "MODELE VEHICULE";
+
+/* Class = "UILabel"; text = "Unité de volume :"; ObjectID = "OrY-wz-Q0q"; */
+"OrY-wz-Q0q.text" = "Unité de volume :";
+
+/* Class = "UITextField"; placeholder = "Pression pneus"; ObjectID = "Otf-bt-fIE"; */
+"Otf-bt-fIE.placeholder" = "Pression pneus";
+
+/* Class = "UITextField"; placeholder = "Modèle"; ObjectID = "Oxm-dQ-HP4"; */
+"Oxm-dQ-HP4.placeholder" = "Modèle";
+
+/* Class = "UITextField"; placeholder = "Motorisation / Finition"; ObjectID = "PGl-M7-zGc"; */
+"PGl-M7-zGc.placeholder" = "Motorisation / Finition";
+
+/* Class = "UITabBarItem"; title = "Mes voitures"; ObjectID = "PJr-Zg-ahJ"; */
+"PJr-Zg-ahJ.title" = "Mes voitures";
+
+/* Class = "UITextField"; placeholder = "Volume total du réservoir à carburant (L)"; ObjectID = "QUf-SU-mHk"; */
+"QUf-SU-mHk.placeholder" = "Volume total du réservoir à carburant (L)";
+
+/* Class = "UITextField"; placeholder = "Nombre de litres"; ObjectID = "Qbw-zM-lPJ"; */
+"Qbw-zM-lPJ.placeholder" = "Nombre de litres";
+
+/* Class = "UITableViewSection"; footerTitle = "Mes commentaires sur mon véhicule"; ObjectID = "Qme-lg-U3G"; */
+"Qme-lg-U3G.footerTitle" = "Mes commentaires sur mon véhicule";
+
+/* Class = "UITableViewSection"; headerTitle = "MES NOTES"; ObjectID = "Qme-lg-U3G"; */
+"Qme-lg-U3G.headerTitle" = "MES NOTES";
+
+/* Class = "UITableViewSection"; headerTitle = "Détails ravitaillement"; ObjectID = "RNV-g0-lR8"; */
+"RNV-g0-lR8.headerTitle" = "Détails ravitaillement";
+
+/* Class = "UITableViewSection"; headerTitle = "Mes notes"; ObjectID = "RpT-f7-oJe"; */
+"RpT-f7-oJe.headerTitle" = "Mes notes";
+
+/* Class = "UIBarButtonItem"; title = "Enregistrer"; ObjectID = "Ryb-9A-2eE"; */
+"Ryb-9A-2eE.title" = "Enregistrer";
+
+/* Class = "UITableViewSection"; headerTitle = "Station Service"; ObjectID = "S27-Mp-U8w"; */
+"S27-Mp-U8w.headerTitle" = "Station Service";
+
+/* Class = "UINavigationItem"; title = "Legal"; ObjectID = "SmI-VE-wSY"; */
+"SmI-VE-wSY.title" = "Legal";
+
+/* Class = "UITextField"; placeholder = "Date immat."; ObjectID = "Svq-Pe-Jzf"; */
+"Svq-Pe-Jzf.placeholder" = "Date immat.";
+
+/* Class = "UITextField"; placeholder = "Station Service"; ObjectID = "T9m-KC-5pf"; */
+"T9m-KC-5pf.placeholder" = "Station Service";
+
+/* Class = "UIButton"; normalTitle = "Remonter un bug / suggestions"; ObjectID = "TMd-PW-lYu"; */
+"TMd-PW-lYu.normalTitle" = "Remonter un bug / suggestions";
+
+/* Class = "UITextField"; placeholder = "Numéro de série"; ObjectID = "Thn-4e-29S"; */
+"Thn-4e-29S.placeholder" = "Numéro de série";
+
+/* Class = "UITextField"; placeholder = "Kilomètres parcourus depuis dernier ravitaillement"; ObjectID = "Tpc-NJ-xdn"; */
+"Tpc-NJ-xdn.placeholder" = "Kilomètres parcourus depuis dernier ravitaillement";
+
+/* Class = "UILabel"; text = "Version : 1.0"; ObjectID = "VV6-if-49f"; */
+"VV6-if-49f.text" = "Version : 1.0";
+
+/* Class = "UITextField"; placeholder = "Carburant"; ObjectID = "Vyd-Gi-nSz"; */
+"Vyd-Gi-nSz.placeholder" = "Carburant";
+
+/* Class = "UITextField"; placeholder = "Prix"; ObjectID = "WJN-RT-Oz8"; */
+"WJN-RT-Oz8.placeholder" = "Prix";
+
+/* Class = "UIBarButtonItem"; title = "Mettre à jour"; ObjectID = "WZj-fg-hFr"; */
+"WZj-fg-hFr.title" = "Mettre à jour";
+
+/* Class = "UIViewController"; title = "Conditions générales d'utilisation"; ObjectID = "X7B-fQ-8EN"; */
+"X7B-fQ-8EN.title" = "Conditions générales d'utilisation";
+
+/* Class = "UITextField"; placeholder = "Pseudo"; ObjectID = "XKH-9D-Gfd"; */
+"XKH-9D-Gfd.placeholder" = "Pseudo";
+
+/* Class = "UITabBarItem"; title = "Ma conso"; ObjectID = "YNe-aj-la3"; */
+"YNe-aj-la3.title" = "Ma conso";
+
+/* Class = "UITableViewSection"; footerTitle = "Cliquez sur le champ pour choisir un type"; ObjectID = "YuN-9S-6Ft"; */
+"YuN-9S-6Ft.footerTitle" = "Cliquez sur le champ pour choisir un type";
+
+/* Class = "UITableViewSection"; headerTitle = "Type de vehicule"; ObjectID = "YuN-9S-6Ft"; */
+"YuN-9S-6Ft.headerTitle" = "Type de vehicule";
+
+/* Class = "UINavigationItem"; title = "Mes véhicules"; ObjectID = "Z6d-QA-1br"; */
+"Z6d-QA-1br.title" = "Mes véhicules";
+
+/* Class = "UITableViewSection"; headerTitle = "Voiture"; ObjectID = "ZHG-bL-ul4"; */
+"ZHG-bL-ul4.headerTitle" = "Voiture";
+
+/* Class = "UINavigationItem"; title = "Nouveau frais"; ObjectID = "aIj-1Z-Niv"; */
+"aIj-1Z-Niv.title" = "Nouveau frais";
+
+/* Class = "UITextField"; placeholder = "Pseudo voiture"; ObjectID = "aOW-ZR-k4i"; */
+"aOW-ZR-k4i.placeholder" = "Pseudo voiture";
+
+/* Class = "UITextField"; placeholder = "Modele"; ObjectID = "aYn-jo-GP6"; */
+"aYn-jo-GP6.placeholder" = "Modele";
+
+/* Class = "UITableViewController"; title = "Stats"; ObjectID = "aml-aA-wME"; */
+"aml-aA-wME.title" = "Stats";
+
+/* Class = "UITableViewSection"; footerTitle = "informations relatives à la voiture"; ObjectID = "asD-rp-4de"; */
+"asD-rp-4de.footerTitle" = "informations relatives à la voiture";
+
+/* Class = "UITableViewSection"; headerTitle = "INFOS PERSOS"; ObjectID = "asD-rp-4de"; */
+"asD-rp-4de.headerTitle" = "INFOS PERSOS";
+
+/* Class = "UILabel"; text = "Cout :"; ObjectID = "bbd-KV-Wga"; */
+"bbd-KV-Wga.text" = "Cout :";
+
+/* Class = "UIBarButtonItem"; title = "Annuler"; ObjectID = "cnG-Ha-bXl"; */
+"cnG-Ha-bXl.title" = "Annuler";
+
+/* Class = "UITextField"; placeholder = "Numéro de série"; ObjectID = "dJk-pi-8ur"; */
+"dJk-pi-8ur.placeholder" = "Numéro de série";
+
+/* Class = "UILabel"; text = "Distance parcourue :"; ObjectID = "eMm-di-RbY"; */
+"eMm-di-RbY.text" = "Distance parcourue :";
+
+/* Class = "UITextField"; placeholder = "--"; ObjectID = "fIE-tM-Acz"; */
+"fIE-tM-Acz.placeholder" = "--";
+
+/* Class = "UITabBarItem"; title = "Stats"; ObjectID = "fxt-Tj-sYx"; */
+"fxt-Tj-sYx.title" = "Stats";
+
+/* Class = "UITextField"; placeholder = "Sélectionner un type de véhicule"; ObjectID = "h7w-kZ-ga7"; */
+"h7w-kZ-ga7.placeholder" = "Sélectionner un type de véhicule";
+
+/* Class = "UIButton"; normalTitle = "Conditions générales d'utilisation"; ObjectID = "hiB-am-2hg"; */
+"hiB-am-2hg.normalTitle" = "Conditions générales d'utilisation";
+
+/* Class = "UILabel"; text = "Aucune donnée"; ObjectID = "i7D-WF-YAj"; */
+"i7D-WF-YAj.text" = "Aucune donnée";
+
+/* Class = "UITableViewSection"; headerTitle = "Infos Achat"; ObjectID = "jF1-Eo-K0f"; */
+"jF1-Eo-K0f.headerTitle" = "Infos Achat";
+
+/* Class = "UITextField"; placeholder = "Kilometrage"; ObjectID = "jIB-cO-Pf6"; */
+"jIB-cO-Pf6.placeholder" = "Kilometrage";
+
+/* Class = "UIBarButtonItem"; title = "Refuser"; ObjectID = "jU0-dj-Cho"; */
+"jU0-dj-Cho.title" = "Refuser";
+
+/* Class = "UILabel"; text = "Devise : "; ObjectID = "jVJ-EI-SqW"; */
+"jVJ-EI-SqW.text" = "Devise : ";
+
+/* Class = "UIButton"; normalTitle = "Je décline"; ObjectID = "jm6-kN-qd6"; Note = "btnIDecline"; */
+"jm6-kN-qd6.normalTitle" = "Je décline";
+
+/* Class = "UITableViewSection"; headerTitle = "PREFERENCES UTILISATEUR"; ObjectID = "k0c-dJ-Ej5"; */
+"k0c-dJ-Ej5.headerTitle" = "PREFERENCES UTILISATEUR";
+
+/* Class = "UITextField"; accessibilityHint = "Marque"; ObjectID = "kgQ-B9-umi"; */
+"kgQ-B9-umi.accessibilityHint" = "Marque";
+
+/* Class = "UITextField"; accessibilityLabel = "Marque"; ObjectID = "kgQ-B9-umi"; */
+"kgQ-B9-umi.accessibilityLabel" = "Marque";
+
+/* Class = "UITextField"; placeholder = "Marque"; ObjectID = "kgQ-B9-umi"; */
+"kgQ-B9-umi.placeholder" = "Marque";
+
+/* Class = "UILabel"; text = "Consommation moyenne :"; ObjectID = "mQD-3W-g3d"; */
+"mQD-3W-g3d.text" = "Consommation moyenne :";
+
+/* Class = "UITextField"; placeholder = "Date d'achat"; ObjectID = "n0K-6c-hFF"; */
+"n0K-6c-hFF.placeholder" = "Date d'achat";
+
+/* Class = "UITextField"; placeholder = "Consommation calculée"; ObjectID = "nOD-30-pO1"; */
+"nOD-30-pO1.placeholder" = "Consommation calculée";
+
+/* Class = "UITextField"; placeholder = "Date"; ObjectID = "nUs-54-Qwd"; */
+"nUs-54-Qwd.placeholder" = "Date";
+
+/* Class = "UIBarButtonItem"; title = "Annuler"; ObjectID = "oju-ch-0fG"; */
+"oju-ch-0fG.title" = "Annuler";
+
+/* Class = "UITableViewSection"; headerTitle = "Notes"; ObjectID = "oxh-fQ-34d"; */
+"oxh-fQ-34d.headerTitle" = "Notes";
+
+/* Class = "UIButton"; normalTitle = "€"; ObjectID = "qI4-66-9wu"; */
+"qI4-66-9wu.normalTitle" = "€";
+
+/* Class = "UITableViewSection"; footerTitle = "Renseignez les Infos sur le modele"; ObjectID = "qUY-Vz-7sA"; */
+"qUY-Vz-7sA.footerTitle" = "Renseignez les Infos sur le modele";
+
+/* Class = "UITableViewSection"; headerTitle = "MODELE"; ObjectID = "qUY-Vz-7sA"; */
+"qUY-Vz-7sA.headerTitle" = "MODELE";
+
+/* Class = "UINavigationItem"; prompt = "Glissez vers la gauche pour modifier"; ObjectID = "qzx-Xt-XCO"; */
+"qzx-Xt-XCO.prompt" = "Glissez vers la gauche pour modifier";
+
+/* Class = "UINavigationItem"; title = "Statistiques Véhicule"; ObjectID = "qzx-Xt-XCO"; */
+"qzx-Xt-XCO.title" = "Statistiques Véhicule";
+
+/* Class = "UIButton"; normalTitle = "Détails / Editer"; ObjectID = "r2U-Vd-YX2"; */
+"r2U-Vd-YX2.normalTitle" = "Détails / Editer";
+
+/* Class = "UITableViewSection"; headerTitle = "CARACTERISTIQUES VEHICULE"; ObjectID = "r5q-JQ-kIF"; */
+"r5q-JQ-kIF.headerTitle" = "CARACTERISTIQUES VEHICULE";
+
+/* Class = "UILabel"; text = "Date de publication : 07/11/2018"; ObjectID = "rcz-o1-IkR"; */
+"rcz-o1-IkR.text" = "Date de publication : 07/11/2018";
+
+/* Class = "UILabel"; text = "Aucune donnée"; ObjectID = "rkd-pf-q0y"; */
+"rkd-pf-q0y.text" = "Aucune donnée";
+
+/* Class = "UITableViewSection"; headerTitle = "Développeur"; ObjectID = "sU0-jt-XzE"; */
+"sU0-jt-XzE.headerTitle" = "Développeur";
+
+/* Class = "UIButton"; normalTitle = "L"; ObjectID = "tNR-Dd-FAq"; */
+"tNR-Dd-FAq.normalTitle" = "L";
+
+/* Class = "UITextField"; placeholder = "Marque"; ObjectID = "thG-Kk-T6l"; */
+"thG-Kk-T6l.placeholder" = "Marque";
+
+/* Class = "UITableViewSection"; headerTitle = "RAVITAILLEMENT"; ObjectID = "ueD-Ha-Kmu"; */
+"ueD-Ha-Kmu.headerTitle" = "RAVITAILLEMENT";
+
+/* Class = "UILabel"; text = "Aucune donnée"; ObjectID = "uqJ-xJ-13L"; */
+"uqJ-xJ-13L.text" = "Aucune donnée";
+
+/* Class = "UIButton"; normalTitle = "J'accepte"; ObjectID = "uqj-qj-OG1"; Note = "btnIAccept"; */
+"uqj-qj-OG1.normalTitle" = "J'accepte";
+
+/* Class = "UIButton"; normalTitle = "km"; ObjectID = "vDS-JV-EHj"; */
+"vDS-JV-EHj.normalTitle" = "km";
+
+/* Class = "UITextField"; placeholder = "Kilometrage à l'achat"; ObjectID = "vaE-BO-Ny2"; */
+"vaE-BO-Ny2.placeholder" = "Kilometrage à l'achat";
+
+/* Class = "UILabel"; text = "Cout journalier :"; ObjectID = "weF-44-JJ7"; */
+"weF-44-JJ7.text" = "Cout journalier :";
+
+/* Class = "UINavigationItem"; title = "Informations Application"; ObjectID = "x2E-Lr-4NI"; */
+"x2E-Lr-4NI.title" = "Informations Application";
+
+/* Class = "UIBarButtonItem"; title = "Accepter"; ObjectID = "y0K-4R-CxX"; */
+"y0K-4R-CxX.title" = "Accepter";
+
+/* Class = "UITableViewSection"; headerTitle = "Application"; ObjectID = "yE0-lH-n5U"; */
+"yE0-lH-n5U.headerTitle" = "Application";
+
+/* Class = "UIBarButtonItem"; title = "Mettre à jour"; ObjectID = "z3r-cq-w9X"; */
+"z3r-cq-w9X.title" = "Mettre à jour";
+
+/* Class = "UINavigationItem"; title = "Vehicule"; ObjectID = "zMA-hp-JML"; */
+"zMA-hp-JML.title" = "Vehicule";
+
+/* Class = "UITableViewSection"; headerTitle = "Modele"; ObjectID = "zdy-ju-pzC"; */
+"zdy-ju-pzC.headerTitle" = "Modele";
+
+/* Class = "UINavigationItem"; prompt = "Glissez vers la gauche pour modifier"; ObjectID = "znI-MN-D6C"; */
+"znI-MN-D6C.prompt" = "Glissez vers la gauche pour modifier";
+
+/* Class = "UINavigationItem"; title = "Ravitaillements"; ObjectID = "znI-MN-D6C"; */
+"znI-MN-D6C.title" = "Ravitaillements";
