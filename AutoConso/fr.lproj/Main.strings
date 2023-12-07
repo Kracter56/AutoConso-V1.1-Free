@@ -1,15 +1,105 @@
 
+/* Class = "UILabel"; text = "€/km"; ObjectID = "04E-Cx-2dZ"; */
+"04E-Cx-2dZ.text" = "€/km";
+
+/* Class = "UILabel"; text = "0,00 €/L"; ObjectID = "0VG-M0-d13"; */
+"0VG-M0-d13.text" = "0,00 €/L";
+
+/* Class = "UILabel"; text = "Pseudo"; ObjectID = "0XS-cA-5n0"; */
+"0XS-cA-5n0.text" = "Pseudo";
+
+/* Class = "UISegmentedControl"; 0fG-Ux-cUI.segmentTitles[0] = "Urbain"; ObjectID = "0fG-Ux-cUI"; */
+"0fG-Ux-cUI.segmentTitles[0]" = "Urbain";
+
+/* Class = "UISegmentedControl"; 0fG-Ux-cUI.segmentTitles[1] = "Mixte"; ObjectID = "0fG-Ux-cUI"; */
+"0fG-Ux-cUI.segmentTitles[1]" = "Mixte";
+
+/* Class = "UISegmentedControl"; 0fG-Ux-cUI.segmentTitles[2] = "Route"; ObjectID = "0fG-Ux-cUI"; */
+"0fG-Ux-cUI.segmentTitles[2]" = "Route";
+
+/* Class = "UILabel"; text = "Date d'inscription"; ObjectID = "0hV-Hl-RDo"; */
+"0hV-Hl-RDo.text" = "Date d'inscription";
+
+/* Class = "UILabel"; text = "Km parcourus"; ObjectID = "0hk-5i-UVW"; */
+"0hk-5i-UVW.text" = "Km parcourus";
+
+/* Class = "UITableViewSection"; footerTitle = "Renseignement du barême kilométrique"; ObjectID = "0nr-Ca-1nI"; */
+"0nr-Ca-1nI.footerTitle" = "Renseignement du barême kilométrique";
+
+/* Class = "UITableViewSection"; headerTitle = "Paramétrage des Notes de frais"; ObjectID = "0nr-Ca-1nI"; */
+"0nr-Ca-1nI.headerTitle" = "Paramétrage des Notes de frais";
+
+/* Class = "UILabel"; text = "Services réparation / entretien"; ObjectID = "0tb-Zn-wEE"; */
+"0tb-Zn-wEE.text" = "Services réparation / entretien";
+
 /* Class = "UIButton"; normalTitle = "Suggérer"; ObjectID = "0uk-dH-2Uk"; */
 "0uk-dH-2Uk.normalTitle" = "Suggérer";
 
-/* Class = "UITextField"; placeholder = "Marque"; ObjectID = "1DX-sH-LWr"; */
-"1DX-sH-LWr.placeholder" = "Marque";
+/* Class = "UITextField"; placeholder = "Choisir"; ObjectID = "1DX-sH-LWr"; */
+"1DX-sH-LWr.placeholder" = "Choisir";
 
-/* Class = "UITableViewSection"; headerTitle = "Voiture"; ObjectID = "25t-Bf-AqI"; */
-"25t-Bf-AqI.headerTitle" = "Voiture";
+/* Class = "UIButton"; normalTitle = "Choisir une photo..."; ObjectID = "1Mf-dt-Ps3"; */
+"1Mf-dt-Ps3.normalTitle" = "Choisir une photo...";
+
+/* Class = "UILabel"; text = " TRAJET MIXTE "; ObjectID = "1QB-pd-FWH"; */
+"1QB-pd-FWH.text" = " TRAJET MIXTE ";
+
+/* Class = "UITableViewSection"; headerTitle = "Mon Profil"; ObjectID = "1jI-sa-IHE"; */
+"1jI-sa-IHE.headerTitle" = "Mon Profil";
+
+/* Class = "UIButton"; normalTitle = "Choisissez une photo"; ObjectID = "1uu-Wm-biJ"; */
+"1uu-Wm-biJ.normalTitle" = "Choisissez une photo";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "1z4-IP-yrO"; */
+"1z4-IP-yrO.text" = "-";
+
+/* Class = "UITableViewSection"; headerTitle = "VEHICULE"; ObjectID = "25t-Bf-AqI"; */
+"25t-Bf-AqI.headerTitle" = "VEHICULE";
+
+/* Class = "UILabel"; text = "AutoConso"; ObjectID = "2O8-ki-acB"; */
+"2O8-ki-acB.text" = "AutoConso";
+
+/* Class = "UILabel"; text = "Commentaire"; ObjectID = "2Ua-Am-n9D"; */
+"2Ua-Am-n9D.text" = "Commentaire";
 
 /* Class = "UILabel"; text = "En cochant la case, j'accepte les conditions générales d'utilisation"; ObjectID = "2c8-RM-ydD"; Note = "textConfirmCheck"; */
 "2c8-RM-ydD.text" = "En cochant la case, j'accepte les conditions générales d'utilisation";
+
+/* Class = "UILabel"; text = "0,00 €/L"; ObjectID = "2l0-JQ-xoE"; */
+"2l0-JQ-xoE.text" = "0,00 €/L";
+
+/* Class = "UILabel"; text = "Bornes de recharge"; ObjectID = "35I-df-WSq"; */
+"35I-df-WSq.text" = "Bornes de recharge";
+
+/* Class = "UILabel"; text = "Marquez la position de votre véhicule avant de quitter celui-ci"; ObjectID = "39j-eC-Ix8"; */
+"39j-eC-Ix8.text" = "Marquez la position de votre véhicule avant de quitter celui-ci";
+
+/* Class = "UILabel"; text = "1.2"; ObjectID = "3EW-uy-QKS"; */
+"3EW-uy-QKS.text" = "1.2";
+
+/* Class = "UILabel"; text = "Kilometrage"; ObjectID = "3SE-11-09e"; */
+"3SE-11-09e.text" = "Kilometrage";
+
+/* Class = "UILabel"; text = "Carburant"; ObjectID = "3XJ-aJ-zkn"; */
+"3XJ-aJ-zkn.text" = "Carburant";
+
+/* Class = "UILabel"; text = "Services non renseignés"; ObjectID = "3cT-8F-yNc"; */
+"3cT-8F-yNc.text" = "Services non renseignés";
+
+/* Class = "UILabel"; text = "Géolocalisation en attente..."; ObjectID = "3tl-Zy-f4F"; */
+"3tl-Zy-f4F.text" = "Géolocalisation en attente...";
+
+/* Class = "UILabel"; text = "Location de véhicules"; ObjectID = "3wp-ry-3eH"; */
+"3wp-ry-3eH.text" = "Location de véhicules";
+
+/* Class = "UITableViewSection"; footerTitle = "Les infos sur mon véhicule"; ObjectID = "3ye-k3-aB7"; */
+"3ye-k3-aB7.footerTitle" = "Les infos sur mon véhicule";
+
+/* Class = "UITableViewSection"; headerTitle = "INFORMATIONS GENERALES"; ObjectID = "3ye-k3-aB7"; */
+"3ye-k3-aB7.headerTitle" = "INFORMATIONS GENERALES";
+
+/* Class = "UILabel"; text = "        "; ObjectID = "4Gs-Eu-PfJ"; */
+"4Gs-Eu-PfJ.text" = "        ";
 
 /* Class = "UINavigationItem"; title = "Détails Voiture"; ObjectID = "4cB-QM-dBE"; */
 "4cB-QM-dBE.title" = "Détails Voiture";
@@ -20,29 +110,158 @@
 /* Class = "UITextField"; placeholder = "Adresse"; ObjectID = "5A1-vr-P4w"; */
 "5A1-vr-P4w.placeholder" = "Adresse";
 
+/* Class = "UILabel"; text = "par Kracter56"; ObjectID = "5IK-y8-D6G"; */
+"5IK-y8-D6G.text" = "par Kracter56";
+
+/* Class = "UITableViewSection"; headerTitle = "Identification de la station"; ObjectID = "5Id-s7-Z02"; */
+"5Id-s7-Z02.headerTitle" = "Identification de la station";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "5LV-Pm-J6S"; */
+"5LV-Pm-J6S.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Distance estimée"; ObjectID = "5Og-gi-nBu"; */
+"5Og-gi-nBu.normalTitle" = "Distance estimée";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "5af-OP-04P"; */
+"5af-OP-04P.text" = "Label";
+
 /* Class = "UITableViewSection"; headerTitle = "KILOMETRAGE AUTO"; ObjectID = "5dk-Vo-NHy"; */
 "5dk-Vo-NHy.headerTitle" = "KILOMETRAGE AUTO";
+
+/* Class = "UITableViewSection"; footerTitle = "Gérer ma position et celle de mon véhicule"; ObjectID = "5fA-Tj-8It"; */
+"5fA-Tj-8It.footerTitle" = "Gérer ma position et celle de mon véhicule";
+
+/* Class = "UITableViewSection"; headerTitle = "Gestion des emplacements"; ObjectID = "5fA-Tj-8It"; */
+"5fA-Tj-8It.headerTitle" = "Gestion des emplacements";
+
+/* Class = "UILabel"; text = "Mes Factures"; ObjectID = "5fs-6H-0gr"; */
+"5fs-6H-0gr.text" = "Mes Factures";
 
 /* Class = "UITextField"; placeholder = "remarques"; ObjectID = "6Rb-My-dkk"; */
 "6Rb-My-dkk.placeholder" = "remarques";
 
+/* Class = "UILabel"; text = "Energie"; ObjectID = "6Ym-fk-qKA"; */
+"6Ym-fk-qKA.text" = "Energie";
+
+/* Class = "UINavigationItem"; title = "Localisation du véhicule"; ObjectID = "6gs-hV-xCu"; */
+"6gs-hV-xCu.title" = "Localisation du véhicule";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "6ht-kl-TwE"; */
+"6ht-kl-TwE.text" = "-";
+
+/* Class = "UILabel"; text = "Nom Station"; ObjectID = "78U-SD-W1t"; */
+"78U-SD-W1t.text" = "Nom Station";
+
+/* Class = "UITextField"; placeholder = "Mot de passe"; ObjectID = "78c-D9-Psu"; */
+"78c-D9-Psu.placeholder" = "Mot de passe";
+
 /* Class = "UITableViewSection"; headerTitle = "Informations sur la station"; ObjectID = "7Bb-Pc-ryS"; */
 "7Bb-Pc-ryS.headerTitle" = "Informations sur la station";
+
+/* Class = "UILabel"; text = "Cout au km :"; ObjectID = "7MK-kp-lBD"; */
+"7MK-kp-lBD.text" = "Cout au km :";
+
+/* Class = "UILabel"; text = "Marque :"; ObjectID = "7ga-0h-Io4"; */
+"7ga-0h-Io4.text" = "Marque :";
+
+/* Class = "UILabel"; text = "Aucune donnée"; ObjectID = "7mE-Vu-Sdq"; */
+"7mE-Vu-Sdq.text" = "Aucune donnée";
+
+/* Class = "UILabel"; text = "Date"; ObjectID = "7yA-NI-seN"; */
+"7yA-NI-seN.text" = "Date";
+
+/* Class = "UILabel"; text = "Type de parcours"; ObjectID = "83Y-qy-mhb"; */
+"83Y-qy-mhb.text" = "Type de parcours";
+
+/* Class = "UILabel"; text = "par Kracter56"; ObjectID = "87k-P2-947"; */
+"87k-P2-947.text" = "par Kracter56";
+
+/* Class = "UILabel"; text = "Barême kilométrique"; ObjectID = "87r-op-Oq5"; */
+"87r-op-Oq5.text" = "Barême kilométrique";
 
 /* Class = "UITextField"; placeholder = "Pseudo"; ObjectID = "8Dl-vQ-kRX"; */
 "8Dl-vQ-kRX.placeholder" = "Pseudo";
 
-/* Class = "UILabel"; text = "Aucune donnée"; ObjectID = "8OG-p5-PMS"; */
-"8OG-p5-PMS.text" = "Aucune donnée";
+/* Class = "UILabel"; text = " "; ObjectID = "8OG-p5-PMS"; */
+"8OG-p5-PMS.text" = " ";
+
+/* Class = "UILabel"; text = "0,30"; ObjectID = "8Vf-9a-Wuo"; */
+"8Vf-9a-Wuo.text" = "0,30";
+
+/* Class = "UIButton"; normalTitle = "        Mot de passe oublié ?"; ObjectID = "8W9-e0-9k8"; */
+"8W9-e0-9k8.normalTitle" = "        Mot de passe oublié ?";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "8jv-kf-cKx"; */
+"8jv-kf-cKx.text" = "Label";
+
+/* Class = "UITableViewSection"; headerTitle = "Localisation"; ObjectID = "8nr-1W-gN3"; */
+"8nr-1W-gN3.headerTitle" = "Localisation";
+
+/* Class = "UILabel"; text = " TRAJET ROUTIER "; ObjectID = "96p-k9-fUh"; */
+"96p-k9-fUh.text" = " TRAJET ROUTIER ";
+
+/* Class = "UIButton"; normalTitle = "Changer"; ObjectID = "98l-vj-Yba"; */
+"98l-vj-Yba.normalTitle" = "Changer";
+
+/* Class = "UILabel"; text = "Unité de volume"; ObjectID = "9aC-2i-cuC"; */
+"9aC-2i-cuC.text" = "Unité de volume";
+
+/* Class = "UILabel"; text = "14/01/1980 08:57"; ObjectID = "9bg-Bg-aAT"; */
+"9bg-Bg-aAT.text" = "14/01/1980 08:57";
+
+/* Class = "UILabel"; text = "0,00 €/L"; ObjectID = "9dC-bA-cku"; */
+"9dC-bA-cku.text" = "0,00 €/L";
+
+/* Class = "UILabel"; text = "Marque Modele"; ObjectID = "AI4-Rq-qEN"; */
+"AI4-Rq-qEN.text" = "Marque Modele";
+
+/* Class = "UILabel"; text = "Aire de camping cars"; ObjectID = "AP3-pZ-Go6"; */
+"AP3-pZ-Go6.text" = "Aire de camping cars";
 
 /* Class = "UIButton"; normalTitle = "Calculer"; ObjectID = "B8s-z4-dPE"; */
 "B8s-z4-dPE.normalTitle" = "Calculer";
 
-/* Class = "UILabel"; text = "Nom : PETRUS Edgar"; ObjectID = "BoX-Oy-aQh"; */
-"BoX-Oy-aQh.text" = "Nom : PETRUS Edgar";
+/* Class = "UITableViewSection"; headerTitle = "Utilisateurs"; ObjectID = "BT0-fq-8bX"; */
+"BT0-fq-8bX.headerTitle" = "Utilisateurs";
+
+/* Class = "UILabel"; text = "Vente de pétrole lampant"; ObjectID = "Bhm-x7-8Vn"; */
+"Bhm-x7-8Vn.text" = "Vente de pétrole lampant";
+
+/* Class = "UITableViewSection"; footerTitle = "Gestion des bases de données"; ObjectID = "C2A-hC-NWf"; */
+"C2A-hC-NWf.footerTitle" = "Gestion des bases de données";
+
+/* Class = "UITableViewSection"; headerTitle = "DONNEES de l'application"; ObjectID = "C2A-hC-NWf"; */
+"C2A-hC-NWf.headerTitle" = "DONNEES de l'application";
 
 /* Class = "UITextField"; placeholder = "Date d'achat"; ObjectID = "CSl-XD-cRx"; */
 "CSl-XD-cRx.placeholder" = "Date d'achat";
+
+/* Class = "UIViewController"; title = "Inscription"; ObjectID = "CW6-KS-0jE"; */
+"CW6-KS-0jE.title" = "Inscription";
+
+/* Class = "UILabel"; text = "Nom du Garage"; ObjectID = "CWN-Dd-M5Z"; */
+"CWN-Dd-M5Z.text" = "Nom du Garage";
+
+/* Class = "UILabel"; text = " "; ObjectID = "CZo-ZA-Feu"; */
+"CZo-ZA-Feu.text" = " ";
+
+/* Class = "UILabel"; text = "0,00 €/L"; ObjectID = "Cxb-Eb-mga"; */
+"Cxb-Eb-mga.text" = "0,00 €/L";
+
+/* Class = "UILabel"; text = "Vidange"; ObjectID = "DI0-v1-jQX"; */
+"DI0-v1-jQX.text" = "Vidange";
+
+/* Class = "UILabel"; text = "L"; ObjectID = "DLi-gJ-xp0"; */
+"DLi-gJ-xp0.text" = "L";
+
+/* Class = "UIButton"; normalTitle = "Saisir adresse"; ObjectID = "DfA-9f-K8p"; */
+"DfA-9f-K8p.normalTitle" = "Saisir adresse";
+
+/* Class = "UILabel"; text = "par Kracter56"; ObjectID = "Dg8-6A-x5e"; */
+"Dg8-6A-x5e.text" = "par Kracter56";
+
+/* Class = "UITextField"; placeholder = "Notes"; ObjectID = "DnN-1K-JpJ"; */
+"DnN-1K-JpJ.placeholder" = "Notes";
 
 /* Class = "UIBarButtonItem"; title = "Enregistrer"; ObjectID = "DuQ-ty-NvV"; */
 "DuQ-ty-NvV.title" = "Enregistrer";
@@ -53,23 +272,98 @@
 /* Class = "UIBarButtonItem"; title = "Retour"; ObjectID = "DzJ-92-nuI"; */
 "DzJ-92-nuI.title" = "Retour";
 
+/* Class = "UITextField"; placeholder = "Pseudo"; ObjectID = "EHA-hj-4fI"; */
+"EHA-hj-4fI.placeholder" = "Pseudo";
+
+/* Class = "UILabel"; text = "Aucun résultat"; ObjectID = "EVm-6a-bzI"; */
+"EVm-6a-bzI.text" = "Aucun résultat";
+
 /* Class = "UITableViewController"; title = "Add New Car"; ObjectID = "Ech-dc-wV2"; */
 "Ech-dc-wV2.title" = "Add New Car";
 
-/* Class = "UITextField"; placeholder = "Commentaires"; ObjectID = "EkP-YZ-7Uk"; */
-"EkP-YZ-7Uk.placeholder" = "Commentaires";
+/* Class = "UILabel"; text = "Label"; ObjectID = "Egn-Wr-hCY"; */
+"Egn-Wr-hCY.text" = "Label";
 
-/* Class = "UITextField"; placeholder = "Numéro d'immatriculation"; ObjectID = "FFN-az-mMt"; */
-"FFN-az-mMt.placeholder" = "Numéro d'immatriculation";
+/* Class = "UILabel"; text = "14/01/1980 08:57"; ObjectID = "EiL-Jb-AFQ"; */
+"EiL-Jb-AFQ.text" = "14/01/1980 08:57";
+
+/* Class = "UITextField"; placeholder = "Saisir"; ObjectID = "EkP-YZ-7Uk"; */
+"EkP-YZ-7Uk.placeholder" = "Saisir";
+
+/* Class = "UIButton"; normalTitle = "Valider"; ObjectID = "EoM-5o-h3P"; */
+"EoM-5o-h3P.normalTitle" = "Valider";
+
+/* Class = "UILabel"; text = "0,00 €/L"; ObjectID = "EwK-fF-AIG"; */
+"EwK-fF-AIG.text" = "0,00 €/L";
+
+/* Class = "UITextField"; placeholder = "Saisir"; ObjectID = "FFN-az-mMt"; */
+"FFN-az-mMt.placeholder" = "Saisir";
+
+/* Class = "UITableViewSection"; footerTitle = "Prenez une photo de votre carte grise"; ObjectID = "FPf-6r-Crn"; */
+"FPf-6r-Crn.footerTitle" = "Prenez une photo de votre carte grise";
+
+/* Class = "UITableViewSection"; headerTitle = "Carte Grise"; ObjectID = "FPf-6r-Crn"; */
+"FPf-6r-Crn.headerTitle" = "Carte Grise";
+
+/* Class = "UILabel"; text = "Latitude :"; ObjectID = "FS0-GE-DKi"; */
+"FS0-GE-DKi.text" = "Latitude :";
+
+/* Class = "UILabel"; text = "300000 km"; ObjectID = "GFH-ko-QpR"; */
+"GFH-ko-QpR.text" = "300000 km";
+
+/* Class = "UINavigationItem"; title = "Menu réglages"; ObjectID = "GJ4-Zp-nDJ"; */
+"GJ4-Zp-nDJ.title" = "Menu réglages";
+
+/* Class = "UILabel"; text = "0,00 €/L"; ObjectID = "GQQ-BL-B8K"; */
+"GQQ-BL-B8K.text" = "0,00 €/L";
+
+/* Class = "UILabel"; text = "Restauration"; ObjectID = "GnB-h5-lls"; */
+"GnB-h5-lls.text" = "Restauration";
+
+/* Class = "UILabel"; text = "abracadabra@gmail.com"; ObjectID = "H8m-x3-22S"; */
+"H8m-x3-22S.text" = "abracadabra@gmail.com";
+
+/* Class = "UILabel"; text = "Date immat."; ObjectID = "HHa-kM-NlZ"; */
+"HHa-kM-NlZ.text" = "Date immat.";
 
 /* Class = "UITextField"; placeholder = "Ville"; ObjectID = "Hci-4G-WCt"; */
 "Hci-4G-WCt.placeholder" = "Ville";
 
-/* Class = "UILabel"; text = "Aucune donnée"; ObjectID = "JcU-3x-jun"; */
-"JcU-3x-jun.text" = "Aucune donnée";
+/* Class = "UILabel"; text = "Latitude"; ObjectID = "HiD-d9-Fq5"; */
+"HiD-d9-Fq5.text" = "Latitude";
 
-/* Class = "UITextField"; placeholder = "Kilométrage véhicule"; ObjectID = "KFn-6R-Zgq"; */
-"KFn-6R-Zgq.placeholder" = "Kilométrage véhicule";
+/* Class = "UILabel"; text = "Label"; ObjectID = "HuH-tL-y5L"; */
+"HuH-tL-y5L.text" = "Label";
+
+/* Class = "UITableViewSection"; headerTitle = "NOTES"; ObjectID = "I0I-Oo-G6V"; */
+"I0I-Oo-G6V.headerTitle" = "NOTES";
+
+/* Class = "UILabel"; text = "Numéro de série"; ObjectID = "I3t-V2-jby"; */
+"I3t-V2-jby.text" = "Numéro de série";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "IFf-PR-GhT"; */
+"IFf-PR-GhT.text" = "-";
+
+/* Class = "UIButton"; normalTitle = "Rejoindre mon véhicule"; ObjectID = "IfJ-Dc-64c"; */
+"IfJ-Dc-64c.normalTitle" = "Rejoindre mon véhicule";
+
+/* Class = "UILabel"; text = "Nom du garage"; ObjectID = "JdQ-ER-344"; */
+"JdQ-ER-344.text" = "Nom du garage";
+
+/* Class = "UILabel"; text = "Vidange huile moteur"; ObjectID = "Jny-ph-GG2"; */
+"Jny-ph-GG2.text" = "Vidange huile moteur";
+
+/* Class = "UITextField"; placeholder = "Saisir"; ObjectID = "KFn-6R-Zgq"; */
+"KFn-6R-Zgq.placeholder" = "Saisir";
+
+/* Class = "UITableViewSection"; footerTitle = "Prenez une photo de votre ticket de plein"; ObjectID = "Kq9-CB-QWe"; */
+"Kq9-CB-QWe.footerTitle" = "Prenez une photo de votre ticket de plein";
+
+/* Class = "UITableViewSection"; headerTitle = "Justificatif"; ObjectID = "Kq9-CB-QWe"; */
+"Kq9-CB-QWe.headerTitle" = "Justificatif";
+
+/* Class = "UIButton"; normalTitle = "Temps estimé"; ObjectID = "KsZ-Bg-b5h"; */
+"KsZ-Bg-b5h.normalTitle" = "Temps estimé";
 
 /* Class = "UIViewController"; title = "Conditions générales d'utilisation"; ObjectID = "Ksh-Jf-SJi"; */
 "Ksh-Jf-SJi.title" = "Conditions générales d'utilisation";
@@ -77,8 +371,17 @@
 /* Class = "UIButton"; normalTitle = "Calculer"; ObjectID = "L5I-G6-6Re"; */
 "L5I-G6-6Re.normalTitle" = "Calculer";
 
-/* Class = "UILabel"; text = "Unité de Distance :"; ObjectID = "LJL-CN-0X0"; */
-"LJL-CN-0X0.text" = "Unité de Distance :";
+/* Class = "UIButton"; normalTitle = "Choisir une photo..."; ObjectID = "L8N-IP-5uh"; */
+"L8N-IP-5uh.normalTitle" = "Choisir une photo...";
+
+/* Class = "UILabel"; text = "Utilisateurs enregistrés"; ObjectID = "LJi-v2-s8b"; */
+"LJi-v2-s8b.text" = "Utilisateurs enregistrés";
+
+/* Class = "UILabel"; text = "Boutique non alimentaire"; ObjectID = "LQL-dS-C0n"; */
+"LQL-dS-C0n.text" = "Boutique non alimentaire";
+
+/* Class = "UILabel"; text = "Code postal :"; ObjectID = "LRo-AZ-VSc"; */
+"LRo-AZ-VSc.text" = "Code postal :";
 
 /* Class = "UITextField"; placeholder = "Prix au litre"; ObjectID = "LVl-Tm-e9v"; */
 "LVl-Tm-e9v.placeholder" = "Prix au litre";
@@ -86,8 +389,14 @@
 /* Class = "UIBarButtonItem"; title = "Retour"; ObjectID = "LkY-Jp-kAo"; */
 "LkY-Jp-kAo.title" = "Retour";
 
-/* Class = "UILabel"; text = "Frais de carburant depuis achat :"; ObjectID = "LnC-2B-Zsh"; */
-"LnC-2B-Zsh.text" = "Frais de carburant depuis achat :";
+/* Class = "UITabBarItem"; title = "Réglages"; ObjectID = "Llu-hE-S64"; */
+"Llu-hE-S64.title" = "Réglages";
+
+/* Class = "UILabel"; text = "Mail"; ObjectID = "LmP-Mu-EAy"; */
+"LmP-Mu-EAy.text" = "Mail";
+
+/* Class = "UILabel"; text = "Ville :"; ObjectID = "M1Q-6F-dae"; */
+"M1Q-6F-dae.text" = "Ville :";
 
 /* Class = "UITextField"; placeholder = "Modele"; ObjectID = "MOZ-88-dIx"; */
 "MOZ-88-dIx.placeholder" = "Modele";
@@ -95,38 +404,113 @@
 /* Class = "UIBarButtonItem"; title = "Retour"; ObjectID = "Mld-e7-fhg"; */
 "Mld-e7-fhg.title" = "Retour";
 
-/* Class = "UILabel"; text = "Nombre de jours depuis achat :"; ObjectID = "O6z-RV-KoG"; */
-"O6z-RV-KoG.text" = "Nombre de jours depuis achat :";
+/* Class = "UILabel"; text = "Douches"; ObjectID = "Mod-oM-HVE"; */
+"Mod-oM-HVE.text" = "Douches";
+
+/* Class = "UILabel"; text = "14/01/1980 08:57"; ObjectID = "Ms6-nX-aaH"; */
+"Ms6-nX-aaH.text" = "14/01/1980 08:57";
+
+/* Class = "UILabel"; text = "Supprimer les sauvegardes"; ObjectID = "N2G-Qq-rSN"; */
+"N2G-Qq-rSN.text" = "Supprimer les sauvegardes";
+
+/* Class = "UILabel"; text = "Entretien / Réparation"; ObjectID = "NSL-rz-8nO"; */
+"NSL-rz-8nO.text" = "Entretien / Réparation";
+
+/* Class = "UILabel"; text = "Aucune donnée"; ObjectID = "O1d-R2-hr8"; */
+"O1d-R2-hr8.text" = "Aucune donnée";
+
+/* Class = "UINavigationItem"; prompt = "Recherchez votre station"; ObjectID = "O83-nv-T9e"; */
+"O83-nv-T9e.prompt" = "Recherchez votre station";
+
+/* Class = "UINavigationItem"; title = "Recherche station"; ObjectID = "O83-nv-T9e"; */
+"O83-nv-T9e.title" = "Recherche station";
 
 /* Class = "UIBarButtonItem"; title = "Fermer"; ObjectID = "O9f-4s-kdq"; */
 "O9f-4s-kdq.title" = "Fermer";
 
-/* Class = "UILabel"; text = "Aucune donnée"; ObjectID = "OBQ-p8-uGh"; */
-"OBQ-p8-uGh.text" = "Aucune donnée";
+/* Class = "UILabel"; text = " "; ObjectID = "OBQ-p8-uGh"; */
+"OBQ-p8-uGh.text" = " ";
 
 /* Class = "UILabel"; text = "MODELE VEHICULE"; ObjectID = "ONT-RE-R45"; */
 "ONT-RE-R45.text" = "MODELE VEHICULE";
 
-/* Class = "UILabel"; text = "Unité de volume :"; ObjectID = "OrY-wz-Q0q"; */
-"OrY-wz-Q0q.text" = "Unité de volume :";
+/* Class = "UITabBarItem"; title = "Stations"; ObjectID = "Obc-Zj-B2C"; */
+"Obc-Zj-B2C.title" = "Stations";
 
-/* Class = "UITextField"; placeholder = "Pression pneus"; ObjectID = "Otf-bt-fIE"; */
-"Otf-bt-fIE.placeholder" = "Pression pneus";
+/* Class = "UILabel"; text = "Station en double"; ObjectID = "OdW-n3-avd"; */
+"OdW-n3-avd.text" = "Station en double";
+
+/* Class = "UINavigationItem"; title = "Opérations d'entretien"; ObjectID = "Oer-Xx-ifY"; */
+"Oer-Xx-ifY.title" = "Opérations d'entretien";
+
+/* Class = "UITextField"; placeholder = "Saisir"; ObjectID = "Otf-bt-fIE"; */
+"Otf-bt-fIE.placeholder" = "Saisir";
 
 /* Class = "UITextField"; placeholder = "Modèle"; ObjectID = "Oxm-dQ-HP4"; */
 "Oxm-dQ-HP4.placeholder" = "Modèle";
 
-/* Class = "UITextField"; placeholder = "Motorisation / Finition"; ObjectID = "PGl-M7-zGc"; */
-"PGl-M7-zGc.placeholder" = "Motorisation / Finition";
+/* Class = "UILabel"; text = "14/01/1980 08:57"; ObjectID = "Oz7-Ev-bEC"; */
+"Oz7-Ev-bEC.text" = "14/01/1980 08:57";
+
+/* Class = "UILabel"; text = "Nom Station Service"; ObjectID = "OzF-ei-Iln"; */
+"OzF-ei-Iln.text" = "Nom Station Service";
+
+/* Class = "UITableViewSection"; footerTitle = "Administration des stations"; ObjectID = "P7C-zQ-aUs"; */
+"P7C-zQ-aUs.footerTitle" = "Administration des stations";
+
+/* Class = "UITableViewSection"; headerTitle = "STATIONS"; ObjectID = "P7C-zQ-aUs"; */
+"P7C-zQ-aUs.headerTitle" = "STATIONS";
+
+/* Class = "UILabel"; text = "Longitude :"; ObjectID = "PAw-d8-Dfq"; */
+"PAw-d8-Dfq.text" = "Longitude :";
+
+/* Class = "UITextField"; placeholder = "Saisir"; ObjectID = "PGl-M7-zGc"; */
+"PGl-M7-zGc.placeholder" = "Saisir";
+
+/* Class = "UILabel"; text = " TRAJET URBAIN "; ObjectID = "PIF-hd-0dd"; */
+"PIF-hd-0dd.text" = " TRAJET URBAIN ";
 
 /* Class = "UITabBarItem"; title = "Mes voitures"; ObjectID = "PJr-Zg-ahJ"; */
 "PJr-Zg-ahJ.title" = "Mes voitures";
 
-/* Class = "UITextField"; placeholder = "Volume total du réservoir à carburant (L)"; ObjectID = "QUf-SU-mHk"; */
-"QUf-SU-mHk.placeholder" = "Volume total du réservoir à carburant (L)";
+/* Class = "UILabel"; text = "Frais carburant total :"; ObjectID = "PdT-MX-Shl"; */
+"PdT-MX-Shl.text" = "Frais carburant total :";
 
-/* Class = "UITextField"; placeholder = "Nombre de litres"; ObjectID = "Qbw-zM-lPJ"; */
-"Qbw-zM-lPJ.placeholder" = "Nombre de litres";
+/* Class = "UILabel"; text = "Aucune donnée"; ObjectID = "PmN-Cu-uFc"; */
+"PmN-Cu-uFc.text" = "Aucune donnée";
+
+/* Class = "UILabel"; text = "Diesel Plus"; ObjectID = "Pvs-If-13H"; */
+"Pvs-If-13H.text" = "Diesel Plus";
+
+/* Class = "UILabel"; text = "Partagez votre position avec vos contacts"; ObjectID = "QDl-Oa-gZF"; */
+"QDl-Oa-gZF.text" = "Partagez votre position avec vos contacts";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "QEz-c7-giZ"; */
+"QEz-c7-giZ.text" = "-";
+
+/* Class = "UITableViewSection"; footerTitle = "Gestion de vos notes de frais"; ObjectID = "QM3-p3-A4k"; */
+"QM3-p3-A4k.footerTitle" = "Gestion de vos notes de frais";
+
+/* Class = "UITableViewSection"; headerTitle = "Notes de frais"; ObjectID = "QM3-p3-A4k"; */
+"QM3-p3-A4k.headerTitle" = "Notes de frais";
+
+/* Class = "UITableViewController"; title = "Menu Frais"; ObjectID = "QRz-6H-Xns"; */
+"QRz-6H-Xns.title" = "Menu Frais";
+
+/* Class = "UITableViewSection"; footerTitle = "Photo de votre carte grise"; ObjectID = "QTc-WB-jqC"; */
+"QTc-WB-jqC.footerTitle" = "Photo de votre carte grise";
+
+/* Class = "UITableViewSection"; headerTitle = "CARTE GRISE"; ObjectID = "QTc-WB-jqC"; */
+"QTc-WB-jqC.headerTitle" = "CARTE GRISE";
+
+/* Class = "UITextField"; placeholder = "Saisir"; ObjectID = "QUf-SU-mHk"; */
+"QUf-SU-mHk.placeholder" = "Saisir";
+
+/* Class = "UITextField"; placeholder = "Saisir"; ObjectID = "Qbw-zM-lPJ"; */
+"Qbw-zM-lPJ.placeholder" = "Saisir";
+
+/* Class = "UILabel"; text = "idStation"; ObjectID = "Qcg-oE-6S6"; */
+"Qcg-oE-6S6.text" = "idStation";
 
 /* Class = "UITableViewSection"; footerTitle = "Mes commentaires sur mon véhicule"; ObjectID = "Qme-lg-U3G"; */
 "Qme-lg-U3G.footerTitle" = "Mes commentaires sur mon véhicule";
@@ -134,47 +518,149 @@
 /* Class = "UITableViewSection"; headerTitle = "MES NOTES"; ObjectID = "Qme-lg-U3G"; */
 "Qme-lg-U3G.headerTitle" = "MES NOTES";
 
+/* Class = "UINavigationItem"; prompt = "Statistiques Vehicule"; ObjectID = "Qn2-6v-US5"; */
+"Qn2-6v-US5.prompt" = "Statistiques Vehicule";
+
+/* Class = "UINavigationItem"; title = "Statistiques"; ObjectID = "Qn2-6v-US5"; */
+"Qn2-6v-US5.title" = "Statistiques";
+
+/* Class = "UILabel"; text = "€"; ObjectID = "QrO-ka-szF"; */
+"QrO-ka-szF.text" = "€";
+
+/* Class = "UITabBarController"; title = "Menu réglages"; ObjectID = "Qvy-2f-P3e"; */
+"Qvy-2f-P3e.title" = "Menu réglages";
+
+/* Class = "UILabel"; text = "Marque"; ObjectID = "RHM-pW-4dH"; */
+"RHM-pW-4dH.text" = "Marque";
+
+/* Class = "UILabel"; text = "Adresse approximative :"; ObjectID = "RLC-Kd-cbs"; */
+"RLC-Kd-cbs.text" = "Adresse approximative :";
+
 /* Class = "UITableViewSection"; headerTitle = "Détails ravitaillement"; ObjectID = "RNV-g0-lR8"; */
 "RNV-g0-lR8.headerTitle" = "Détails ravitaillement";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "ROP-HB-esW"; */
+"ROP-HB-esW.text" = "0";
 
 /* Class = "UITableViewSection"; headerTitle = "Mes notes"; ObjectID = "RpT-f7-oJe"; */
 "RpT-f7-oJe.headerTitle" = "Mes notes";
 
+/* Class = "UILabel"; text = "km"; ObjectID = "RwX-cl-zMj"; */
+"RwX-cl-zMj.text" = "km";
+
 /* Class = "UIBarButtonItem"; title = "Enregistrer"; ObjectID = "Ryb-9A-2eE"; */
 "Ryb-9A-2eE.title" = "Enregistrer";
+
+/* Class = "UILabel"; text = "Ville"; ObjectID = "RzM-d0-jMM"; */
+"RzM-d0-jMM.text" = "Ville";
 
 /* Class = "UITableViewSection"; headerTitle = "Station Service"; ObjectID = "S27-Mp-U8w"; */
 "S27-Mp-U8w.headerTitle" = "Station Service";
 
+/* Class = "UITableViewSection"; footerTitle = "Choix du mode d'affichage des annonces"; ObjectID = "SfM-tj-Ey3"; */
+"SfM-tj-Ey3.footerTitle" = "Choix du mode d'affichage des annonces";
+
+/* Class = "UITableViewSection"; headerTitle = "Choix des annonces / C.G.U"; ObjectID = "SfM-tj-Ey3"; */
+"SfM-tj-Ey3.headerTitle" = "Choix des annonces / C.G.U";
+
 /* Class = "UINavigationItem"; title = "Legal"; ObjectID = "SmI-VE-wSY"; */
 "SmI-VE-wSY.title" = "Legal";
 
-/* Class = "UITextField"; placeholder = "Date immat."; ObjectID = "Svq-Pe-Jzf"; */
-"Svq-Pe-Jzf.placeholder" = "Date immat.";
+/* Class = "UITextField"; placeholder = "Choisir"; ObjectID = "Svq-Pe-Jzf"; */
+"Svq-Pe-Jzf.placeholder" = "Choisir";
 
-/* Class = "UITextField"; placeholder = "Station Service"; ObjectID = "T9m-KC-5pf"; */
-"T9m-KC-5pf.placeholder" = "Station Service";
+/* Class = "UIButton"; normalTitle = "Effacer la position de mon véhicule"; ObjectID = "T1r-PV-WwD"; */
+"T1r-PV-WwD.normalTitle" = "Effacer la position de mon véhicule";
 
-/* Class = "UIButton"; normalTitle = "Remonter un bug / suggestions"; ObjectID = "TMd-PW-lYu"; */
-"TMd-PW-lYu.normalTitle" = "Remonter un bug / suggestions";
+/* Class = "UILabel"; text = "Temps de marche jusqu'au véhicule"; ObjectID = "T9w-wc-tKi"; */
+"T9w-wc-tKi.text" = "Temps de marche jusqu'au véhicule";
 
-/* Class = "UITextField"; placeholder = "Numéro de série"; ObjectID = "Thn-4e-29S"; */
-"Thn-4e-29S.placeholder" = "Numéro de série";
+/* Class = "UITableViewSection"; footerTitle = "services proposés par la station"; ObjectID = "TEp-dd-hmi"; */
+"TEp-dd-hmi.footerTitle" = "services proposés par la station";
 
-/* Class = "UITextField"; placeholder = "Kilomètres parcourus depuis dernier ravitaillement"; ObjectID = "Tpc-NJ-xdn"; */
-"Tpc-NJ-xdn.placeholder" = "Kilomètres parcourus depuis dernier ravitaillement";
+/* Class = "UITableViewSection"; headerTitle = "Services"; ObjectID = "TEp-dd-hmi"; */
+"TEp-dd-hmi.headerTitle" = "Services";
 
-/* Class = "UILabel"; text = "Version : 1.0"; ObjectID = "VV6-if-49f"; */
-"VV6-if-49f.text" = "Version : 1.0";
+/* Class = "UIButton"; normalTitle = "Me guider vers cette station"; ObjectID = "TFu-cs-pKS"; */
+"TFu-cs-pKS.normalTitle" = "Me guider vers cette station";
 
-/* Class = "UITextField"; placeholder = "Carburant"; ObjectID = "Vyd-Gi-nSz"; */
-"Vyd-Gi-nSz.placeholder" = "Carburant";
+/* Class = "UILabel"; text = "Cout journalier :"; ObjectID = "TL4-HB-W0Q"; */
+"TL4-HB-W0Q.text" = "Cout journalier :";
 
-/* Class = "UITextField"; placeholder = "Prix"; ObjectID = "WJN-RT-Oz8"; */
-"WJN-RT-Oz8.placeholder" = "Prix";
+/* Class = "UIBarButtonItem"; title = "Retour"; ObjectID = "Tc7-Xn-SKo"; */
+"Tc7-Xn-SKo.title" = "Retour";
+
+/* Class = "UITextField"; placeholder = "Numéro d'immatriculation"; ObjectID = "Thn-4e-29S"; */
+"Thn-4e-29S.placeholder" = "Numéro d'immatriculation";
+
+/* Class = "UILabel"; text = "Aucune donnée"; ObjectID = "Thn-Ip-VGq"; */
+"Thn-Ip-VGq.text" = "Aucune donnée";
+
+/* Class = "UITableViewSection"; footerTitle = "Signaler une anomalie sur la station"; ObjectID = "Tmb-zS-TUh"; */
+"Tmb-zS-TUh.footerTitle" = "Signaler une anomalie sur la station";
+
+/* Class = "UITableViewSection"; headerTitle = "Signalement"; ObjectID = "Tmb-zS-TUh"; */
+"Tmb-zS-TUh.headerTitle" = "Signalement";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Tp9-rj-KXD"; */
+"Tp9-rj-KXD.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Saisir"; ObjectID = "Tpc-NJ-xdn"; */
+"Tpc-NJ-xdn.placeholder" = "Saisir";
+
+/* Class = "UILabel"; text = "Relais colis"; ObjectID = "U0n-Wh-O2Y"; */
+"U0n-Wh-O2Y.text" = "Relais colis";
+
+/* Class = "UILabel"; text = "Laverie"; ObjectID = "U3w-Ly-pwc"; */
+"U3w-Ly-pwc.text" = "Laverie";
+
+/* Class = "UIButton"; normalTitle = "Associer une photo..."; ObjectID = "U50-gI-boE"; */
+"U50-gI-boE.normalTitle" = "Associer une photo...";
+
+/* Class = "UIButton"; normalTitle = "Marquer la position de mon véhicule"; ObjectID = "UBX-qc-1hb"; */
+"UBX-qc-1hb.normalTitle" = "Marquer la position de mon véhicule";
+
+/* Class = "UILabel"; text = "12/01/2019"; ObjectID = "UrF-bb-8Ip"; */
+"UrF-bb-8Ip.text" = "12/01/2019";
+
+/* Class = "UILabel"; text = "Piste poids lourds"; ObjectID = "V3A-xW-DRW"; */
+"V3A-xW-DRW.text" = "Piste poids lourds";
+
+/* Class = "UILabel"; text = "Adresse :"; ObjectID = "V92-Ty-P4C"; */
+"V92-Ty-P4C.text" = "Adresse :";
+
+/* Class = "UILabel"; text = "Version :"; ObjectID = "VV6-if-49f"; */
+"VV6-if-49f.text" = "Version :";
+
+/* Class = "UITableViewSection"; headerTitle = "Infos Véhicule"; ObjectID = "Vd6-Vl-c7i"; */
+"Vd6-Vl-c7i.headerTitle" = "Infos Véhicule";
+
+/* Class = "UILabel"; text = "Boutique alimentaire"; ObjectID = "Vot-tv-Emf"; */
+"Vot-tv-Emf.text" = "Boutique alimentaire";
+
+/* Class = "UIButton"; normalTitle = "Changer"; ObjectID = "Vtj-V9-06H"; */
+"Vtj-V9-06H.normalTitle" = "Changer";
+
+/* Class = "UITextField"; placeholder = "Choisir"; ObjectID = "Vyd-Gi-nSz"; */
+"Vyd-Gi-nSz.placeholder" = "Choisir";
+
+/* Class = "UILabel"; text = "Pseudo du véhicule"; ObjectID = "WDI-CD-4rk"; */
+"WDI-CD-4rk.text" = "Pseudo du véhicule";
+
+/* Class = "UITextField"; placeholder = "Saisir"; ObjectID = "WJN-RT-Oz8"; */
+"WJN-RT-Oz8.placeholder" = "Saisir";
+
+/* Class = "UINavigationItem"; prompt = "Operations de maintenance"; ObjectID = "WQy-ZB-VIW"; */
+"WQy-ZB-VIW.prompt" = "Operations de maintenance";
+
+/* Class = "UINavigationItem"; title = "Frais auto"; ObjectID = "WQy-ZB-VIW"; */
+"WQy-ZB-VIW.title" = "Frais auto";
 
 /* Class = "UIBarButtonItem"; title = "Mettre à jour"; ObjectID = "WZj-fg-hFr"; */
 "WZj-fg-hFr.title" = "Mettre à jour";
+
+/* Class = "UITextField"; placeholder = "Energie"; ObjectID = "Wxp-EZ-Tnq"; */
+"Wxp-EZ-Tnq.placeholder" = "Energie";
 
 /* Class = "UIViewController"; title = "Conditions générales d'utilisation"; ObjectID = "X7B-fQ-8EN"; */
 "X7B-fQ-8EN.title" = "Conditions générales d'utilisation";
@@ -182,8 +668,44 @@
 /* Class = "UITextField"; placeholder = "Pseudo"; ObjectID = "XKH-9D-Gfd"; */
 "XKH-9D-Gfd.placeholder" = "Pseudo";
 
+/* Class = "UIViewController"; title = "Connexion"; ObjectID = "XKQ-lj-u7L"; */
+"XKQ-lj-u7L.title" = "Connexion";
+
+/* Class = "UILabel"; text = "Aucune donnée"; ObjectID = "XSc-Xs-AEL"; */
+"XSc-Xs-AEL.text" = "Aucune donnée";
+
+/* Class = "UILabel"; text = "Vente d'additifs de carburants"; ObjectID = "XVq-gN-OCC"; */
+"XVq-gN-OCC.text" = "Vente d'additifs de carburants";
+
+/* Class = "UILabel"; text = "Temps estimé :"; ObjectID = "Xae-jC-9vW"; */
+"Xae-jC-9vW.text" = "Temps estimé :";
+
+/* Class = "UILabel"; text = "Nom :"; ObjectID = "XbW-70-MkU"; */
+"XbW-70-MkU.text" = "Nom :";
+
+/* Class = "UILabel"; text = "Nombre de litres"; ObjectID = "Xcn-q3-yC2"; */
+"Xcn-q3-yC2.text" = "Nombre de litres";
+
+/* Class = "UILabel"; text = "Mes Notes de frais"; ObjectID = "Xct-2W-Utw"; */
+"Xct-2W-Utw.text" = "Mes Notes de frais";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "XwC-5l-CCs"; */
+"XwC-5l-CCs.text" = "0";
+
+/* Class = "UILabel"; text = "Prix"; ObjectID = "Y2g-6p-4b0"; */
+"Y2g-6p-4b0.text" = "Prix";
+
+/* Class = "UITextField"; placeholder = "Adresse e-mail"; ObjectID = "YN1-gO-gy2"; */
+"YN1-gO-gy2.placeholder" = "Adresse e-mail";
+
 /* Class = "UITabBarItem"; title = "Ma conso"; ObjectID = "YNe-aj-la3"; */
 "YNe-aj-la3.title" = "Ma conso";
+
+/* Class = "UILabel"; text = "Aucune donnée"; ObjectID = "YSk-Am-gyR"; */
+"YSk-Am-gyR.text" = "Aucune donnée";
+
+/* Class = "UILabel"; text = "Aucune donnée"; ObjectID = "YUn-qQ-HxY"; */
+"YUn-qQ-HxY.text" = "Aucune donnée";
 
 /* Class = "UITableViewSection"; footerTitle = "Cliquez sur le champ pour choisir un type"; ObjectID = "YuN-9S-6Ft"; */
 "YuN-9S-6Ft.footerTitle" = "Cliquez sur le champ pour choisir un type";
@@ -194,17 +716,35 @@
 /* Class = "UINavigationItem"; title = "Mes véhicules"; ObjectID = "Z6d-QA-1br"; */
 "Z6d-QA-1br.title" = "Mes véhicules";
 
-/* Class = "UITableViewSection"; headerTitle = "Voiture"; ObjectID = "ZHG-bL-ul4"; */
-"ZHG-bL-ul4.headerTitle" = "Voiture";
+/* Class = "UILabel"; text = "Station de gonflage"; ObjectID = "ZB0-hV-Kra"; */
+"ZB0-hV-Kra.text" = "Station de gonflage";
 
-/* Class = "UINavigationItem"; title = "Nouveau frais"; ObjectID = "aIj-1Z-Niv"; */
-"aIj-1Z-Niv.title" = "Nouveau frais";
+/* Class = "UILabel"; text = "Label"; ObjectID = "ZCD-Ge-1SB"; */
+"ZCD-Ge-1SB.text" = "Label";
+
+/* Class = "UITableViewSection"; headerTitle = "Infos Véhicule"; ObjectID = "ZHG-bL-ul4"; */
+"ZHG-bL-ul4.headerTitle" = "Infos Véhicule";
+
+/* Class = "UILabel"; text = "14/01/1980 08:57"; ObjectID = "ZTC-v8-A2C"; */
+"ZTC-v8-A2C.text" = "14/01/1980 08:57";
+
+/* Class = "UILabel"; text = "Pseudo"; ObjectID = "ZVr-vd-qsi"; */
+"ZVr-vd-qsi.text" = "Pseudo";
+
+/* Class = "UITableViewSection"; headerTitle = "Conso Management"; ObjectID = "Zbh-mM-LYl"; */
+"Zbh-mM-LYl.headerTitle" = "Conso Management";
+
+/* Class = "UILabel"; text = "Pseudo"; ObjectID = "aCl-Xv-CzT"; */
+"aCl-Xv-CzT.text" = "Pseudo";
+
+/* Class = "UINavigationItem"; title = "Nouveau plein"; ObjectID = "aIj-1Z-Niv"; */
+"aIj-1Z-Niv.title" = "Nouveau plein";
 
 /* Class = "UITextField"; placeholder = "Pseudo voiture"; ObjectID = "aOW-ZR-k4i"; */
 "aOW-ZR-k4i.placeholder" = "Pseudo voiture";
 
-/* Class = "UITextField"; placeholder = "Modele"; ObjectID = "aYn-jo-GP6"; */
-"aYn-jo-GP6.placeholder" = "Modele";
+/* Class = "UITextField"; placeholder = "Choisir"; ObjectID = "aYn-jo-GP6"; */
+"aYn-jo-GP6.placeholder" = "Choisir";
 
 /* Class = "UITableViewController"; title = "Stats"; ObjectID = "aml-aA-wME"; */
 "aml-aA-wME.title" = "Stats";
@@ -215,50 +755,182 @@
 /* Class = "UITableViewSection"; headerTitle = "INFOS PERSOS"; ObjectID = "asD-rp-4de"; */
 "asD-rp-4de.headerTitle" = "INFOS PERSOS";
 
-/* Class = "UILabel"; text = "Cout :"; ObjectID = "bbd-KV-Wga"; */
-"bbd-KV-Wga.text" = "Cout :";
+/* Class = "UILabel"; text = "Record Conso (mini.)"; ObjectID = "b5b-l1-vlv"; */
+"b5b-l1-vlv.text" = "Record Conso (mini.)";
+
+/* Class = "UILabel"; text = "Aucune donnée"; ObjectID = "bPJ-Aa-G6H"; */
+"bPJ-Aa-G6H.text" = "Aucune donnée";
+
+/* Class = "UILabel"; text = "Marque"; ObjectID = "bSG-oq-lkW"; */
+"bSG-oq-lkW.text" = "Marque";
+
+/* Class = "UILabel"; text = "par Kracter56"; ObjectID = "bZB-vt-oSD"; */
+"bZB-vt-oSD.text" = "par Kracter56";
+
+/* Class = "UILabel"; text = "Adresse inexacte"; ObjectID = "baF-S1-PJc"; */
+"baF-S1-PJc.text" = "Adresse inexacte";
+
+/* Class = "UITableViewSection"; footerTitle = "Configuration du carnet d'entretien"; ObjectID = "bfX-2f-xZx"; */
+"bfX-2f-xZx.footerTitle" = "Configuration du carnet d'entretien";
+
+/* Class = "UITableViewSection"; headerTitle = "Paramétrage du plan d'entretien"; ObjectID = "bfX-2f-xZx"; */
+"bfX-2f-xZx.headerTitle" = "Paramétrage du plan d'entretien";
+
+/* Class = "UILabel"; text = " "; ObjectID = "bkp-yr-jRZ"; */
+"bkp-yr-jRZ.text" = " ";
+
+/* Class = "UIButton"; normalTitle = "Partager ma position"; ObjectID = "buu-OG-dIW"; */
+"buu-OG-dIW.normalTitle" = "Partager ma position";
+
+/* Class = "UILabel"; text = "Longitude"; ObjectID = "cG2-vI-uka"; */
+"cG2-vI-uka.text" = "Longitude";
+
+/* Class = "UILabel"; text = "Wifi"; ObjectID = "cG9-5H-HWx"; */
+"cG9-5H-HWx.text" = "Wifi";
+
+/* Class = "UILabel"; text = "Modèle"; ObjectID = "cOf-ov-xKb"; */
+"cOf-ov-xKb.text" = "Modèle";
+
+/* Class = "UILabel"; text = "Stations à valider"; ObjectID = "ckN-m4-lPD"; */
+"ckN-m4-lPD.text" = "Stations à valider";
 
 /* Class = "UIBarButtonItem"; title = "Annuler"; ObjectID = "cnG-Ha-bXl"; */
 "cnG-Ha-bXl.title" = "Annuler";
 
-/* Class = "UITextField"; placeholder = "Numéro de série"; ObjectID = "dJk-pi-8ur"; */
-"dJk-pi-8ur.placeholder" = "Numéro de série";
+/* Class = "UILabel"; text = "Nom Garage"; ObjectID = "cyF-sT-Xbw"; */
+"cyF-sT-Xbw.text" = "Nom Garage";
 
-/* Class = "UILabel"; text = "Distance parcourue :"; ObjectID = "eMm-di-RbY"; */
-"eMm-di-RbY.text" = "Distance parcourue :";
+/* Class = "UILabel"; text = "Distance jusqu'au véhicule"; ObjectID = "dHc-sA-B0f"; */
+"dHc-sA-B0f.text" = "Distance jusqu'au véhicule";
+
+/* Class = "UITextField"; placeholder = "Saisir"; ObjectID = "dJk-pi-8ur"; */
+"dJk-pi-8ur.placeholder" = "Saisir";
+
+/* Class = "UILabel"; text = "Conditions Générales d'Utilisation"; ObjectID = "dbO-VM-rXc"; */
+"dbO-VM-rXc.text" = "Conditions Générales d'Utilisation";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "deQ-Nk-wb4"; */
+"deQ-Nk-wb4.text" = "Label";
+
+/* Class = "UINavigationController"; title = "Réglages"; ObjectID = "dtT-Qc-pbF"; */
+"dtT-Qc-pbF.title" = "Réglages";
+
+/* Class = "UILabel"; text = "Pression pneus"; ObjectID = "dty-Bu-Ysv"; */
+"dty-Bu-Ysv.text" = "Pression pneus";
+
+/* Class = "UITableViewSection"; footerTitle = "Historique d'entretien réalisé / à réaliser"; ObjectID = "du5-Tf-I05"; */
+"du5-Tf-I05.footerTitle" = "Historique d'entretien réalisé / à réaliser";
+
+/* Class = "UITableViewSection"; headerTitle = "Suivi de mon véhicule"; ObjectID = "du5-Tf-I05"; */
+"du5-Tf-I05.headerTitle" = "Suivi de mon véhicule";
+
+/* Class = "UITextField"; placeholder = "Numéro de série"; ObjectID = "egq-xO-WDX"; */
+"egq-xO-WDX.placeholder" = "Numéro de série";
+
+/* Class = "UIBarButtonItem"; title = "Retour"; ObjectID = "etm-cw-4ZL"; */
+"etm-cw-4ZL.title" = "Retour";
+
+/* Class = "UITabBarItem"; title = "Stations"; ObjectID = "eu5-rV-pPO"; */
+"eu5-rV-pPO.title" = "Stations";
+
+/* Class = "UILabel"; text = "Lavage automatique"; ObjectID = "ewJ-w6-brR"; */
+"ewJ-w6-brR.text" = "Lavage automatique";
+
+/* Class = "UILabel"; text = "GNV"; ObjectID = "fCh-00-w18"; */
+"fCh-00-w18.text" = "GNV";
 
 /* Class = "UITextField"; placeholder = "--"; ObjectID = "fIE-tM-Acz"; */
 "fIE-tM-Acz.placeholder" = "--";
 
-/* Class = "UITabBarItem"; title = "Stats"; ObjectID = "fxt-Tj-sYx"; */
-"fxt-Tj-sYx.title" = "Stats";
+/* Class = "UILabel"; text = " "; ObjectID = "fOV-Bk-o5d"; */
+"fOV-Bk-o5d.text" = " ";
+
+/* Class = "UILabel"; text = "Numéro immat."; ObjectID = "fPP-Ef-xtg"; */
+"fPP-Ef-xtg.text" = "Numéro immat.";
+
+/* Class = "UITabBarItem"; title = "Mes vehicules"; ObjectID = "fxt-Tj-sYx"; */
+"fxt-Tj-sYx.title" = "Mes vehicules";
+
+/* Class = "UILabel"; text = "Modele"; ObjectID = "gG9-bw-N1M"; */
+"gG9-bw-N1M.text" = "Modele";
+
+/* Class = "UILabel"; text = "Fin de pénurie d'un carburant"; ObjectID = "gPq-pP-jfV"; */
+"gPq-pP-jfV.text" = "Fin de pénurie d'un carburant";
+
+/* Class = "UITableViewSection"; headerTitle = "Mon véhicule"; ObjectID = "gWx-jY-bs0"; */
+"gWx-jY-bs0.headerTitle" = "Mon véhicule";
+
+/* Class = "UIButton"; normalTitle = "Restaurer données"; ObjectID = "gaj-i0-yQb"; */
+"gaj-i0-yQb.normalTitle" = "Restaurer données";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "gb6-4L-e3F"; */
+"gb6-4L-e3F.text" = "Label";
+
+/* Class = "UILabel"; text = "Consommation moyenne :"; ObjectID = "gi1-Ye-roC"; */
+"gi1-Ye-roC.text" = "Consommation moyenne :";
+
+/* Class = "UITextField"; placeholder = "Date"; ObjectID = "h5t-ad-Hs8"; */
+"h5t-ad-Hs8.placeholder" = "Date";
+
+/* Class = "UITableViewSection"; headerTitle = "VEHICULE"; ObjectID = "h65-jq-z2E"; */
+"h65-jq-z2E.headerTitle" = "VEHICULE";
 
 /* Class = "UITextField"; placeholder = "Sélectionner un type de véhicule"; ObjectID = "h7w-kZ-ga7"; */
 "h7w-kZ-ga7.placeholder" = "Sélectionner un type de véhicule";
 
-/* Class = "UIButton"; normalTitle = "Conditions générales d'utilisation"; ObjectID = "hiB-am-2hg"; */
-"hiB-am-2hg.normalTitle" = "Conditions générales d'utilisation";
+/* Class = "UILabel"; text = "Automate CB 24/24"; ObjectID = "hMx-vv-c4a"; */
+"hMx-vv-c4a.text" = "Automate CB 24/24";
 
-/* Class = "UILabel"; text = "Aucune donnée"; ObjectID = "i7D-WF-YAj"; */
-"i7D-WF-YAj.text" = "Aucune donnée";
+/* Class = "UILabel"; text = "Nom : PETRUS Edgar"; ObjectID = "hdq-r8-5zT"; */
+"hdq-r8-5zT.text" = "Nom : PETRUS Edgar";
+
+/* Class = "UILabel"; text = "Dernière connexion"; ObjectID = "he5-a0-lOr"; */
+"he5-a0-lOr.text" = "Dernière connexion";
+
+/* Class = "UIButton"; accessibilityLabel = "btnSearch"; ObjectID = "ipa-a5-pqh"; */
+"ipa-a5-pqh.accessibilityLabel" = "btnSearch";
+
+/* Class = "UIButton"; normalTitle = "       "; ObjectID = "ipa-a5-pqh"; */
+"ipa-a5-pqh.normalTitle" = "       ";
+
+/* Class = "UILabel"; text = "Vente de fioul domestique"; ObjectID = "irN-YT-twM"; */
+"irN-YT-twM.text" = "Vente de fioul domestique";
 
 /* Class = "UITableViewSection"; headerTitle = "Infos Achat"; ObjectID = "jF1-Eo-K0f"; */
 "jF1-Eo-K0f.headerTitle" = "Infos Achat";
 
-/* Class = "UITextField"; placeholder = "Kilometrage"; ObjectID = "jIB-cO-Pf6"; */
-"jIB-cO-Pf6.placeholder" = "Kilometrage";
+/* Class = "UITextField"; placeholder = "Saisir"; ObjectID = "jIB-cO-Pf6"; */
+"jIB-cO-Pf6.placeholder" = "Saisir";
+
+/* Class = "UILabel"; text = "Station inexistante"; ObjectID = "jME-XD-WZ6"; */
+"jME-XD-WZ6.text" = "Station inexistante";
+
+/* Class = "UILabel"; text = "Vol. réservoir"; ObjectID = "jN2-9l-p5X"; */
+"jN2-9l-p5X.text" = "Vol. réservoir";
 
 /* Class = "UIBarButtonItem"; title = "Refuser"; ObjectID = "jU0-dj-Cho"; */
 "jU0-dj-Cho.title" = "Refuser";
 
-/* Class = "UILabel"; text = "Devise : "; ObjectID = "jVJ-EI-SqW"; */
-"jVJ-EI-SqW.text" = "Devise : ";
+/* Class = "UILabel"; text = "Kilometrage vehicule"; ObjectID = "jUX-OQ-EPR"; */
+"jUX-OQ-EPR.text" = "Kilometrage vehicule";
 
 /* Class = "UIButton"; normalTitle = "Je décline"; ObjectID = "jm6-kN-qd6"; Note = "btnIDecline"; */
 "jm6-kN-qd6.normalTitle" = "Je décline";
 
-/* Class = "UITableViewSection"; headerTitle = "PREFERENCES UTILISATEUR"; ObjectID = "k0c-dJ-Ej5"; */
-"k0c-dJ-Ej5.headerTitle" = "PREFERENCES UTILISATEUR";
+/* Class = "UISegmentedControl"; k7E-1b-UV6.segmentTitles[0] = "Mes Favoris"; ObjectID = "k7E-1b-UV6"; */
+"k7E-1b-UV6.segmentTitles[0]" = "Mes Favoris";
+
+/* Class = "UISegmentedControl"; k7E-1b-UV6.segmentTitles[1] = "Recherche"; ObjectID = "k7E-1b-UV6"; */
+"k7E-1b-UV6.segmentTitles[1]" = "Recherche";
+
+/* Class = "UISegmentedControl"; k7E-1b-UV6.segmentTitles[2] = "Autour de moi"; ObjectID = "k7E-1b-UV6"; */
+"k7E-1b-UV6.segmentTitles[2]" = "Autour de moi";
+
+/* Class = "UILabel"; text = "par Kracter56"; ObjectID = "kVp-Tw-hhR"; */
+"kVp-Tw-hhR.text" = "par Kracter56";
+
+/* Class = "UILabel"; text = "14/01/1980 08:57"; ObjectID = "kaR-aT-LUO"; */
+"kaR-aT-LUO.text" = "14/01/1980 08:57";
 
 /* Class = "UITextField"; accessibilityHint = "Marque"; ObjectID = "kgQ-B9-umi"; */
 "kgQ-B9-umi.accessibilityHint" = "Marque";
@@ -269,17 +941,71 @@
 /* Class = "UITextField"; placeholder = "Marque"; ObjectID = "kgQ-B9-umi"; */
 "kgQ-B9-umi.placeholder" = "Marque";
 
-/* Class = "UILabel"; text = "Consommation moyenne :"; ObjectID = "mQD-3W-g3d"; */
-"mQD-3W-g3d.text" = "Consommation moyenne :";
+/* Class = "UILabel"; text = "14/01/1980 08:57"; ObjectID = "lFn-kY-hkR"; */
+"lFn-kY-hkR.text" = "14/01/1980 08:57";
 
-/* Class = "UITextField"; placeholder = "Date d'achat"; ObjectID = "n0K-6c-hFF"; */
-"n0K-6c-hFF.placeholder" = "Date d'achat";
+/* Class = "UITableViewSection"; footerTitle = "Ce que me coûte ma voiture"; ObjectID = "lME-SJ-Ia6"; */
+"lME-SJ-Ia6.footerTitle" = "Ce que me coûte ma voiture";
+
+/* Class = "UITableViewSection"; headerTitle = "COUT"; ObjectID = "lME-SJ-Ia6"; */
+"lME-SJ-Ia6.headerTitle" = "COUT";
+
+/* Class = "UITextField"; placeholder = "Adresse e-mail"; ObjectID = "lSk-fI-x25"; */
+"lSk-fI-x25.placeholder" = "Adresse e-mail";
+
+/* Class = "UILabel"; text = "kilométrage véhicule"; ObjectID = "lug-Hv-y5V"; */
+"lug-Hv-y5V.text" = "kilométrage véhicule";
+
+/* Class = "UILabel"; text = "Liste de stations"; ObjectID = "m0C-yd-8nB"; */
+"m0C-yd-8nB.text" = "Liste de stations";
+
+/* Class = "UILabel"; text = "01/01/2000 00:00"; ObjectID = "mA6-zh-sha"; */
+"mA6-zh-sha.text" = "01/01/2000 00:00";
+
+/* Class = "UILabel"; text = "Distance :"; ObjectID = "mf6-DU-RgS"; */
+"mf6-DU-RgS.text" = "Distance :";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "mgz-dN-Hjk"; */
+"mgz-dN-Hjk.text" = "-";
+
+/* Class = "UITextField"; placeholder = "Choisir"; ObjectID = "n0K-6c-hFF"; */
+"n0K-6c-hFF.placeholder" = "Choisir";
+
+/* Class = "UIBarButtonItem"; title = "Import"; ObjectID = "n0x-x2-RCH"; */
+"n0x-x2-RCH.title" = "Import";
+
+/* Class = "UILabel"; text = "Code postal"; ObjectID = "n2e-x0-pdb"; */
+"n2e-x0-pdb.text" = "Code postal";
 
 /* Class = "UITextField"; placeholder = "Consommation calculée"; ObjectID = "nOD-30-pO1"; */
 "nOD-30-pO1.placeholder" = "Consommation calculée";
 
-/* Class = "UITextField"; placeholder = "Date"; ObjectID = "nUs-54-Qwd"; */
-"nUs-54-Qwd.placeholder" = "Date";
+/* Class = "UILabel"; text = "Devise"; ObjectID = "ncm-P8-7K0"; */
+"ncm-P8-7K0.text" = "Devise";
+
+/* Class = "UILabel"; text = "0000.00€"; ObjectID = "nso-3u-Yi5"; */
+"nso-3u-Yi5.text" = "0000.00€";
+
+/* Class = "UILabel"; text = "Erreur sur la marque de la station"; ObjectID = "nwV-RV-KLb"; */
+"nwV-RV-KLb.text" = "Erreur sur la marque de la station";
+
+/* Class = "UILabel"; text = "300000 km"; ObjectID = "o1C-gx-0Wx"; */
+"o1C-gx-0Wx.text" = "300000 km";
+
+/* Class = "UILabel"; text = "abcdefghijklmnopqrstuvwxyz"; ObjectID = "o1S-7I-DFV"; */
+"o1S-7I-DFV.text" = "abcdefghijklmnopqrstuvwxyz";
+
+/* Class = "UITableViewSection"; footerTitle = "Cliquer sur un carburant pour mettre à jour le prix. Chaque mise à jour vous rapporte 3 points."; ObjectID = "o44-wg-2YA"; */
+"o44-wg-2YA.footerTitle" = "Cliquer sur un carburant pour mettre à jour le prix. Chaque mise à jour vous rapporte 3 points.";
+
+/* Class = "UITableViewSection"; headerTitle = "carburants"; ObjectID = "o44-wg-2YA"; */
+"o44-wg-2YA.headerTitle" = "carburants";
+
+/* Class = "UILabel"; text = "Motorisation / Finition"; ObjectID = "oGp-sh-GSf"; */
+"oGp-sh-GSf.text" = "Motorisation / Finition";
+
+/* Class = "UILabel"; text = "Plan d'entretien"; ObjectID = "oMH-ne-pF2"; */
+"oMH-ne-pF2.text" = "Plan d'entretien";
 
 /* Class = "UIBarButtonItem"; title = "Annuler"; ObjectID = "oju-ch-0fG"; */
 "oju-ch-0fG.title" = "Annuler";
@@ -287,8 +1013,20 @@
 /* Class = "UITableViewSection"; headerTitle = "Notes"; ObjectID = "oxh-fQ-34d"; */
 "oxh-fQ-34d.headerTitle" = "Notes";
 
-/* Class = "UIButton"; normalTitle = "€"; ObjectID = "qI4-66-9wu"; */
-"qI4-66-9wu.normalTitle" = "€";
+/* Class = "UITableViewSection"; footerTitle = "Configuration des unités"; ObjectID = "pMN-uZ-zjs"; */
+"pMN-uZ-zjs.footerTitle" = "Configuration des unités";
+
+/* Class = "UITableViewSection"; headerTitle = "Choix des Unités"; ObjectID = "pMN-uZ-zjs"; */
+"pMN-uZ-zjs.headerTitle" = "Choix des Unités";
+
+/* Class = "UILabel"; text = "Words\nLetters\n "; ObjectID = "ptt-d9-Xlt"; */
+"ptt-d9-Xlt.text" = "Words\nLetters\n ";
+
+/* Class = "UITabBarItem"; title = "Info"; ObjectID = "pwI-hl-gM2"; */
+"pwI-hl-gM2.title" = "Info";
+
+/* Class = "UILabel"; text = "Sauvegarder données"; ObjectID = "py8-Ba-QdG"; */
+"py8-Ba-QdG.text" = "Sauvegarder données";
 
 /* Class = "UITableViewSection"; footerTitle = "Renseignez les Infos sur le modele"; ObjectID = "qUY-Vz-7sA"; */
 "qUY-Vz-7sA.footerTitle" = "Renseignez les Infos sur le modele";
@@ -296,59 +1034,203 @@
 /* Class = "UITableViewSection"; headerTitle = "MODELE"; ObjectID = "qUY-Vz-7sA"; */
 "qUY-Vz-7sA.headerTitle" = "MODELE";
 
+/* Class = "UILabel"; text = "Effacer toutes les données"; ObjectID = "qbS-tT-IRl"; */
+"qbS-tT-IRl.text" = "Effacer toutes les données";
+
+/* Class = "UITextField"; accessibilityHint = "Marque"; ObjectID = "qvZ-SW-VqP"; */
+"qvZ-SW-VqP.accessibilityHint" = "Marque";
+
+/* Class = "UITextField"; accessibilityLabel = "Marque"; ObjectID = "qvZ-SW-VqP"; */
+"qvZ-SW-VqP.accessibilityLabel" = "Marque";
+
+/* Class = "UITextField"; placeholder = "Date de mise en circulation"; ObjectID = "qvZ-SW-VqP"; */
+"qvZ-SW-VqP.placeholder" = "Date de mise en circulation";
+
 /* Class = "UINavigationItem"; prompt = "Glissez vers la gauche pour modifier"; ObjectID = "qzx-Xt-XCO"; */
 "qzx-Xt-XCO.prompt" = "Glissez vers la gauche pour modifier";
 
 /* Class = "UINavigationItem"; title = "Statistiques Véhicule"; ObjectID = "qzx-Xt-XCO"; */
 "qzx-Xt-XCO.title" = "Statistiques Véhicule";
 
-/* Class = "UIButton"; normalTitle = "Détails / Editer"; ObjectID = "r2U-Vd-YX2"; */
-"r2U-Vd-YX2.normalTitle" = "Détails / Editer";
-
 /* Class = "UITableViewSection"; headerTitle = "CARACTERISTIQUES VEHICULE"; ObjectID = "r5q-JQ-kIF"; */
 "r5q-JQ-kIF.headerTitle" = "CARACTERISTIQUES VEHICULE";
 
-/* Class = "UILabel"; text = "Date de publication : 07/11/2018"; ObjectID = "rcz-o1-IkR"; */
-"rcz-o1-IkR.text" = "Date de publication : 07/11/2018";
+/* Class = "UILabel"; text = "14/01/1980 08:57"; ObjectID = "rX1-Mz-pfe"; */
+"rX1-Mz-pfe.text" = "14/01/1980 08:57";
 
-/* Class = "UILabel"; text = "Aucune donnée"; ObjectID = "rkd-pf-q0y"; */
-"rkd-pf-q0y.text" = "Aucune donnée";
+/* Class = "UINavigationController"; title = "Stations"; ObjectID = "rbC-zO-gxl"; */
+"rbC-zO-gxl.title" = "Stations";
 
-/* Class = "UITableViewSection"; headerTitle = "Développeur"; ObjectID = "sU0-jt-XzE"; */
-"sU0-jt-XzE.headerTitle" = "Développeur";
+/* Class = "UILabel"; text = "Date de publication :"; ObjectID = "rcz-o1-IkR"; */
+"rcz-o1-IkR.text" = "Date de publication :";
 
-/* Class = "UIButton"; normalTitle = "L"; ObjectID = "tNR-Dd-FAq"; */
-"tNR-Dd-FAq.normalTitle" = "L";
+/* Class = "UILabel"; text = "Pénurie de carburant"; ObjectID = "s5f-4z-gQi"; */
+"s5f-4z-gQi.text" = "Pénurie de carburant";
+
+/* Class = "UILabel"; text = "Gestion des données personnelles / Annonces"; ObjectID = "sEp-KE-WrV"; */
+"sEp-KE-WrV.text" = "Gestion des données personnelles / Annonces";
+
+/* Class = "UILabel"; text = "Toilettes publiques"; ObjectID = "sQn-Df-oIa"; */
+"sQn-Df-oIa.text" = "Toilettes publiques";
+
+/* Class = "UIButton"; normalTitle = "Chercher une station"; ObjectID = "sVt-bm-B4u"; */
+"sVt-bm-B4u.normalTitle" = "Chercher une station";
+
+/* Class = "UILabel"; text = "par Kracter56"; ObjectID = "ssK-gf-hQa"; */
+"ssK-gf-hQa.text" = "par Kracter56";
+
+/* Class = "UITableViewSection"; footerTitle = "Gérer la position de mon véhicule et le rejoindre"; ObjectID = "tBe-0a-dZ6"; */
+"tBe-0a-dZ6.footerTitle" = "Gérer la position de mon véhicule et le rejoindre";
+
+/* Class = "UITableViewSection"; headerTitle = "Position véhicule"; ObjectID = "tBe-0a-dZ6"; */
+"tBe-0a-dZ6.headerTitle" = "Position véhicule";
+
+/* Class = "UIBarButtonItem"; title = "Retour"; ObjectID = "tEN-kw-nCJ"; */
+"tEN-kw-nCJ.title" = "Retour";
+
+/* Class = "UILabel"; text = "Espace bébé"; ObjectID = "tJ7-QN-wC8"; */
+"tJ7-QN-wC8.text" = "Espace bébé";
+
+/* Class = "UIButton"; normalTitle = "Annuler"; ObjectID = "tLh-PC-zpL"; */
+"tLh-PC-zpL.normalTitle" = "Annuler";
+
+/* Class = "UILabel"; text = " "; ObjectID = "tMs-Te-1XD"; */
+"tMs-Te-1XD.text" = " ";
+
+/* Class = "UILabel"; text = "Effacez les données position de votre véhicule"; ObjectID = "tP0-kQ-iCh"; */
+"tP0-kQ-iCh.text" = "Effacez les données position de votre véhicule";
 
 /* Class = "UITextField"; placeholder = "Marque"; ObjectID = "thG-Kk-T6l"; */
 "thG-Kk-T6l.placeholder" = "Marque";
 
+/* Class = "UILabel"; text = "Autonomie mini."; ObjectID = "tkC-oQ-ryZ"; */
+"tkC-oQ-ryZ.text" = "Autonomie mini.";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "u7i-Gh-X31"; */
+"u7i-Gh-X31.title" = "Item";
+
+/* Class = "UILabel"; text = "Aucune donnée"; ObjectID = "uHb-m0-MyC"; */
+"uHb-m0-MyC.text" = "Aucune donnée";
+
+/* Class = "UITextField"; placeholder = "Mot de passe"; ObjectID = "uOH-Kf-K1M"; */
+"uOH-Kf-K1M.placeholder" = "Mot de passe";
+
 /* Class = "UITableViewSection"; headerTitle = "RAVITAILLEMENT"; ObjectID = "ueD-Ha-Kmu"; */
 "ueD-Ha-Kmu.headerTitle" = "RAVITAILLEMENT";
 
-/* Class = "UILabel"; text = "Aucune donnée"; ObjectID = "uqJ-xJ-13L"; */
-"uqJ-xJ-13L.text" = "Aucune donnée";
+/* Class = "UILabel"; text = "Lavage manuel"; ObjectID = "ufZ-lI-tB5"; */
+"ufZ-lI-tB5.text" = "Lavage manuel";
+
+/* Class = "UILabel"; text = "Plein"; ObjectID = "uhA-5C-drn"; */
+"uhA-5C-drn.text" = "Plein";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "uje-mZ-LiG"; */
+"uje-mZ-LiG.text" = "-";
 
 /* Class = "UIButton"; normalTitle = "J'accepte"; ObjectID = "uqj-qj-OG1"; Note = "btnIAccept"; */
 "uqj-qj-OG1.normalTitle" = "J'accepte";
 
-/* Class = "UIButton"; normalTitle = "km"; ObjectID = "vDS-JV-EHj"; */
-"vDS-JV-EHj.normalTitle" = "km";
+/* Class = "UILabel"; text = "Opérations planifiées"; ObjectID = "vPr-hm-6TI"; */
+"vPr-hm-6TI.text" = "Opérations planifiées";
 
 /* Class = "UITextField"; placeholder = "Kilometrage à l'achat"; ObjectID = "vaE-BO-Ny2"; */
 "vaE-BO-Ny2.placeholder" = "Kilometrage à l'achat";
 
-/* Class = "UILabel"; text = "Cout journalier :"; ObjectID = "weF-44-JJ7"; */
-"weF-44-JJ7.text" = "Cout journalier :";
+/* Class = "UILabel"; text = "Autonomie maxi."; ObjectID = "ve0-97-qD0"; */
+"ve0-97-qD0.text" = "Autonomie maxi.";
 
-/* Class = "UINavigationItem"; title = "Informations Application"; ObjectID = "x2E-Lr-4NI"; */
-"x2E-Lr-4NI.title" = "Informations Application";
+/* Class = "UILabel"; text = "Aucune donnée"; ObjectID = "vgI-9V-P4T"; */
+"vgI-9V-P4T.text" = "Aucune donnée";
+
+/* Class = "UILabel"; text = "Date d'achat"; ObjectID = "vjt-oG-65R"; */
+"vjt-oG-65R.text" = "Date d'achat";
+
+/* Class = "UITableViewSection"; footerTitle = "Stats de consommation"; ObjectID = "vro-RX-yyR"; */
+"vro-RX-yyR.footerTitle" = "Stats de consommation";
+
+/* Class = "UITableViewSection"; headerTitle = "BILAN CONSOMMATION"; ObjectID = "vro-RX-yyR"; */
+"vro-RX-yyR.headerTitle" = "BILAN CONSOMMATION";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "w0u-hm-kna"; */
+"w0u-hm-kna.text" = "-";
+
+/* Class = "UILabel"; text = "Unité de distance"; ObjectID = "w2C-T9-92X"; */
+"w2C-T9-92X.text" = "Unité de distance";
+
+/* Class = "UITableViewSection"; footerTitle = "Mon emplacement et celui de mon véhicule sur la carte"; ObjectID = "w3X-pi-2tL"; */
+"w3X-pi-2tL.footerTitle" = "Mon emplacement et celui de mon véhicule sur la carte";
+
+/* Class = "UITableViewSection"; headerTitle = "CARTE"; ObjectID = "w3X-pi-2tL"; */
+"w3X-pi-2tL.headerTitle" = "CARTE";
+
+/* Class = "UILabel"; text = "par Kracter56"; ObjectID = "w3x-IL-v4Y"; */
+"w3x-IL-v4Y.text" = "par Kracter56";
+
+/* Class = "UINavigationItem"; title = "Administration"; ObjectID = "wA0-uA-LaE"; */
+"wA0-uA-LaE.title" = "Administration";
+
+/* Class = "UITableViewController"; title = "Details sur la Station"; ObjectID = "wDv-m7-dZj"; */
+"wDv-m7-dZj.title" = "Details sur la Station";
+
+/* Class = "UILabel"; text = "Eureka Conso Form"; ObjectID = "wL3-HB-VMI"; */
+"wL3-HB-VMI.text" = "Eureka Conso Form";
+
+/* Class = "UILabel"; text = "Kilométrage"; ObjectID = "wV3-ha-LDt"; */
+"wV3-ha-LDt.text" = "Kilométrage";
+
+/* Class = "UITabBarItem"; title = "Stations"; ObjectID = "wbG-E5-0Mi"; */
+"wbG-E5-0Mi.title" = "Stations";
+
+/* Class = "UIButton"; normalTitle = "Remonter un bug / suggestions"; ObjectID = "we9-yI-iVv"; */
+"we9-yI-iVv.normalTitle" = "Remonter un bug / suggestions";
+
+/* Class = "UILabel"; text = "Distributeur de billets"; ObjectID = "wsf-uh-VvY"; */
+"wsf-uh-VvY.text" = "Distributeur de billets";
+
+/* Class = "UILabel"; text = "1000 km"; ObjectID = "ww8-TL-iGV"; */
+"ww8-TL-iGV.text" = "1000 km";
+
+/* Class = "UILabel"; text = "Conso maxi."; ObjectID = "x0b-Zr-sam"; */
+"x0b-Zr-sam.text" = "Conso maxi.";
+
+/* Class = "UITextField"; placeholder = "Choisir"; ObjectID = "x14-AO-N9Q"; */
+"x14-AO-N9Q.placeholder" = "Choisir";
+
+/* Class = "UINavigationItem"; title = "Informations"; ObjectID = "x2E-Lr-4NI"; */
+"x2E-Lr-4NI.title" = "Informations";
+
+/* Class = "UILabel"; text = "Rejoignez votre véhicule en utilisant le GPS"; ObjectID = "x4j-fm-fsd"; */
+"x4j-fm-fsd.text" = "Rejoignez votre véhicule en utilisant le GPS";
+
+/* Class = "UILabel"; text = "01/01/2000"; ObjectID = "x8I-D9-aVu"; */
+"x8I-D9-aVu.text" = "01/01/2000";
+
+/* Class = "UITextField"; placeholder = "Répéter mot de passe"; ObjectID = "xIG-32-asi"; */
+"xIG-32-asi.placeholder" = "Répéter mot de passe";
+
+/* Class = "UILabel"; text = "0,00 €/L"; ObjectID = "xct-IX-aQ9"; */
+"xct-IX-aQ9.text" = "0,00 €/L";
+
+/* Class = "UITableViewController"; title = "StationsTableViewController"; ObjectID = "xkp-z2-CvA"; */
+"xkp-z2-CvA.title" = "StationsTableViewController";
+
+/* Class = "UILabel"; text = "Vente de gaz domestique (Butane, Propane)"; ObjectID = "xlm-Xd-Qn7"; */
+"xlm-Xd-Qn7.text" = "Vente de gaz domestique (Butane, Propane)";
 
 /* Class = "UIBarButtonItem"; title = "Accepter"; ObjectID = "y0K-4R-CxX"; */
 "y0K-4R-CxX.title" = "Accepter";
 
-/* Class = "UITableViewSection"; headerTitle = "Application"; ObjectID = "yE0-lH-n5U"; */
-"yE0-lH-n5U.headerTitle" = "Application";
+/* Class = "UITableViewSection"; headerTitle = "A propos de l'Application"; ObjectID = "yE0-lH-n5U"; */
+"yE0-lH-n5U.headerTitle" = "A propos de l'Application";
+
+/* Class = "UITableViewSection"; headerTitle = "A propos du Développeur"; ObjectID = "yVm-fO-t6M"; */
+"yVm-fO-t6M.headerTitle" = "A propos du Développeur";
+
+/* Class = "UILabel"; text = "par Kracter56"; ObjectID = "yvw-gA-b78"; */
+"yvw-gA-b78.text" = "par Kracter56";
+
+/* Class = "UILabel"; text = "01/01/2000"; ObjectID = "z2X-Sx-t81"; */
+"z2X-Sx-t81.text" = "01/01/2000";
 
 /* Class = "UIBarButtonItem"; title = "Mettre à jour"; ObjectID = "z3r-cq-w9X"; */
 "z3r-cq-w9X.title" = "Mettre à jour";
@@ -359,8 +1241,17 @@
 /* Class = "UITableViewSection"; headerTitle = "Modele"; ObjectID = "zdy-ju-pzC"; */
 "zdy-ju-pzC.headerTitle" = "Modele";
 
+/* Class = "UILabel"; text = "Autonomie moyenne :"; ObjectID = "zhj-o5-TSy"; */
+"zhj-o5-TSy.text" = "Autonomie moyenne :";
+
 /* Class = "UINavigationItem"; prompt = "Glissez vers la gauche pour modifier"; ObjectID = "znI-MN-D6C"; */
 "znI-MN-D6C.prompt" = "Glissez vers la gauche pour modifier";
 
 /* Class = "UINavigationItem"; title = "Ravitaillements"; ObjectID = "znI-MN-D6C"; */
 "znI-MN-D6C.title" = "Ravitaillements";
+
+/* Class = "UILabel"; text = "93330"; ObjectID = "zqt-50-G5B"; */
+"zqt-50-G5B.text" = "93330";
+
+/* Class = "UILabel"; text = "0,00 €/L"; ObjectID = "zwu-pQ-Www"; */
+"zwu-pQ-Www.text" = "0,00 €/L";

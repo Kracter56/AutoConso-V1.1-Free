@@ -24,16 +24,11 @@ class CGUViewController: UIViewController {
             let popupCheckTitle = NSLocalizedString("Consentement utilisateur", comment: "popupCheckTitle")
             let popupCheckMessage = NSLocalizedString("Veuillez confirmer votre consentement en cochant la case avant de valider", comment: "popupCheckMessage")
             let popupCheckYes = NSLocalizedString("J'ai compris", comment: "popupCheckYes")
-            
-            let popupCheck = UIAlertController(title: popupCheckTitle, message: popupCheckMessage, preferredStyle: UIAlertControllerStyle.alert)
-        
-            popupCheck.addAction(UIAlertAction(title: popupCheckYes, style: .default, handler:
-            { (action: UIAlertAction!) in
-                print("L'utilisateur a donné son consentementn mais n'a pas coché la case")
-                print("popupCheck",self.cguAccept)
-            }))
-            
-            self.present(popupCheck, animated: true, completion: nil)
+			
+			SweetAlert().showAlert(popupCheckTitle, subTitle: popupCheckMessage, style: AlertStyle.warning, buttonTitle:popupCheckYes, buttonColor:self.UIColorFromRGB(rgbValue: 0xD0D0D0)) { (isOtherButton) -> Void in
+				print("L'utilisateur a donné son consentementn mais n'a pas coché la case")
+				print("popupCheck",self.cguAccept)
+			}
         }else{
             print("L'utilisateur a donné son consentement et a coché la case")
             UserDefaults.standard.set(true, forKey: "cguAccept")
@@ -44,8 +39,8 @@ class CGUViewController: UIViewController {
         
     }
     @IBAction func btnAnnuler(_ sender: Any) {
-        //alertCGUDecline()
-        SCAlertViewDecline()
+        alertCGUDecline()
+        //SCAlertViewDecline()
     }
     
     /* Cette fonction ne gère que l'affichage de la case à cocher. N'intervient pas sur le résultat */
@@ -53,11 +48,11 @@ class CGUViewController: UIViewController {
         if(self.cguAccept == false){
             print("checkPressFalse",self.cguAccept)
             self.cguAccept = true
-            btnCheck.setBackgroundImage(UIImage(named: "icon_checked"), for: UIControlState.normal)
+			btnCheck.setBackgroundImage(UIImage(named: "icon_checked"), for: UIControl.State.normal)
         }else{
             print("checkPressTrue",self.cguAccept)
             self.cguAccept = false
-            btnCheck.setBackgroundImage(UIImage(named: "icon_unchecked"), for: UIControlState.normal)
+			btnCheck.setBackgroundImage(UIImage(named: "icon_unchecked"), for: UIControl.State.normal)
         }
     }
     
@@ -79,9 +74,9 @@ class CGUViewController: UIViewController {
         self.cguAccept = UserDefaults.standard.bool(forKey: "cguAccept")
         print("CGUviewDidLoad, CGUAcceptState",self.cguAccept)
         if(self.cguAccept == false){
-            btnCheck.setBackgroundImage(UIImage(named: "icon_unchecked"), for: UIControlState.normal)
+			btnCheck.setBackgroundImage(UIImage(named: "icon_unchecked"), for: UIControl.State.normal)
         }else{
-            btnCheck.setBackgroundImage(UIImage(named: "icon_checked"), for: UIControlState.normal)
+			btnCheck.setBackgroundImage(UIImage(named: "icon_checked"), for: UIControl.State.normal)
         }
         
     }
@@ -89,29 +84,24 @@ class CGUViewController: UIViewController {
     func alertCGUDecline(){
         let CGUDeclineTitle = NSLocalizedString("Réinitialisation", comment: "CGUDeclineTitle")
         let CGUDeclineMessage = NSLocalizedString("En refusant les conditions générales d'utilisation, vous êtes sur le point d'effacer toutes les données de l'application. Voulez-vous continuer ?", comment: "CGUDeclineMessage")
-        let CGUDeclineYes = NSLocalizedString("Oui, je le confirme", comment: "CGUDeclineYes")
-        let CGUDeclineNo = NSLocalizedString("Non, je reviens sur ma décision", comment: "CGUDeclineNo")
-        
-        let CGUDecline = UIAlertController(title: CGUDeclineTitle, message: CGUDeclineMessage, preferredStyle: UIAlertControllerStyle.alert)
-        
-        CGUDecline.addAction(UIAlertAction(title: CGUDeclineYes, style: .default, handler:
-            { (action: UIAlertAction!) in
-                print("L'utilisateur a décliné les CGU")
-                UserDefaults.standard.set(false, forKey: "cguAccept")
-                print("CGUDeclineYes",UserDefaults.standard.object(forKey: "cguAccept"))
-                self.eraseAllData()
-                self.dismiss(animated: true)
-                //UIControl().sendAction(#selector(NSXPCConnection.suspend),to: UIApplication.shared, for: nil) // Peut être rejeté par Apple si le code ferme l'app
-        })
-        )
-        
-        CGUDecline.addAction(UIAlertAction(title: CGUDeclineNo, style: .cancel, handler:
-            { (action: UIAlertAction!) in
-                print("CGUDeclineNo(Cancel)",UserDefaults.standard.object(forKey: "cguAccept"))
-        }
-        ))
-        
-        self.present(CGUDecline, animated: true, completion: nil)
+        let CGUDeclineYes = NSLocalizedString("Oui", comment: "CGUDeclineYes")
+        let CGUDeclineNo = NSLocalizedString("Non", comment: "CGUDeclineNo")
+		let confirmEraseTitle = NSLocalizedString("Réinitialisé", comment: "confirmEraseTitle")
+		let confirmEraseMessage = NSLocalizedString("L'application a été réinitialisée !", comment: "confirmEraseMessage")
+		
+		SweetAlert().showAlert(CGUDeclineTitle, subTitle: CGUDeclineMessage, style: AlertStyle.warning, buttonTitle:CGUDeclineNo, buttonColor:self.UIColorFromRGB(rgbValue: 0xD0D0D0) , otherButtonTitle:  CGUDeclineYes, otherButtonColor: self.UIColorFromRGB(rgbValue: 0xDD6B55)) { (isOtherButton) -> Void in
+			if isOtherButton == true {
+				print("Cancel Button Pressed")
+				print("CGUDeclineNo(Cancel)",UserDefaults.standard.object(forKey: "cguAccept"))
+			}
+			else {
+				print("L'utilisateur a décliné les CGU")
+				UserDefaults.standard.set(false, forKey: "cguAccept")
+				print("CGUDeclineYes",UserDefaults.standard.object(forKey: "cguAccept"))
+				self.eraseAllData()
+				SweetAlert().showAlert(confirmEraseTitle, subTitle: confirmEraseMessage, style: AlertStyle.success)
+			}
+		}
     }
     
 
@@ -157,4 +147,14 @@ class CGUViewController: UIViewController {
     }
     */
 
+	/* Fonctions utilitaires */
+	
+	func UIColorFromRGB(rgbValue: UInt) -> UIColor {
+		return UIColor(
+			red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
+			green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
+			blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
+			alpha: CGFloat(1.0)
+		)
+	}
 }

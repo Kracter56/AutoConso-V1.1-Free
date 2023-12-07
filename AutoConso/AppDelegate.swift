@@ -11,24 +11,42 @@ import CoreData
 import Firebase
 import GoogleMobileAds
 import RealmSwift
+import GoogleSignIn
+import CoreLocation
 
 @available(iOS 10.0, *)
 @available(iOS 10.0, *)
 @available(iOS 10.0, *)
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
+	func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+		// ...
+		if let error = error {
+			// ...
+			return
+		}
+		
+		guard let authentication = user.authentication else { return }
+		let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
+													   accessToken: authentication.accessToken)
+		// ...
+	}
+	
 
     var window: UIWindow?
     var bannerView: GADBannerView!
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         // Initialize the Google Mobile Ads SDK.
         // Sample AdMob app ID: ca-app-pub-3940256099942544~1458002511
-        
+		
         FirebaseApp.configure()
-        
+		
+		GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
+		GIDSignIn.sharedInstance().delegate = self
+		
         /* Vérification de la langue de l'iphone */
         let phoneLanguage = Locale.current.languageCode
         
@@ -39,6 +57,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         UserDefaults.standard.set(phoneLanguage, forKey: "phoneLanguage")
         
+        /* Créer un dossier dans les Documents pour gérer les photos */
+        createAppDirectory()
+        initBDD()
         /* Copier la base de données si elle n'existe pas */
         /*let bundlePath = Bundle.main.path(forResource: "default", ofType: "realm")
         let destPath = Realm.Configuration.defaultConfiguration.fileURL?.path
@@ -46,7 +67,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if fileManager.fileExists(atPath: destPath!) {
             //File exist, do nothing
-            //print(fileManager.fileExists(atPath: destPath!))
+            print(fileManager.fileExists(atPath: destPath!))
         } else {
             do {
                 //Copy file from bundle to Realm default path
@@ -62,13 +83,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let config = Realm.Configuration(
             // Set the new schema version. This must be greater than the previously used
             // version (if you've never set a schema version before, the version is 0).
-            schemaVersion: 1,
-            
-            // Set the block which will be called automatically when opening a Realm with
-            // a schema version lower than the one set above
+            schemaVersion: 36,
             migrationBlock: { migration, oldSchemaVersion in
                 // We haven’t migrated anything yet, so oldSchemaVersion == 0
-                if (oldSchemaVersion != 0) {
+                if (oldSchemaVersion < 36) {
                     print("oldSchemaVersion", oldSchemaVersion)
                     // Nothing to do!
                     // Realm will automatically detect new properties and removed properties
@@ -82,7 +100,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Now that we've told Realm how to handle the schema change, opening the file
         // will automatically perform the migration
         print("AppDelegate:realmInit")
-        let realm = try! Realm()
+        //let realm = try! Realm()
         
         return true
     }
@@ -91,6 +109,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return UserDefaults.standard.object(forKey: Key) != nil
     }
     
+    func createAppDirectory(){
+        /* Création d'un dossier de sauvegarde dans l'iphone */
+        let fileManager = FileManager.default
+        if let DocumentDirectory = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first {
+            let filePath =  DocumentDirectory.appendingPathComponent("AutoConso")
+            if !fileManager.fileExists(atPath: filePath.path) {
+                do {
+                    try fileManager.createDirectory(atPath: filePath.path, withIntermediateDirectories: true, attributes: nil)
+                } catch {
+                    NSLog("Couldn't create document directory")
+                }
+            }
+            NSLog("Document directory is \(filePath)")
+            UserDefaults.standard.set(filePath, forKey: "appFolder")
+            //set(filePath,forkey: "appFolder")
+        }
+    }
+	//@available(iOS 9.0, *)
+	func application(_ application: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any])
+		-> Bool {
+			return GIDSignIn.sharedInstance().handle(url, sourceApplication:options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
+													 annotation: [:])
+	}
+	
+	func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+		return GIDSignIn.sharedInstance().handle(url, sourceApplication: sourceApplication, annotation: annotation)
+	}
+	
     /* Edgar PETRUS - 07/10/2018 : Gestion de la rotation */
     /*func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
         if let rootViewController = self.topViewControllerWithRootViewController(rootViewController: window?.rootViewController) {
@@ -185,6 +231,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
-
+	
+	func initBDD(){
+		let bundlePath = Bundle.main.path(forResource: "/bdd.bundle/AutoConso-bdd-init-25082019", ofType: ".realm")
+		let destPath = Realm.Configuration.defaultConfiguration.fileURL?.path
+		let fileManager = FileManager.default
+		print("initBDD()")
+		if fileManager.fileExists(atPath: destPath!) {
+			//File exist, do nothing
+			print(destPath ?? "if loop")
+		} else {
+			do {
+				//Copy file from bundle to Realm default path
+				try fileManager.copyItem(atPath: bundlePath!, toPath: destPath!)
+			} catch {
+				print(error)
+			}
+		}
+	}
 }
 

@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="AutoConso/Base.lproj/Main.storyboard" source-language="fr" datatype="plaintext" target-language="en">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.0" build-num="10A255"/>
+    </header>
+    <body>
+      <trans-unit id="0uk-dH-2Uk.normalTitle">
+        <source>Suggérer</source>
+        <target>Suggest</target>
+        <note>Class = "UIButton"; normalTitle = "Suggérer"; ObjectID = "0uk-dH-2Uk";</note>
+      </trans-unit>
+      <trans-unit id="1DX-sH-LWr.placeholder">
+        <source>Marque</source>
+        <target>Brand</target>
+        <note>Class = "UITextField"; placeholder = "Marque"; ObjectID = "1DX-sH-LWr";</note>
+      </trans-unit>
+      <trans-unit id="4cB-QM-dBE.title">
+        <source>Détails Voiture</source>
+        <target>Car Details</target>
+        <note>Class = "UINavigationItem"; title = "Détails Voiture"; ObjectID = "4cB-QM-dBE";</note>
+      </trans-unit>
+      <trans-unit id="4yJ-fB-SIc.placeholder">
+        <source>Code Postal</source>
+        <target>Postal Code</target>
+        <note>Class = "UITextField"; placeholder = "Code Postal"; ObjectID = "4yJ-fB-SIc";</note>
+      </trans-unit>
+      <trans-unit id="5A1-vr-P4w.placeholder">
+        <source>Adresse</source>
+        <target>Adress</target>
+        <note>Class = "UITextField"; placeholder = "Adresse"; ObjectID = "5A1-vr-P4w";</note>
+      </trans-unit>
+      <trans-unit id="5dk-Vo-NHy.headerTitle">
+        <source>KILOMETRAGE AUTO</source>
+        <target>CAR MILEAGE IN KM</target>
+        <note>Class = "UITableViewSection"; headerTitle = "KILOMETRAGE AUTO"; ObjectID = "5dk-Vo-NHy";</note>
+      </trans-unit>
+      <trans-unit id="6Rb-My-dkk.placeholder">
+        <source>remarques</source>
+        <target>notes</target>
+        <note>Class = "UITextField"; placeholder = "remarques"; ObjectID = "6Rb-My-dkk";</note>
+      </trans-unit>
+      <trans-unit id="7Bb-Pc-ryS.headerTitle">
+        <source>Informations sur la station</source>
+        <target>fuel station information</target>
+        <note>Class = "UITableViewSection"; headerTitle = "Informations sur la station"; ObjectID = "7Bb-Pc-ryS";</note>
+      </trans-unit>
+      <trans-unit id="8Dl-vQ-kRX.placeholder">
+        <source>Pseudo</source>
+        <target>Alias</target>
+        <note>Class = "UITextField"; placeholder = "Pseudo"; ObjectID = "8Dl-vQ-kRX";</note>
+      </trans-unit>
+      <trans-unit id="25t-Bf-AqI.headerTitle">
+        <source>Voiture</source>
+        <target>Car</target>
+        <note>Class = "UITableViewSection"; headerTitle = "Voiture"; ObjectID = "25t-Bf-AqI";</note>
+      </trans-unit>
+      <trans-unit id="B8s-z4-dPE.normalTitle">
+        <source>Calculer</source>
+        <target>Compute</target>
+        <note>Class = "UIButton"; normalTitle = "Calculer"; ObjectID = "B8s-z4-dPE";</note>
+      </trans-unit>
+      <trans-unit id="BoX-Oy-aQh.text">
+        <source>Nom : PETRUS Edgar</source>
+        <target>Name : PETRUS Edgar</target>
+        <note>Class = "UILabel"; text = "Nom : PETRUS Edgar"; ObjectID = "BoX-Oy-aQh";</note>
+      </trans-unit>
+      <trans-unit id="CSl-XD-cRx.placeholder">
+        <source>Date d'achat</source>
+        <target>Buy date</target>
+        <note>Class = "UITextField"; placeholder = "Date d'achat"; ObjectID = "CSl-XD-cRx";</note>
+      </trans-unit>
+      <trans-unit id="DuQ-ty-NvV.title">
+        <source>Enregistrer</source>
+        <target>Save</target>
+        <note>Class = "UIBarButtonItem"; title = "Enregistrer"; ObjectID = "DuQ-ty-NvV";</note>
+      </trans-unit>
+      <trans-unit id="Dut-nP-TGd.title">
+        <source>Retour</source>
+        <target>Back</target>
+        <note>Class = "UIBarButtonItem"; title = "Retour"; ObjectID = "Dut-nP-TGd";</note>
+      </trans-unit>
+      <trans-unit id="DzJ-92-nuI.title">
+        <source>Retour</source>
+        <target>Back</target>
+        <note>Class = "UIBarButtonItem"; title = "Retour"; ObjectID = "DzJ-92-nuI";</note>
+      </trans-unit>
+      <trans-unit id="Ech-dc-wV2.title">
+        <source>Add New Car</source>
+        <target>Add New Car</target>
+        <note>Class = "UITableViewController"; title = "Add New Car"; ObjectID = "Ech-dc-wV2";</note>
+      </trans-unit>
+      <trans-unit id="EkP-YZ-7Uk.placeholder">
+        <source>Commentaires</source>
+        <target>Notes</target>
+        <note>Class = "UITextField"; placeholder = "Commentaires"; ObjectID = "EkP-YZ-7Uk";</note>
+      </trans-unit>
+      <trans-unit id="FFN-az-mMt.placeholder">
+        <source>Numéro d'immatriculation</source>
+        <target>License plate number</target>
+        <note>Class = "UITextField"; placeholder = "Numéro d'immatriculation"; ObjectID = "FFN-az-mMt";</note>
+      </trans-unit>
+      <trans-unit id="Hci-4G-WCt.placeholder">
+        <source>Ville</source>
+        <target>City</target>
+        <note>Class = "UITextField"; placeholder = "Ville"; ObjectID = "Hci-4G-WCt";</note>
+      </trans-unit>
+      <trans-unit id="KFn-6R-Zgq.placeholder">
+        <source>Kilométrage véhicule</source>
+        <target>Car Mileage</target>
+        <note>Class = "UITextField"; placeholder = "Kilométrage véhicule"; ObjectID = "KFn-6R-Zgq";</note>
+      </trans-unit>
+      <trans-unit id="L5I-G6-6Re.normalTitle">
+        <source>Calculer</source>
+        <target>Compute</target>
+        <note>Class = "UIButton"; normalTitle = "Calculer"; ObjectID = "L5I-G6-6Re";</note>
+      </trans-unit>
+      <trans-unit id="LJL-CN-0X0.text">
+        <source>Unité de Distance :</source>
+        <target>Distance Unit :</target>
+        <note>Class = "UILabel"; text = "Unité de Distance :"; ObjectID = "LJL-CN-0X0";</note>
+      </trans-unit>
+      <trans-unit id="LVl-Tm-e9v.placeholder">
+        <source>Prix au litre</source>
+        <target>Price per Liter</target>
+        <note>Class = "UITextField"; placeholder = "Prix au litre"; ObjectID = "LVl-Tm-e9v";</note>
+      </trans-unit>
+      <trans-unit id="LkY-Jp-kAo.title">
+        <source>Retour</source>
+        <target>Back</target>
+        <note>Class = "UIBarButtonItem"; title = "Retour"; ObjectID = "LkY-Jp-kAo";</note>
+      </trans-unit>
+      <trans-unit id="MOZ-88-dIx.placeholder">
+        <source>Modele</source>
+        <target>Model</target>
+        <note>Class = "UITextField"; placeholder = "Modele"; ObjectID = "MOZ-88-dIx";</note>
+      </trans-unit>
+      <trans-unit id="Mld-e7-fhg.title">
+        <source>Retour</source>
+        <target>Back</target>
+        <note>Class = "UIBarButtonItem"; title = "Retour"; ObjectID = "Mld-e7-fhg";</note>
+      </trans-unit>
+      <trans-unit id="O6z-RV-KoG.text">
+        <source>Nombre de jours depuis achat :</source>
+        <target>Number of days since beginning :</target>
+        <note>Class = "UILabel"; text = "Nombre de jours depuis achat :"; ObjectID = "O6z-RV-KoG";</note>
+      </trans-unit>
+      <trans-unit id="O9f-4s-kdq.title">
+        <source>Fermer</source>
+        <target>Back</target>
+        <note>Class = "UIBarButtonItem"; title = "Fermer"; ObjectID = "O9f-4s-kdq";</note>
+      </trans-unit>
+      <trans-unit id="ONT-RE-R45.text">
+        <source>MODELE VOITURE</source>
+        <target>CAR MODEL</target>
+        <note>Class = "UILabel"; text = "MODELE VOITURE"; ObjectID = "ONT-RE-R45";</note>
+      </trans-unit>
+      <trans-unit id="OrY-wz-Q0q.text">
+        <source>Unité de volume :</source>
+        <target>Volume Unit :</target>
+        <note>Class = "UILabel"; text = "Unité de volume :"; ObjectID = "OrY-wz-Q0q";</note>
+      </trans-unit>
+      <trans-unit id="Otf-bt-fIE.placeholder">
+        <source>Pression pneus</source>
+        <target>Tyre pressure</target>
+        <note>Class = "UITextField"; placeholder = "Pression pneus"; ObjectID = "Otf-bt-fIE";</note>
+      </trans-unit>
+      <trans-unit id="Oxm-dQ-HP4.placeholder">
+        <source>Modèle</source>
+        <target>Model</target>
+        <note>Class = "UITextField"; placeholder = "Modèle"; ObjectID = "Oxm-dQ-HP4";</note>
+      </trans-unit>
+      <trans-unit id="PGl-M7-zGc.placeholder">
+        <source>Motorisation / Finition</source>
+        <target>Engine / Refinishing</target>
+        <note>Class = "UITextField"; placeholder = "Motorisation / Finition"; ObjectID = "PGl-M7-zGc";</note>
+      </trans-unit>
+      <trans-unit id="PJr-Zg-ahJ.title">
+        <source>Mes voitures</source>
+        <target>My Cars</target>
+        <note>Class = "UITabBarItem"; title = "Mes voitures"; ObjectID = "PJr-Zg-ahJ";</note>
+      </trans-unit>
+      <trans-unit id="QUf-SU-mHk.placeholder">
+        <source>Volume total du réservoir à carburant (L)</source>
+        <target>Car Tank total Volume</target>
+        <note>Class = "UITextField"; placeholder = "Volume total du réservoir à carburant (L)"; ObjectID = "QUf-SU-mHk";</note>
+      </trans-unit>
+      <trans-unit id="Qbw-zM-lPJ.placeholder">
+        <source>Nombre de litres</source>
+        <target>Number of liters</target>
+        <note>Class = "UITextField"; placeholder = "Nombre de litres"; ObjectID = "Qbw-zM-lPJ";</note>
+      </trans-unit>
+      <trans-unit id="Qme-lg-U3G.footerTitle">
+        <source>Mes commentaires sur mon véhicule</source>
+        <target>My notes about my car</target>
+        <note>Class = "UITableViewSection"; footerTitle = "Mes commentaires sur mon véhicule"; ObjectID = "Qme-lg-U3G";</note>
+      </trans-unit>
+      <trans-unit id="Qme-lg-U3G.headerTitle">
+        <source>MES NOTES</source>
+        <target>MY NOTES</target>
+        <note>Class = "UITableViewSection"; headerTitle = "MES NOTES"; ObjectID = "Qme-lg-U3G";</note>
+      </trans-unit>
+      <trans-unit id="RNV-g0-lR8.headerTitle">
+        <source>Détails ravitaillement</source>
+        <target>Fueling details</target>
+        <note>Class = "UITableViewSection"; headerTitle = "Détails ravitaillement"; ObjectID = "RNV-g0-lR8";</note>
+      </trans-unit>
+      <trans-unit id="RpT-f7-oJe.headerTitle">
+        <source>Mes notes</source>
+        <target>My notes</target>
+        <note>Class = "UITableViewSection"; headerTitle = "Mes notes"; ObjectID = "RpT-f7-oJe";</note>
+      </trans-unit>
+      <trans-unit id="Ryb-9A-2eE.title">
+        <source>Enregistrer</source>
+        <target>Save</target>
+        <note>Class = "UIBarButtonItem"; title = "Enregistrer"; ObjectID = "Ryb-9A-2eE";</note>
+      </trans-unit>
+      <trans-unit id="S27-Mp-U8w.headerTitle">
+        <source>Station Service</source>
+        <target>Fuel Station</target>
+        <note>Class = "UITableViewSection"; headerTitle = "Station Service"; ObjectID = "S27-Mp-U8w";</note>
+      </trans-unit>
+      <trans-unit id="Svq-Pe-Jzf.placeholder">
+        <source>Date immat.</source>
+        <target>License Date</target>
+        <note>Class = "UITextField"; placeholder = "Date immat."; ObjectID = "Svq-Pe-Jzf";</note>
+      </trans-unit>
+      <trans-unit id="T9m-KC-5pf.placeholder">
+        <source>Station Service</source>
+        <target>Fuel Station</target>
+        <note>Class = "UITextField"; placeholder = "Station Service"; ObjectID = "T9m-KC-5pf";</note>
+      </trans-unit>
+      <trans-unit id="TMd-PW-lYu.normalTitle">
+        <source>Remonter un bug / suggestions</source>
+        <target>Report a bug or suggestion</target>
+        <note>Class = "UIButton"; normalTitle = "Remonter un bug / suggestions"; ObjectID = "TMd-PW-lYu";</note>
+      </trans-unit>
+      <trans-unit id="Thn-4e-29S.placeholder">
+        <source>Numéro de série</source>
+        <target>Serial number</target>
+        <note>Class = "UITextField"; placeholder = "Numéro de série"; ObjectID = "Thn-4e-29S";</note>
+      </trans-unit>
+      <trans-unit id="Tpc-NJ-xdn.placeholder">
+        <source>Kilomètres parcourus depuis dernier ravitaillement</source>
+        <target>Kilometers left since the last fuelling</target>
+        <note>Class = "UITextField"; placeholder = "Kilomètres parcourus depuis dernier ravitaillement"; ObjectID = "Tpc-NJ-xdn";</note>
+      </trans-unit>
+      <trans-unit id="VV6-if-49f.text">
+        <source>Version : 1.0</source>
+        <target>Version : 1.0</target>
+        <note>Class = "UILabel"; text = "Version : 1.0"; ObjectID = "VV6-if-49f";</note>
+      </trans-unit>
+      <trans-unit id="Vyd-Gi-nSz.placeholder">
+        <source>Carburant</source>
+        <target>Fuel</target>
+        <note>Class = "UITextField"; placeholder = "Carburant"; ObjectID = "Vyd-Gi-nSz";</note>
+      </trans-unit>
+      <trans-unit id="WJN-RT-Oz8.placeholder">
+        <source>Prix</source>
+        <target>Price</target>
+        <note>Class = "UITextField"; placeholder = "Prix"; ObjectID = "WJN-RT-Oz8";</note>
+      </trans-unit>
+      <trans-unit id="WZj-fg-hFr.title">
+        <source>Mettre à jour</source>
+        <target>Update</target>
+        <note>Class = "UIBarButtonItem"; title = "Mettre à jour"; ObjectID = "WZj-fg-hFr";</note>
+      </trans-unit>
+      <trans-unit id="XKH-9D-Gfd.placeholder">
+        <source>Pseudo</source>
+        <target>Alias</target>
+        <note>Class = "UITextField"; placeholder = "Pseudo"; ObjectID = "XKH-9D-Gfd";</note>
+      </trans-unit>
+      <trans-unit id="YNe-aj-la3.title">
+        <source>Ma conso</source>
+        <target>My consumption</target>
+        <note>Class = "UITabBarItem"; title = "Ma conso"; ObjectID = "YNe-aj-la3";</note>
+      </trans-unit>
+      <trans-unit id="Z6d-QA-1br.title">
+        <source>Mes voitures</source>
+        <target>My cars</target>
+        <note>Class = "UINavigationItem"; title = "Mes voitures"; ObjectID = "Z6d-QA-1br";</note>
+      </trans-unit>
+      <trans-unit id="ZHG-bL-ul4.headerTitle">
+        <source>Voiture</source>
+        <target>Car</target>
+        <note>Class = "UITableViewSection"; headerTitle = "Voiture"; ObjectID = "ZHG-bL-ul4";</note>
+      </trans-unit>
+      <trans-unit id="aIj-1Z-Niv.title">
+        <source>Nouveau frais</source>
+        <target>Nouveau frais</target>
+        <note>Class = "UINavigationItem"; title = "Nouveau frais"; ObjectID = "aIj-1Z-Niv";</note>
+      </trans-unit>
+      <trans-unit id="aOW-ZR-k4i.placeholder">
+        <source>Pseudo voiture</source>
+        <target>Car Alias</target>
+        <note>Class = "UITextField"; placeholder = "Pseudo voiture"; ObjectID = "aOW-ZR-k4i";</note>
+      </trans-unit>
+      <trans-unit id="aYn-jo-GP6.placeholder">
+        <source>Modele</source>
+        <target>Model</target>
+        <note>Class = "UITextField"; placeholder = "Modele"; ObjectID = "aYn-jo-GP6";</note>
+      </trans-unit>
+      <trans-unit id="aml-aA-wME.title">
+        <source>Stats</source>
+        <target>Stats</target>
+        <note>Class = "UITableViewController"; title = "Stats"; ObjectID = "aml-aA-wME";</note>
+      </trans-unit>
+      <trans-unit id="asD-rp-4de.footerTitle">
+        <source>informations relatives à la voiture</source>
+        <target>Car Information</target>
+        <note>Class = "UITableViewSection"; footerTitle = "informations relatives à la voiture"; ObjectID = "asD-rp-4de";</note>
+      </trans-unit>
+      <trans-unit id="asD-rp-4de.headerTitle">
+        <source>INFOS PERSOS</source>
+        <target>PERSONAL INFO</target>
+        <note>Class = "UITableViewSection"; headerTitle = "INFOS PERSOS"; ObjectID = "asD-rp-4de";</note>
+      </trans-unit>
+      <trans-unit id="bbd-KV-Wga.text">
+        <source>Cout :</source>
+        <target>Cost per km :</target>
+        <note>Class = "UILabel"; text = "Cout :"; ObjectID = "bbd-KV-Wga";</note>
+      </trans-unit>
+      <trans-unit id="cnG-Ha-bXl.title">
+        <source>Annuler</source>
+        <target>Cancel</target>
+        <note>Class = "UIBarButtonItem"; title = "Annuler"; ObjectID = "cnG-Ha-bXl";</note>
+      </trans-unit>
+      <trans-unit id="dJk-pi-8ur.placeholder">
+        <source>Numéro de série</source>
+        <target>Serial Number</target>
+        <note>Class = "UITextField"; placeholder = "Numéro de série"; ObjectID = "dJk-pi-8ur";</note>
+      </trans-unit>
+      <trans-unit id="fIE-tM-Acz.placeholder">
+        <source>--</source>
+        <target>--</target>
+        <note>Class = "UITextField"; placeholder = "--"; ObjectID = "fIE-tM-Acz";</note>
+      </trans-unit>
+      <trans-unit id="fxt-Tj-sYx.title">
+        <source>Stats</source>
+        <target>Stats</target>
+        <note>Class = "UITabBarItem"; title = "Stats"; ObjectID = "fxt-Tj-sYx";</note>
+      </trans-unit>
+      <trans-unit id="jF1-Eo-K0f.headerTitle">
+        <source>Infos Achat</source>
+        <target>Buy info</target>
+        <note>Class = "UITableViewSection"; headerTitle = "Infos Achat"; ObjectID = "jF1-Eo-K0f";</note>
+      </trans-unit>
+      <trans-unit id="jIB-cO-Pf6.placeholder">
+        <source>Kilometrage</source>
+        <target>Mileage</target>
+        <note>Class = "UITextField"; placeholder = "Kilometrage"; ObjectID = "jIB-cO-Pf6";</note>
+      </trans-unit>
+      <trans-unit id="jVJ-EI-SqW.text">
+        <source>Devise : </source>
+        <target>Currency  :</target>
+        <note>Class = "UILabel"; text = "Devise : "; ObjectID = "jVJ-EI-SqW";</note>
+      </trans-unit>
+      <trans-unit id="k0c-dJ-Ej5.headerTitle">
+        <source>PREFERENCES UTILISATEUR</source>
+        <target>User Settings</target>
+        <note>Class = "UITableViewSection"; headerTitle = "PREFERENCES UTILISATEUR"; ObjectID = "k0c-dJ-Ej5";</note>
+      </trans-unit>
+      <trans-unit id="kgQ-B9-umi.accessibilityHint">
+        <source>Marque</source>
+        <target>Brand</target>
+        <note>Class = "UITextField"; accessibilityHint = "Marque"; ObjectID = "kgQ-B9-umi";</note>
+      </trans-unit>
+      <trans-unit id="kgQ-B9-umi.accessibilityLabel">
+        <source>Marque</source>
+        <target>Brand</target>
+        <note>Class = "UITextField"; accessibilityLabel = "Marque"; ObjectID = "kgQ-B9-umi";</note>
+      </trans-unit>
+      <trans-unit id="kgQ-B9-umi.placeholder">
+        <source>Marque</source>
+        <target>Brand</target>
+        <note>Class = "UITextField"; placeholder = "Marque"; ObjectID = "kgQ-B9-umi";</note>
+      </trans-unit>
+      <trans-unit id="mQD-3W-g3d.text">
+        <source>Consommation moyenne :</source>
+        <target>Average Consumption :</target>
+        <note>Class = "UILabel"; text = "Consommation moyenne :"; ObjectID = "mQD-3W-g3d";</note>
+      </trans-unit>
+      <trans-unit id="n0K-6c-hFF.placeholder">
+        <source>Date d'achat</source>
+        <target>Buy date</target>
+        <note>Class = "UITextField"; placeholder = "Date d'achat"; ObjectID = "n0K-6c-hFF";</note>
+      </trans-unit>
+      <trans-unit id="nOD-30-pO1.placeholder">
+        <source>Consommation calculée</source>
+        <target>Computed consumption</target>
+        <note>Class = "UITextField"; placeholder = "Consommation calculée"; ObjectID = "nOD-30-pO1";</note>
+      </trans-unit>
+      <trans-unit id="nUs-54-Qwd.placeholder">
+        <source>Date</source>
+        <target>Date</target>
+        <note>Class = "UITextField"; placeholder = "Date"; ObjectID = "nUs-54-Qwd";</note>
+      </trans-unit>
+      <trans-unit id="oju-ch-0fG.title">
+        <source>Annuler</source>
+        <target>Cancel</target>
+        <note>Class = "UIBarButtonItem"; title = "Annuler"; ObjectID = "oju-ch-0fG";</note>
+      </trans-unit>
+      <trans-unit id="oxh-fQ-34d.headerTitle">
+        <source>Notes</source>
+        <target>Notes</target>
+        <note>Class = "UITableViewSection"; headerTitle = "Notes"; ObjectID = "oxh-fQ-34d";</note>
+      </trans-unit>
+      <trans-unit id="qI4-66-9wu.normalTitle">
+        <source>€</source>
+        <note>Class = "UIButton"; normalTitle = "€"; ObjectID = "qI4-66-9wu";</note>
+      </trans-unit>
+      <trans-unit id="qUY-Vz-7sA.footerTitle">
+        <source>Renseignez les Infos sur le modele</source>
+        <target>Write information on the model</target>
+        <note>Class = "UITableViewSection"; footerTitle = "Renseignez les Infos sur le modele"; ObjectID = "qUY-Vz-7sA";</note>
+      </trans-unit>
+      <trans-unit id="qUY-Vz-7sA.headerTitle">
+        <source>MODELE</source>
+        <target>MODEL</target>
+        <note>Class = "UITableViewSection"; headerTitle = "MODELE"; ObjectID = "qUY-Vz-7sA";</note>
+      </trans-unit>
+      <trans-unit id="qzx-Xt-XCO.prompt">
+        <source>Glissez vers la gauche pour modifier</source>
+        <target>Swipe on the left to modify</target>
+        <note>Class = "UINavigationItem"; prompt = "Glissez vers la gauche pour modifier"; ObjectID = "qzx-Xt-XCO";</note>
+      </trans-unit>
+      <trans-unit id="qzx-Xt-XCO.title">
+        <source>Statistiques Voiture</source>
+        <target>Car Statistics</target>
+        <note>Class = "UINavigationItem"; title = "Statistiques Voiture"; ObjectID = "qzx-Xt-XCO";</note>
+      </trans-unit>
+      <trans-unit id="r2U-Vd-YX2.normalTitle">
+        <source>Détails / Editer</source>
+        <target>Details / Edit</target>
+        <note>Class = "UIButton"; normalTitle = "Détails / Editer"; ObjectID = "r2U-Vd-YX2";</note>
+      </trans-unit>
+      <trans-unit id="r5q-JQ-kIF.headerTitle">
+        <source>CARACTERISTIQUES VEHICULE</source>
+        <target>CAR CHARACTERISTICS</target>
+        <note>Class = "UITableViewSection"; headerTitle = "CARACTERISTIQUES VEHICULE"; ObjectID = "r5q-JQ-kIF";</note>
+      </trans-unit>
+      <trans-unit id="rcz-o1-IkR.text">
+        <source>Date de publication : 07/11/2018</source>
+        <target>Publish Date : 11/07/2018</target>
+        <note>Class = "UILabel"; text = "Date de publication : 07/11/2018"; ObjectID = "rcz-o1-IkR";</note>
+      </trans-unit>
+      <trans-unit id="rkd-pf-q0y.text">
+        <source>Aucune donnée</source>
+        <target>No Data</target>
+        <note>Class = "UILabel"; text = "Aucune donnée"; ObjectID = "rkd-pf-q0y";</note>
+      </trans-unit>
+      <trans-unit id="sU0-jt-XzE.headerTitle">
+        <source>Développeur</source>
+        <target>Developer</target>
+        <note>Class = "UITableViewSection"; headerTitle = "Développeur"; ObjectID = "sU0-jt-XzE";</note>
+      </trans-unit>
+      <trans-unit id="tNR-Dd-FAq.normalTitle">
+        <source>L</source>
+        <note>Class = "UIButton"; normalTitle = "L"; ObjectID = "tNR-Dd-FAq";</note>
+      </trans-unit>
+      <trans-unit id="thG-Kk-T6l.placeholder">
+        <source>Marque</source>
+        <target>Brand</target>
+        <note>Class = "UITextField"; placeholder = "Marque"; ObjectID = "thG-Kk-T6l";</note>
+      </trans-unit>
+      <trans-unit id="ueD-Ha-Kmu.headerTitle">
+        <source>RAVITAILLEMENT</source>
+        <target>FUELLING</target>
+        <note>Class = "UITableViewSection"; headerTitle = "RAVITAILLEMENT"; ObjectID = "ueD-Ha-Kmu";</note>
+      </trans-unit>
+      <trans-unit id="uqJ-xJ-13L.text">
+        <source>Aucune donnée</source>
+        <target>No Data</target>
+        <note>Class = "UILabel"; text = "Aucune donnée"; ObjectID = "uqJ-xJ-13L";</note>
+      </trans-unit>
+      <trans-unit id="vDS-JV-EHj.normalTitle">
+        <source>km</source>
+        <note>Class = "UIButton"; normalTitle = "km"; ObjectID = "vDS-JV-EHj";</note>
+      </trans-unit>
+      <trans-unit id="vaE-BO-Ny2.placeholder">
+        <source>Kilometrage à l'achat</source>
+        <target>Mileage on buying date</target>
+        <note>Class = "UITextField"; placeholder = "Kilometrage à l'achat"; ObjectID = "vaE-BO-Ny2";</note>
+      </trans-unit>
+      <trans-unit id="weF-44-JJ7.text">
+        <source>Cout journalier :</source>
+        <target>Daily Cost :</target>
+        <note>Class = "UILabel"; text = "Cout journalier :"; ObjectID = "weF-44-JJ7";</note>
+      </trans-unit>
+      <trans-unit id="x2E-Lr-4NI.title">
+        <source>Informations Application</source>
+        <target>App Information</target>
+        <note>Class = "UINavigationItem"; title = "Informations Application"; ObjectID = "x2E-Lr-4NI";</note>
+      </trans-unit>
+      <trans-unit id="yE0-lH-n5U.headerTitle">
+        <source>Application</source>
+        <target>Application</target>
+        <note>Class = "UITableViewSection"; headerTitle = "Application"; ObjectID = "yE0-lH-n5U";</note>
+      </trans-unit>
+      <trans-unit id="z3r-cq-w9X.title">
+        <source>Mettre à jour</source>
+        <target>Update</target>
+        <note>Class = "UIBarButtonItem"; title = "Mettre à jour"; ObjectID = "z3r-cq-w9X";</note>
+      </trans-unit>
+      <trans-unit id="zMA-hp-JML.title">
+        <source>Voiture</source>
+        <target>Car</target>
+        <note>Class = "UINavigationItem"; title = "Voiture"; ObjectID = "zMA-hp-JML";</note>
+      </trans-unit>
+      <trans-unit id="zdy-ju-pzC.headerTitle">
+        <source>Modele</source>
+        <target>Model</target>
+        <note>Class = "UITableViewSection"; headerTitle = "Modele"; ObjectID = "zdy-ju-pzC";</note>
+      </trans-unit>
+      <trans-unit id="znI-MN-D6C.prompt">
+        <source>Glissez vers la gauche pour modifier</source>
+        <target>Swipe on the left to modify</target>
+        <note>Class = "UINavigationItem"; prompt = "Glissez vers la gauche pour modifier"; ObjectID = "znI-MN-D6C";</note>
+      </trans-unit>
+      <trans-unit id="znI-MN-D6C.title">
+        <source>Ravitaillements</source>
+        <target>Fuellings</target>
+        <note>Class = "UINavigationItem"; title = "Ravitaillements"; ObjectID = "znI-MN-D6C";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="AutoConso/fr.lproj/InfoPlist.strings" datatype="plaintext" source-language="fr" target-language="en">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.0" build-num="10A255"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName">
+        <source>AutoConso</source>
+        <note>Bundle display name</note>
+      </trans-unit>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+        <note>Bundle name</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="AutoConso/fr.lproj/Localizable.strings" datatype="plaintext" source-language="fr" target-language="en">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.0" build-num="10A255"/>
+    </header>
+    <body>
+      <trans-unit id="Saisir une voiture">
+        <source>Saisir une voiture</source>
+        <note>AddCarAlertTitle</note>
+      </trans-unit>
+      <trans-unit id="Vous n'avez pas encore de voiture. Voulez-vous en saisir une ?">
+        <source>Vous n'avez pas encore de voiture. Voulez-vous en saisir une ?</source>
+        <note>AddCarAlertMessage</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -8,16 +8,21 @@
 
 import UIKit
 import MapKit
+import FloatingPanel
+import RealmSwift
 
 protocol HandleMapSearch {
     func dropPinZoomIn(placemark:MKPlacemark)
 }
 
-class stationsSearchViewCrontroller: UIViewController {
+class stationsSearchViewCrontroller: UIViewController, FloatingPanelControllerDelegate {
+	
+	var fpc: FloatingPanelController!
 
     var selectedPin:MKPlacemark? = nil
     let locationManager = CLLocationManager()
     var resultSearchController:UISearchController? = nil
+	
     //var coordGPS:CLLocation
 
     @IBOutlet weak var mapView: MKMapView!
@@ -25,31 +30,66 @@ class stationsSearchViewCrontroller: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+		
+		
         // Do any additional setup after loading the view.
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
         locationManager.requestLocation()
         
-        let locationSearchTable = storyboard!.instantiateViewController(withIdentifier: "LocationSearchTable") as! LocationSearchTable
-        resultSearchController = UISearchController(searchResultsController: locationSearchTable)
-        resultSearchController?.searchResultsUpdater = locationSearchTable
+		
+//        let locationSearchTable = storyboard!.instantiateViewController(withIdentifier: "LocationSearchTable") as! LocationSearchTable
+//        resultSearchController = UISearchController(searchResultsController: locationSearchTable)
+//        resultSearchController?.searchResultsUpdater = locationSearchTable
+//        
+//        let searchBar = resultSearchController!.searchBar
+//        /*searchBar.sizeToFit()
+//        searchBar.placeholder = "Search for places"*/
+//        navigationItem.titleView = resultSearchController?.searchBar
+//        
+//        resultSearchController?.hidesNavigationBarDuringPresentation = false
+//        resultSearchController?.dimsBackgroundDuringPresentation = true
+//        definesPresentationContext = true
+//        
+//        locationSearchTable.mapView = mapView
         
-        let searchBar = resultSearchController!.searchBar
-        searchBar.sizeToFit()
-        searchBar.placeholder = "Search for places"
-        navigationItem.titleView = resultSearchController?.searchBar
-        
-        resultSearchController?.hidesNavigationBarDuringPresentation = false
-        resultSearchController?.dimsBackgroundDuringPresentation = true
-        definesPresentationContext = true
-        
-        locationSearchTable.mapView = mapView
-        
-        locationSearchTable.handleMapSearchDelegate = self
+        //locationSearchTable.handleMapSearchDelegate = self
         
     }
+	
+	override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+
+        // Remove the views managed by the `FloatingPanelController` object from self.view.
+		fpc.removePanelFromParent(animated: true)
+    }
     
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillDisappear(animated)
+		
+		// Initialize a `FloatingPanelController` object.
+		fpc = FloatingPanelController()
+		// Assign self as the delegate of the controller.
+		fpc.delegate = self
+		let storyboard = UIStoryboard(name: "Main", bundle: nil)
+		let contentVC = storyboard.instantiateViewController(withIdentifier: "carsVC") as! CarsViewController
+				
+		fpc.set(contentViewController: contentVC)
+
+		// Track a scroll view(or the siblings) in the content view controller.
+		fpc.track(scrollView: contentVC.tableViewCar)
+
+		// Add and show the views managed by the `FloatingPanelController` object to self.view.
+		//        fpc.addPanel(toParent: self)
+		fpc.contentMode = .fitToBounds
+		fpc.isRemovalInteractionEnabled = true // Optional: Let it removable by a swipe-down
+		fpc.surfaceView.containerMargins = .init(top: 20.0, left: 16.0, bottom: 16.0, right: 16.0)
+		fpc.surfaceView.contentInsets = .init(top: 20, left: 20, bottom: 20, right: 20)
+		
+		self.present(fpc, animated: true, completion: nil)
+	}
+	
     @objc func getDirections(){
         if let selectedPin = selectedPin {
             let mapItem = MKMapItem(placemark: selectedPin)
@@ -58,6 +98,19 @@ class stationsSearchViewCrontroller: UIViewController {
         }
     }
     
+//	func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+//		let gesture = (gestureRecognizer as! UIPanGestureRecognizer)
+//		let direction = gesture.velocity(in: view).y
+//
+//		let y = view.frame.minY
+//		if (y == fullView && tableView.contentOffset.y == 0 && direction > 0) || (y == partialView) {
+//			tableView.isScrollEnabled = false
+//		} else {
+//		  tableView.isScrollEnabled = true
+//		}
+//
+//		return false
+//	}
     
     /*
     // MARK: - Navigation
@@ -68,14 +121,12 @@ class stationsSearchViewCrontroller: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
-    
     
     
 }
 
 extension stationsSearchViewCrontroller : CLLocationManagerDelegate {
-    /*func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+    func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
         if status == .authorizedWhenInUse {
             locationManager.requestLocation()
         }
@@ -83,7 +134,7 @@ extension stationsSearchViewCrontroller : CLLocationManagerDelegate {
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first {
-            let span = MKCoordinateSpanMake(0.05, 0.05)
+			let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
             let region = MKCoordinateRegion(center: location.coordinate, span: span)
             mapView.setRegion(region, animated: true)
         }
@@ -91,7 +142,7 @@ extension stationsSearchViewCrontroller : CLLocationManagerDelegate {
     
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
         print("error:: (error)")
-    }*/
+    }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("error:: \(error.localizedDescription)")
@@ -106,7 +157,7 @@ extension stationsSearchViewCrontroller : CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
         if let location = locations.first {
-            let span = MKCoordinateSpanMake(0.05, 0.05)
+			let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
             let region = MKCoordinateRegion(center: location.coordinate, span: span)
             mapView.setRegion(region, animated: true)
             
@@ -115,8 +166,7 @@ extension stationsSearchViewCrontroller : CLLocationManagerDelegate {
     }
 }
 
-
-extension stationsSearchViewCrontroller: HandleMapSearch {
+/*extension stationsSearchViewCrontroller: HandleMapSearch {
     func dropPinZoomIn(placemark:MKPlacemark){
         // cache the pin
         selectedPin = placemark
@@ -132,8 +182,8 @@ extension stationsSearchViewCrontroller: HandleMapSearch {
             annotation.subtitle = num + " " + adresse + " " + city
         }
         mapView.addAnnotation(annotation)
-        let span = MKCoordinateSpanMake(0.05, 0.05)
-        let region = MKCoordinateRegionMake(placemark.coordinate, span)
+		let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
+		let region = MKCoordinateRegion(center: placemark.coordinate, span: span)
         mapView.setRegion(region, animated: true)
     }
 }
@@ -158,4 +208,4 @@ extension stationsSearchViewCrontroller : MKMapViewDelegate {
     }
     
     
-}
+}*/

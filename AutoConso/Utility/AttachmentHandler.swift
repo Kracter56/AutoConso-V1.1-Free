@@ -11,6 +11,7 @@ import UIKit
 import MobileCoreServices
 import AVFoundation
 import Photos
+import SCLAlertView
 
 /*
  AttachmentHandler.shared.showAttachmentActionSheet(vc: self)
@@ -196,7 +197,7 @@ class AttachmentHandler: NSObject{
         let cameraUnavailableAlertController = UIAlertController (title: alertTitle , message: nil, preferredStyle: .alert)
         
         let settingsAction = UIAlertAction(title: self.settingsBtnTitle, style: .destructive) { (_) -> Void in
-            let settingsUrl = NSURL(string:UIApplicationOpenSettingsURLString)
+            let settingsUrl = NSURL(string:UIApplication.openSettingsURLString)
             if let url = settingsUrl {
                 UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
             }
@@ -214,8 +215,22 @@ extension AttachmentHandler: UIImagePickerControllerDelegate, UINavigationContro
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         currentVC?.dismiss(animated: true, completion: nil)
     }
-    
-    @objc func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+	
+	func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+		
+		// The info dictionary may contain multiple representations of the image. You want to use the original.
+		guard let selectedImage = info[.originalImage] as? UIImage else {
+			fatalError("Expected a dictionary containing an image, but was provided the following: \(info)")
+		}
+		self.imagePickedBlock?(selectedImage)
+		// Set photoImageView to display the selected image.
+		//photoImageView.image = selectedImage
+		
+		// Dismiss the picker.
+		currentVC?.dismiss(animated: true, completion: nil)
+	}
+	
+    /*@objc func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
             self.imagePickedBlock?(image)
         } else{
@@ -233,7 +248,7 @@ extension AttachmentHandler: UIImagePickerControllerDelegate, UINavigationContro
             print("Something went wrong in  video")
         }
         currentVC?.dismiss(animated: true, completion: nil)
-    }
+    }*/
     
     //MARK: Video Compressing technique
     fileprivate func compressWithSessionStatusFunc(_ videoUrl: NSURL) {

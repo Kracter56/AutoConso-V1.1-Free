@@ -1,0 +1,41 @@
+{
+    "ALFA ROMEO":
+    {
+        "Mito (145)",
+        "145/146 (930)",
+        "147 (937)",
+        "Giulietta (940)",
+        "155 (167)",
+        "156 (932)",
+        "159 (939)",
+        "Giulia (620)",
+        "164 (164)",
+        "166 (136)",
+        "GTV / Spider (916)",
+        "Brera",
+        "Spider (939)",
+        "GT Coupé (937)",
+        "4C (643)",
+        "Stelvio (630)"
+    },
+    "AMC":
+    {
+      "Alliance",
+      "Concord",
+      "Eagle",
+      "Encore",
+      "Spirit"
+    },
+    "Aston Martin":
+    {
+      "DB7",
+      "DB9",
+      "DBS",
+      "Lagonda",
+      "Rapide",
+      "V12 Vantage",
+      "V8 Vantage",
+      "Vanquish",
+      "Virage"
+    }
+}

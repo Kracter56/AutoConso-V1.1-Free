@@ -27,7 +27,14 @@ class InformationsTableViewController: UITableViewController, MFMailComposeViewC
     var alertVolMessage = NSLocalizedString("Saisir une unité de volume", comment: "alertVolMessage")
     var textFieldVolHint = NSLocalizedString("Unité de Volume", comment: "textFieldVolHint")
     
-    @IBOutlet var tbl: UITableView!
+	@IBOutlet weak var labelPseudo: UILabel!
+	@IBOutlet weak var labelDateInscription: UILabel!
+	@IBOutlet weak var labelMail: UILabel!
+	@IBOutlet weak var labelDerniereConnexion: UILabel!
+	@IBOutlet weak var labelSWVersion: UILabel!
+	@IBOutlet weak var labelDatePublication: UILabel!
+	
+	@IBOutlet var tbl: UITableView!
     @IBOutlet weak var editFieldCurrency: UIButton!
     @IBOutlet weak var labelAnnonces: UIButton!
     @IBAction func BtnAnnonces(_ sender: UIButton) {
@@ -75,15 +82,6 @@ class InformationsTableViewController: UITableViewController, MFMailComposeViewC
     
     func animateTable() {
         
-        /*self.tbl.visibleCells.alpha = 0
-        
-        UIView.animate(
-            withDuration: 0.5,
-            delay: 0.05 * tbl,
-            animations: {
-                tbl.visibleCells.alpha = 1
-        })*/
-        
         /*let cells = tbl.visibleCells
         let tableHeight: CGFloat = tbl.bounds.size.height
         
@@ -103,6 +101,26 @@ class InformationsTableViewController: UITableViewController, MFMailComposeViewC
             index += 1
         }*/
     }
+	
+	@IBAction func onRefresh(_ sender: UIBarButtonItem) {
+		// Refresh table view here
+	}
+	
+	override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath){
+		// Add animations here
+		cell.alpha = 0
+		
+		UIView.animate(
+			withDuration: 0.5,
+			delay: 0.05 * Double(indexPath.row),
+			animations: {
+				cell.alpha = 1
+		})
+		
+		/*let animation = AnimationFactory.makeSlideIn(duration: 0.5, delayFactor: 0.05)
+		let animator = Animator(animation: animation)
+		animator.animate(cell: cell, at: indexPath, in: tableView)*/
+	}
     
     func displayAdChoice(){
         GADMobileAds.configure(withApplicationID: "ca-app-pub-8249099547869316~4988744906")
@@ -282,9 +300,7 @@ class InformationsTableViewController: UITableViewController, MFMailComposeViewC
         let get = UserDefaults.standard
         
         editFieldCurrency?.setTitle("€", for: .normal)
-        
         editFieldDistance?.setTitle("km", for: .normal)
-        
         editFieldVol?.setTitle("L", for: .normal)
         
         if(settingsDataAlreadyExist(Key: "devise")){
@@ -294,9 +310,19 @@ class InformationsTableViewController: UITableViewController, MFMailComposeViewC
             editFieldDistance?.setTitle(get.object(forKey: "distance") as? String, for: .normal)
         }
         if(settingsDataAlreadyExist(Key: "volume")){
+			
             editFieldVol?.setTitle(get.object(forKey: "volume") as? String, for: .normal)
         }
-        
+		
+		/* Remplaissage du profil utilisateur */
+		self.labelMail.text = UserDefaults.standard.string(forKey: "usrEmail")
+		self.labelPseudo.text = UserDefaults.standard.string(forKey: "usrPseudo")
+//		self.labelNbPoints.text = UserDefaults.standard.string(forKey: "usrPoints")
+		self.labelDateInscription.text = UserDefaults.standard.string(forKey: "usrLastConnection") //usrDateInscription
+		self.labelDerniereConnexion.text = UserDefaults.standard.string(forKey: "usrLastConnection")
+		self.labelSWVersion.text = "1.2"
+		self.labelDatePublication.text = "13/09/2019"
+		
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -329,7 +355,7 @@ class InformationsTableViewController: UITableViewController, MFMailComposeViewC
 
     override func viewWillAppear(_ animated: Bool){
         super.viewWillAppear(true)
-        animateTable()
+		
     }
     
     

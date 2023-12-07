@@ -26,7 +26,7 @@ class LegalViewController: UIViewController, WKUIDelegate {
         myWeb = WKWebView(frame: .zero, configuration: webConfiguration)
         myWeb.uiDelegate = self
         myWeb.sizeToFit();
-        myWeb.contentMode = UIViewContentMode.scaleToFill;
+		myWeb.contentMode = UIView.ContentMode.scaleToFill;
         view = myWeb
     }
     

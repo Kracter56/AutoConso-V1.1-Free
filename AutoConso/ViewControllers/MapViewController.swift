@@ -9,22 +9,22 @@
 import UIKit
 import MapKit
 
-class stationsMapViewController: UIViewController, UISearchBarDelegate {
+class MapViewController: UIViewController, UISearchBarDelegate {
 
     var searchController:UISearchController!
     var annotation:MKAnnotation!
-    var localSearchRequest:MKLocalSearchRequest!
+    var localSearchRequest:MKLocalSearch.Request!
     var localSearch:MKLocalSearch!
-    var localSearchResponse:MKLocalSearchResponse!
+    var localSearchResponse:MKLocalSearch.Response!
     var error:NSError!
     var pointAnnotation:MKPointAnnotation!
     var pinAnnotationView:MKPinAnnotationView!
     
     @IBAction func showSearchBar(_ sender: UIBarButtonItem) {
-        searchController = UISearchController(searchResultsController: nil)
+        /*searchController = UISearchController(searchResultsController: nil)
         searchController.hidesNavigationBarDuringPresentation = false
         self.searchController.searchBar.delegate = self
-        present(searchController, animated: true, completion: nil)
+        present(searchController, animated: true, completion: nil)*/
     }
     
     @IBOutlet weak var mapView: MKMapView!
@@ -34,11 +34,11 @@ class stationsMapViewController: UIViewController, UISearchBarDelegate {
 
         // Init the zoom level
         let coordinate:CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 34.03, longitude: 118.14)
-        let span = MKCoordinateSpanMake(100, 80)
-        let region = MKCoordinateRegionMake(coordinate, span)
+        let span = MKCoordinateSpan.init(latitudeDelta:100, longitudeDelta:80)
+		let region = MKCoordinateRegion(center: coordinate, span: span)
         self.mapView.setRegion(region, animated: true)
         //
-        
+        localizeFuelStation()
         // Do any additional setup after loading the view.
     }
     
@@ -62,20 +62,20 @@ class stationsMapViewController: UIViewController, UISearchBarDelegate {
             self.mapView.removeAnnotation(annotation)
         }
         //2
-        localSearchRequest = MKLocalSearchRequest()
-        localSearchRequest.naturalLanguageQuery = searchBar.text
+        localSearchRequest = MKLocalSearch.Request()
+        localSearchRequest.naturalLanguageQuery = "Station service" //searchBar.text
         localSearch = MKLocalSearch(request: localSearchRequest)
         localSearch.start { (localSearchResponse, error) -> Void in
             
             if localSearchResponse == nil{
-                let alertController = UIAlertController(title: nil, message: "Place Not Found", preferredStyle: UIAlertControllerStyle.alert)
-                alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default, handler: nil))
+                let alertController = UIAlertController(title: nil, message: "Place Not Found", preferredStyle: UIAlertController.Style.alert)
+				alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertAction.Style.default, handler: nil))
                 self.present(alertController, animated: true, completion: nil)
                 return
             }
             //3
             self.pointAnnotation = MKPointAnnotation()
-            self.pointAnnotation.title = searchBar.text
+            self.pointAnnotation.title = "Stations services" //searchBar.text
             self.pointAnnotation.coordinate = CLLocationCoordinate2D(latitude: localSearchResponse!.boundingRegion.center.latitude, longitude:     localSearchResponse!.boundingRegion.center.longitude)
             
             
@@ -84,4 +84,33 @@ class stationsMapViewController: UIViewController, UISearchBarDelegate {
             self.mapView.addAnnotation(self.pinAnnotationView.annotation!)
         }
     }
+	
+	func localizeFuelStation(){
+		if self.mapView.annotations.count != 0{
+			annotation = self.mapView.annotations[0]
+			self.mapView.removeAnnotation(annotation)
+		}
+		//2
+		localSearchRequest = MKLocalSearch.Request()
+		localSearchRequest.naturalLanguageQuery = "Station service" //searchBar.text
+		localSearch = MKLocalSearch(request: localSearchRequest)
+		localSearch.start { (localSearchResponse, error) -> Void in
+			
+			if localSearchResponse == nil{
+				let alertController = UIAlertController(title: nil, message: "Place Not Found", preferredStyle: UIAlertController.Style.alert)
+				alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertAction.Style.default, handler: nil))
+				self.present(alertController, animated: true, completion: nil)
+				return
+			}
+			//3
+			self.pointAnnotation = MKPointAnnotation()
+			self.pointAnnotation.title = "Stations services" //searchBar.text
+			self.pointAnnotation.coordinate = CLLocationCoordinate2D(latitude: localSearchResponse!.boundingRegion.center.latitude, longitude:     localSearchResponse!.boundingRegion.center.longitude)
+			
+			
+			self.pinAnnotationView = MKPinAnnotationView(annotation: self.pointAnnotation, reuseIdentifier: nil)
+			self.mapView.centerCoordinate = self.pointAnnotation.coordinate
+			self.mapView.addAnnotation(self.pinAnnotationView.annotation!)
+		}
+	}
 }

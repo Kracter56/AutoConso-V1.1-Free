@@ -6,17 +6,30 @@ target 'AutoConso' do
   use_frameworks!
 
   # Pods for AutoConso
-	pod 'RealmSwift'
+	pod 'FoldingCell'
 	pod 'Google-Mobile-Ads-SDK'
 	pod 'Firebase'
 	pod 'Firebase/Core'
-	pod 'PersonalizedAdConsent'
-	pod 'FirebaseUI/Auth', '~> 5.0'
-  	pod 'FirebaseUI/Google', '~> 5.0'
-  	pod 'Firebase/Firestore'
-  	pod 'Firebase/Core'
+	pod 'Firebase/Database'
 	pod 'SCLAlertView'
-
+        pod 'NVActivityIndicatorView'
+	pod 'LCUIComponents'
+	pod 'AMPopTip'
+	pod 'RSLoadingView'
+	pod 'CWProgressHUD'
+	pod 'PersonalizedAdConsent'
+	pod 'FirebaseUI/Google'
+	pod 'CSV.swift', '~> 2.3.1'
+	pod 'Eureka'
+	pod 'PopupDialog', '~> 1.1'
+	pod 'SwiftyJSON'
+	pod 'SWXMLHash'
+	pod 'RealmGeoQueries'
+	pod 'RealmSwift'
+	pod 'ImageRow'	
+	pod 'DZNEmptyDataSet'
+	pod 'FloatingPanel'
+  
   target 'AutoConsoTests' do
     inherit! :search_paths
     # Pods for testing

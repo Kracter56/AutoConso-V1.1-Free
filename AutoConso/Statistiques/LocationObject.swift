@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import MapKit
 
-class LocationObject: NSObject {
+class StationObject: NSObject {
     var locationName: String!
     var location: String!
     var image: UIImageView!
@@ -19,7 +19,7 @@ class LocationObject: NSObject {
     var ville: String!
     var coordGPS: String!
     
-    init(locationName: String, location: String, codePostal: String, ville: String, Distance: String, coordGPS: String) {
+	init(locationName: String, locationMarque: String, adresse: String, codePostal: String, ville: String, Distance: String, coordGPS: String) {
         self.locationName = locationName
         self.location = location
         self.codePostal = codePostal
