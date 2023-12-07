@@ -1,0 +1,61 @@
+[
+  {
+    "ALFA ROMEO":
+      {
+        "Modele": "Mito",
+        "Code": "145",
+        "reservoir": "60L",
+      },
+      {
+        "Modele": "145/146",
+        "Code": "930",
+        "reservoir": "60L",
+      },
+      {
+        "Modele": "Mito",
+        "Code": "145",
+        "reservoir": "60L",
+      },
+    {
+        "Modele": "147",
+        "Code": "937",
+        "reservoir": "60L",
+      },
+    {
+        "Modele": "Giulietta",
+        "Code": "940",
+        "reservoir": "60L",
+      },
+    {
+        "Modele": "155",
+        "Code": "167",
+        "reservoir": "60L",
+      },
+    {
+        "Modele": "156",
+        "Code": "932",
+        "reservoir": "60L",
+      },
+    {
+        "Modele": "159",
+        "Code": "939",
+        "reservoir": "60L",
+      },
+    {
+        "Modele": "Giulia",
+        "Code": "620",
+        "reservoir": "60L",
+      }
+}
+  {
+    "brand": "Renault",
+    "models": [
+      "18i",
+      "Fuego",
+      "Le Car",
+      "R18",
+      "Sportwagon"
+    ]
+  
+]
+

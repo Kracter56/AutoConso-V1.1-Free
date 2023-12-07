@@ -10,8 +10,7 @@
 /* confirmCarDeleteToastMessage */
 "La voiture et ses données associées ont bien été supprimés de la base" = "The vehicle and its associated fuellings have been deleted from the database";
 
-/* AddCarAlertNoAnswer
- */
+/* AddCarAlertNoAnswer */
 "Non" = "No";
 
 /* AddCarAlertYesAnswer */
@@ -21,10 +20,10 @@
 "Oui je confirme" = "Yes I confirm";
 
 /* deleteCarAlertYes */
-"Oui, j'efface tout" = "Yes, erase all";
+"Oui" = "Yes";
 
 /* deleteCarAlertNo */
-"Oups, Non je laisse tout." = "Oops, No let the data as it is.";
+"Non" = "No";
 
 /* AddCarAlertTitle */
 "Saisir une voiture" = "Add a new vehicle";
@@ -33,7 +32,13 @@
 "Suppression conso" = "Fuelling deletion";
 
 /* deleteCarAlertTitle */
-"Suppression voiture et données associées" = "Car deletion and its associated data";
+"Suppression voiture et données associées" = "Car deletion";
+
+/* confirmCarDeleteTitle */
+"Supprimé !" = "Deleted !";
+
+/* confirmCarDeleteMessage */
+"La voiture et ses données associées ont bien été supprimés !" = "The selected car and its associated data are deleted !";
 
 /* noCarMessage */
 "Vous n'avez pas encore ajouté de véhicule. Touchez le bouton + pour en ajouter un." = "You have not added a vehicle yet. PLease tap on + button to add one.";
@@ -158,4 +163,393 @@
 /* textFieldVolHint */
 "Unité de Volume" = "Volume Unit";
 
+/* imageTooBigTitle */
+"Image trop grande : " = "Image too big : ";
 
+/* imageTooBigMessage */
+"Choisissez une image dont la taille est inférieure à 16 Mo et de préférence de format carré svp." = "Please choose an image whose size is under 16Mb, with square shape.";
+
+/* titreDossierAutoConsoInexistant */
+"Oups !" = "Oops !";
+
+/* messageDossierAutoConsoInexistant */
+"La fonction aperçu est indisponible pour le moment." = "The preview function is unavailable for the moment.";
+
+/* actionFileTypeHeading */
+"Choisir une image" = "Choose a picture";
+
+/* actionFileTypeDescription */
+"Comment voulez-vous associer l'image ?" = "How do you want to get the picture ?";
+
+/* camera */
+"Prendre une photo" = "Take a photo from camera";
+
+/* phoneLibrary */
+"Choisir une image" = "Choose a picture from gallery";
+
+/* video */
+"Vidéo" = "video";
+
+/* file */
+"Document" = "file";
+
+/* alertForPhotoLibraryMessage */
+"L'appli n'a pas accès à vos photos. Pour autoriser l'accès, autoriser l'accès aux photos depuis le menu réglages de l'iPhone" = "This app has no access to your Gallery. Please enable access to Gallery and try again";
+
+/* alertForCameraAccessMessage */
+"L'appli n'a pas accès à votre appareil photo. Pour autoriser l'accès, autoriser l'accès à l'appareil photo depuis le menu réglages de l'iPhone" = "This app has no access to your Camera. Please enable access to Camera and try again";
+
+/* settingsBtnTitle */
+"Réglages" = "Settings";
+
+/* cancelBtnTitle */
+"Annuler" = "Cancel";
+
+/* titleEnableGPS */
+"Autorisation GPS" = "Allow Location Access";
+
+/* messageEnableGPS */
+"L'app AutoConso a besoin d'accéder à votre localisation. Activer les permissions de localisation dans le menu Réglages de votre iPhone" = "AutoConso app needs access to your location. Turn on Location Services in your device settings.";
+
+/* settingsButton */
+"Réglages" = "Settings";
+
+/* titleAddCar */
+"Saisir un véhicule" = "Add a vehicle";
+
+/* messageAddCar */
+"Vous n'avez pas encore de voiture. Voulez-vous en saisir une ?" = "You have no vehicle yet. Do you want to add one ?";
+
+/* textYes */
+"Oui" = "Yes";
+
+/* textNo */
+"Non" = "No";
+
+/* strOK */
+"OK" = "OK";
+
+/* strJaiCompris */
+"J'ai compris." = "I Understand.";
+
+/* strOui */
+"Oui" = "Yes";
+
+/* strNon */
+"Non" = "No";
+
+/* strJaccepte */
+"J'accepte" = "I Accept";
+
+/* strJeRefuse */
+"Je refuse" = "I decline";
+
+/* strErreur */
+"Erreur" = "Error";
+
+/* strRechercheEnCours */
+"Recherche en cours..." = "Searching...";
+
+/* strFermer */
+"Fermer" = "Close";
+
+/* strEnregistrer */
+"Enregistrer" = "Save";
+
+/* strAdresse */
+"Adresse" = "Address";
+
+/* strVille */
+"Ville" = "City";
+
+/* strAnnuler */
+"Annuler" = "Cancel";
+
+/* strRelancer */
+"Relancer" = "ReLaunch";
+
+/* strChargement */
+"Chargement..." = "Loading...";
+
+/* strContinuer */
+"Continuer" = "Continue";
+
+/* strRavitaillementCarburant */
+"Ravitaillement en carburant" = "Fuelling";
+
+/* strAlreadyOnStation */
+"Je suis dans une station" = "I'm on a station";
+
+/* detailsTicket */
+"Details du ticket" = "Bill details";
+
+/* strKilometrage */
+"Kilometrage" = "Mileage";
+
+/* strKMParcourus */
+"KM parcourus" = "travelled distance";
+
+/* nbLitres */
+"Nb de litres" = "Fuel volume";
+
+/* typeParcours */
+"Type de parcours" = "Itinerary type";
+
+/* strPrix */
+"Prix" = "Price";
+
+/* strMesNotes */
+"Mes Notes" = "My Notes";
+
+/* strCommentaire */
+"Commentaire" = "Comments";
+
+/* strCodePostal */
+"Code Postal" = "Postal Code";
+
+/* strConso */
+"Consommation (L/100km)" = "Consumption";
+
+/* coutLitre */
+"Coût au litre" = "Volume Unit Cost";
+
+/* strStationName */
+"Nom de la station" = "Station Name";
+
+/* strSearch */
+"Rechercher" = "Search";
+
+/* strSelect */
+"Choisir" = "Select";
+
+/* strType */
+"Saisir" = "Edit";
+
+/* photoStation */
+"Photo de la station" = "Station Picture";
+
+/* createTicket */
+"Création d'un ticket" = "New Bill";
+
+/* strPlein */
+"Plein de carburant" = "Tank full";
+
+/* typeCycle */
+"Type de cycle" = "Cycle Type";
+
+/* cycleUrbain */
+"Urbain" = "Urban Cycle";
+
+/* cycleMixte */
+"Mixte" = "Mixed Cycle";
+
+/* cycleRoutier */
+"Routier" = "Road Cycle";
+
+/* titleAdresseInexistante */
+"Adresse inexistante" = "Unknown Address";
+
+/* messageAdresseInexistante */
+"Cette adresse n'existe pas." = "This address does not exist.";
+
+/* titleNetworkNOK */
+"Erreur Connexion Internet" = "Internet Connection Failure";
+
+/* messageNetworkNOK */
+"L'application n'est pas connectée à Internet. Une connexion internet stable est nécessaire pour que l'application fonctionne dans de meilleures conditions. La fonctionnalité de localisation véhicule ne sera pas utilisable dans cette session." = "This app is not connected to the Network. A stable Internet connection is necessary to the app to work on the best conditions. The parking function will not work during this session.";
+
+/* titleNoStationSelected */
+"Aucune station sélectionnée" = "No Fuel station selected";
+
+/* messageNoStationSelected */
+"Vous n'avez pas sélectionné de station. Relancez votre recherche." = "You have not selected a fuel station. Please relaunch your search again.";
+
+/* titleEnableGPS */
+"Autorisation GPS" = "GPS Location";
+
+/* messageEnableGPS */
+"L'app AutoConso a besoin d'accéder à votre localisation. Activer les permissions de localisation dans le menu Réglages de votre iPhone" = "The AutoConso App needs your Location information. Please activate the Location permission ont the settings of your iPhone.";
+
+/* settingsButton */
+"Réglages" = "Settings";
+
+/* titleAucuneStation */
+"Recherche invalide" = "Invalid Search";
+
+/* messageAucuneStation */
+"Votre recherche n'a donné aucun résultat. Voulez-vous ajouter une station ?" = "Your search has no result. Would you like to add a Fuel Station ?";
+
+/* strChercherStation */
+"Chercher une station" = "Search for a Fuel Station";
+
+/* strCritereRecherche */
+"Critères de recherche" = "Search Criteria";
+
+/* strGeolocationError */
+"Erreur de géolocalisation" = "Location Error";
+
+/* strCheckGPSAuth */
+"Vérifiez vos autorisations GPS et rééssayez." = "Please check your GPS permissions and retry.";
+
+/* strSignalementStationActionSheetTitle */
+"Que voulez-vous signaler pour ce carburant ?" = "What do you want to report about this fuel ?";
+
+/* strSignalementStationActionSheetChoice1 */
+"Mettre à jour le prix" = "Update the price";
+
+/* strSignalementStationActionSheetChoice2 */
+"Signaler une Pénurie" = "Report a fuel shortage";
+
+/* strReferenceNdF */
+"Référence" = "Reference";
+
+/* strDateNdF */
+"Date de la mission" = "Mission Date";
+
+/* messageParkingFunctionDisabled */
+"Votre connexion internet n'est pas stable. La fonction Parking a été désactivée pour cette session. Pour pouvoir la réutiliser, redémarrez l'application avec une connexion internet." = "Your network connection is not stable. The parking feature has been deactivated for this session. To use this feature, restart the app, making sure to be connected to Internet.";
+
+/* deleteBtn */
+"Supprimer" = "Delete";
+
+/* deleteCarAlertTitle */
+"Supprimer véhicule" = "Delete the vehicle";
+
+/* deleteCarAlertMessage */
+"Attention ! Si vous supprimez ce véhicule, vous supprimerez tous les ravitaillements associés. Etes-vous sûr de vouloir continuer ?" = "Warning : If you delete this vehicle, you will loss all the associated fuelings. Do you wish to continue ?";
+
+/* confirmCarDeleteTitle */
+"Supprimé !" = "Deleted !";
+
+/* confirmCarDeleteMessage */
+"Le véhicule et ses données associées ont bien été supprimés !" = "The vehicle and its associed data has been deleted.";
+
+/* noCarMessage */
+"Vous n'avez pas encore ajouté de véhicule. Touchez le bouton + pour en ajouter un." = "You have not add a vehicle yet. Please tap on + button to add one.";
+
+/* messagePeuxPasRejoindreVehicule */
+"Vous n'avez pas localisé votre véhicule. Veuillez marquer la position du véhicule pour le rejoindre." = "You have not located your vehicle yet. Please mark the location of the Vehicle to launch the Navigation app.";
+
+/* titleConfirmRestore */
+"Confirmer restauration" = "Confirm restoration";
+
+
+/* messageConfirmRestore */
+"Etes-vous sûr de vouloir restaurer vos données ? Cette restauration écrasera les données existantes" = "Are you sure you want to restore data ? This restoration will overwrite the existing data";
+
+/* titleRestoreDBSuccess */
+"Restauration réussie" = "Restoration Success";
+
+/* messageRestoreDBSuccess */
+"Les données de l'application ont bien été restaurées. Veuillez relancer l'application pour la prise en compte." = "App data have been restored successfully. Please relaunch the app to let the changes taken into account.";
+
+/* titleRestoreDBError */
+"Erreur restauration" = "Restoration Error";
+
+/* messageRestoreDBError */
+"Une erreur s'est produite lors de la restauration des données de l'application." = "An Error occured during the app data restoration.";
+
+/* titleBackupNotExist */
+"Sauvegarde inexistante" = "Backup error";
+
+/* messageBackupNotExist */
+"Aucune sauvegarde n'a été trouvée." = "Backup file not found.";
+
+/* titleClearBackUps */
+"attention" = "warning";
+
+/* messageClearBackUps */
+"Vous êtes sur le point d'effacer l'ensemble de vos sauvegardes. Etes-vous sûrs de vouloir continuer ?" = "You are about to erase the whole backup files. Are you sure you want to continue ?";
+
+/* messageConfirmVoitureCree */
+"La voiture a bien été créée" = "The car has been created";
+
+/* titleConfirmClearBackUps */
+"Dossier de sauvegarde vidé" = "Backup Folder erased.";
+
+/* messageConfirmClearBackUps */
+"Le dossier de sauvegarde de l'application a bien été vidé!" = "The app's backup folder is empty!";
+
+/* titleErrorClearBackUps */
+"Erreur d'effacement" = "Erasing failure";
+
+/* messageErrorClearBackUps */
+"Une erreur s'est produite lors de l'effacement du dossier de sauvegarde" = "An error occured during backup folder erasing.";
+
+/* titleConfirmErase */
+"Confirmer effacement des données" = "Confirm data erasing";
+
+/* messageConfirmErase */
+"Etes-vous sûr de vouloir supprimer toutes les données de l'application ? Vous ne pourrez plus revenir en arrière." = "Are you sure you want to delete the whole app data ? You cannot go backwards.";
+
+/* titleOKErase */
+"Données réinitialisées" = "Data has been reinitialized";
+
+/* messageOKErase */
+"Toutes les données de l'application ont été effacées." = "The whole app data has been erased successfully.";
+
+/* titleSaveDBSuccess */
+"Sauvegarde réussie" = "Backup successful";
+
+/* messageSaveDBSuccess */
+"Les données de l'application ont bien été sauvegardées." = "The app data has been saved successfully.";
+
+/* titleSaveDBError */
+"Erreur sauvegarde" = "Backup Error";
+
+/* messageSaveDBError */
+"Une erreur s'est produite lors de la sauvegarde des données de l'application." = "An error occured during the app data backup.";
+
+/* strChargerSauvegarde */
+"Charger une sauvegarde" = "Load a backup file";
+
+/* strNommerSauvegarde */
+"Nommer la sauvegarde" = "Rename the backup file";
+
+/* strMessageNommerSauvegarde */
+"Donnez un nom à votre sauvegarde (sans espaces ni caractères spéciaux)" = "Give a name to your backup file (without any space and special character)";
+
+/* titleNomOperationNOK */
+"Champ Opération vide" = "Operation field is empty";
+
+/* messageNomOperationNOK */
+"Veuillez renseigner une opération svp." = "Please prompt an Operation.";
+
+/* emptyOperationMessage */
+"Vous n'avez enregistré aucune prévision sur votre agenda pour le moment" = "You have no prevision recorded yet.";
+
+/* titleNomOperationNOK */
+"Champ Opération vide" = "Operation field is empty";
+
+/* messageNomOperationNOK */
+"Veuillez renseigner une opération svp." = "Please type an Operation.";
+
+/* emptyFactureMessage */
+"Cette facture ne contient aucune opération d'entretien" = "This bill contains no car maintenance operations.";
+
+/* deleteFraisAlertTitle */
+"Suppression frais" = "Car maintenance costs deletion";
+
+/* deleteFraisAlertMessage */
+"Etes-vous sûr de vouloir supprimer la ligne sélectionnée ?" = "Are you sure you want to delete the selected Vehicle maintenance row ?";
+
+/* confirmConsoDelete */
+"Le ticket de carburant a bien été supprimé." = "The fuelling bill has been deleted successfully.";
+
+/* labelSelectVehicle */
+"Selectionner un véhicule" = "Select a vehicle";
+
+/* strNom */
+"Nom de la station" = "Station Name";
+
+/* strSearch */
+"Rechercher" = "Search";
+
+/* Vehicle */
+"Véhicule" = "Vehicle";
+
+/* strMake */
+"Marque" = "Make";
+
+/* strDateKMError */
+"La date du ravitaillement doit être ultérieure à la date d'achat" = "The selected date must be after the car registration date";

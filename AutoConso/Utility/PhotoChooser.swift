@@ -28,8 +28,8 @@ class PhotoChooser: NSObject{
     //MARK: - Internal Properties
     var imagePickedBlock: ((UIImage) -> Void)?
     
-    var actionFileTypeHeading = NSLocalizedString("Image du véhicule", comment: "actionFileTypeHeading")
-    var actionFileTypeDescription = NSLocalizedString("Moyen de récupération de la photo", comment: "actionFileTypeDescription")
+    var actionFileTypeHeading = NSLocalizedString("Choisir une image", comment: "actionFileTypeHeading")
+    var actionFileTypeDescription = NSLocalizedString("Comment voulez-vous associer l'image ?", comment: "actionFileTypeDescription")
     var camera = NSLocalizedString("Prendre une photo", comment: "camera")
     var phoneLibrary = NSLocalizedString("Choisir une image", comment: "phoneLibrary")
     
@@ -184,7 +184,7 @@ class PhotoChooser: NSObject{
         let cameraUnavailableAlertController = UIAlertController (title: alertTitle , message: nil, preferredStyle: .alert)
         
         let settingsAction = UIAlertAction(title: self.settingsBtnTitle, style: .destructive) { (_) -> Void in
-            let settingsUrl = NSURL(string:UIApplicationOpenSettingsURLString)
+			let settingsUrl = NSURL(string:UIApplication.openSettingsURLString)
             if let url = settingsUrl {
                 UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
             }
@@ -204,12 +204,15 @@ extension PhotoChooser: UIImagePickerControllerDelegate, UINavigationControllerD
     }
     
     @objc func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
-            self.imagePickedBlock?(image)
-        } else{
-            print("Something went wrong in  image")
-        }
-        
+		guard let image = info[UIImagePickerController.InfoKey.originalImage.rawValue] as? UIImage else {
+			fatalError("Expected a dictionary containing an image, but was provided the following: \(info)")
+		}
+        self.imagePickedBlock?(image)
+		
+		/*guard let videoUrl = info[UIImagePickerController.InfoKey.originalImage.rawValue] as? UIImage else {
+			fatalError("Expected a dictionary containing an image, but was provided the following: \(info)")
+		}
+		
         if let videoUrl = info[UIImagePickerControllerMediaURL] as? NSURL{
             print("videourl: ", videoUrl)
             //trying compression of video
@@ -219,7 +222,7 @@ extension PhotoChooser: UIImagePickerControllerDelegate, UINavigationControllerD
         }
         else{
             print("Something went wrong in  video")
-        }
+        }*/
         currentVC?.dismiss(animated: true, completion: nil)
     }
     

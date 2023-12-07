@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>messageNetworkNOK</key>
+	<dict>
+		<key>value</key>
+		<string>Vous n&apos;êtes pas connecté à internet. Certaines fonctionnalités de l&apos;application ne seront pas utilisables.</string>
+		<key>comment</key>
+		<string>dialog message for internet connection failure</string>
+	</dict>
+	<key>titleNetworkNOK</key>
+	<dict>
+		<key>value</key>
+		<string>Erreur Connexion Internet</string>
+		<key>comment</key>
+		<string>String for Network Connection NOK</string>
+	</dict>
+	<key>Network Connection</key>
+	<dict>
+		<key>messageNetworkNOK</key>
+		<dict>
+			<key>value</key>
+			<string>Vous n&apos;êtes pas connecté à internet. Certaines fonctionnalités de l&apos;application ne seront pas utilisables.</string>
+			<key>comment</key>
+			<string>dialog message for internet connection failure</string>
+		</dict>
+		<key>titleNetworkNOK</key>
+		<dict>
+			<key>value</key>
+			<string>Erreur Connexion Internet</string>
+			<key>comment</key>
+			<string>String for Network Connection NOK</string>
+		</dict>
+	</dict>
+	<key>General</key>
+	<dict>
+		<key>Cancel</key>
+		<dict>
+			<key>value</key>
+			<string>Annuler</string>
+			<key>comment</key>
+			<string>Generic String for Cancel Action</string>
+		</dict>
+		<key>Decline</key>
+		<dict>
+			<key>value</key>
+			<string>Décliner</string>
+			<key>comment</key>
+			<string>Generic String for Decline Action</string>
+		</dict>
+		<key>Yes</key>
+		<dict>
+			<key>value</key>
+			<string>Oui</string>
+			<key>comment</key>
+			<string>Generic String for Yes button</string>
+		</dict>
+		<key>No</key>
+		<dict>
+			<key>value</key>
+			<string>Non</string>
+			<key>comment</key>
+			<string>Generic String for No button</string>
+		</dict>
+		<key>Ok</key>
+		<dict>
+			<key>value</key>
+			<string>OK</string>
+			<key>comment</key>
+			<string>Generic String for OK button</string>
+		</dict>
+		<key>Accept</key>
+		<dict>
+			<key>value</key>
+			<string>Accepter</string>
+			<key>comment</key>
+			<string>Generic String for Accept Action</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

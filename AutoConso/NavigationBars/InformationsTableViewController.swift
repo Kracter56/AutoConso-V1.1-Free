@@ -14,6 +14,8 @@ import PersonalizedAdConsent
 class InformationsTableViewController: UITableViewController, MFMailComposeViewControllerDelegate, GADBannerViewDelegate{
 
     var bannerView: GADBannerView!
+	var langue:String?
+	var consentState:Int = 0
     
     var lblDeviseAlertTitle = NSLocalizedString("Saisie de la devise", comment: "lblDeviseAlertTitle")
     var alertDeviseMessage = NSLocalizedString("Saisir une devise", comment: "alertDeviseMessage")
@@ -27,11 +29,18 @@ class InformationsTableViewController: UITableViewController, MFMailComposeViewC
     var alertVolMessage = NSLocalizedString("Saisir une unité de volume", comment: "alertVolMessage")
     var textFieldVolHint = NSLocalizedString("Unité de Volume", comment: "textFieldVolHint")
     
-    @IBOutlet var tbl: UITableView!
+	@IBOutlet weak var labelPseudo: UILabel!
+	@IBOutlet weak var labelDateInscription: UILabel!
+	@IBOutlet weak var labelMail: UILabel!
+	@IBOutlet weak var labelDerniereConnexion: UILabel!
+	@IBOutlet weak var labelSWVersion: UILabel!
+	@IBOutlet weak var labelDatePublication: UILabel!
+	
+	@IBOutlet var tbl: UITableView!
     @IBOutlet weak var editFieldCurrency: UIButton!
     @IBOutlet weak var labelAnnonces: UIButton!
     @IBAction func BtnAnnonces(_ sender: UIButton) {
-        displayAdChoice()
+        loadAds()
     }
     @IBOutlet weak var editFieldDistance: UIButton!
     @IBOutlet weak var editFieldVol: UIButton!
@@ -75,15 +84,10 @@ class InformationsTableViewController: UITableViewController, MFMailComposeViewC
     
     func animateTable() {
         
-        /*self.tbl.visibleCells.alpha = 0
-        
-        UIView.animate(
-            withDuration: 0.5,
-            delay: 0.05 * tbl,
-            animations: {
-                tbl.visibleCells.alpha = 1
-        })*/
-        
+		self.view.fadeIn(completion: {
+			(finished: Bool) -> Void in
+		})
+		
         /*let cells = tbl.visibleCells
         let tableHeight: CGFloat = tbl.bounds.size.height
         
@@ -103,11 +107,35 @@ class InformationsTableViewController: UITableViewController, MFMailComposeViewC
             index += 1
         }*/
     }
+	
+	@IBAction func onRefresh(_ sender: UIBarButtonItem) {
+		// Refresh table view here
+	}
+	
+	override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath){
+		// Add animations here
+		cell.alpha = 0
+		
+		UIView.animate(
+			withDuration: 0.5,
+			delay: 0.05 * Double(indexPath.row),
+			animations: {
+				cell.alpha = 1
+		})
+		
+		/*let animation = AnimationFactory.makeSlideIn(duration: 0.5, delayFactor: 0.05)
+		let animator = Animator(animation: animation)
+		animator.animate(cell: cell, at: indexPath, in: tableView)*/
+	}
     
-    func displayAdChoice(){
+    func loadAds(){
         GADMobileAds.configure(withApplicationID: "ca-app-pub-8249099547869316~4988744906")
         bannerView = GADBannerView(adSize: kGADAdSizeBanner)
         addBannerViewToView(bannerView)
+        self.langue = UserDefaults.standard.string(forKey: "phoneLanguage")!
+        /*bannerView.adUnitID = "ca-app-pub-8249099547869316/5778124533"
+         bannerView.rootViewController = self
+         bannerView.load(GADRequest())*/
         
         bannerView.delegate = self
         
@@ -115,13 +143,23 @@ class InformationsTableViewController: UITableViewController, MFMailComposeViewC
         PACConsentInformation.sharedInstance.requestConsentInfoUpdate(forPublisherIdentifiers: ["pub-8249099547869316"])
         {
             (_ error: Error?) -> Void in
+			
             if let error = error {
                 print("Consent info update failed.")
             } else {
+				
                 // Consent info update succeeded. The shared PACConsentInformation
                 // instance has been updated.
                 print("Consent info update succeeded")
+				print("consentStatus = ", PACConsentInformation.sharedInstance.consentStatus.rawValue)
+				
+				if(UserDefaults.standard.object(forKey: "consentStatus") != nil){
+					self.consentState = UserDefaults.standard.integer(forKey: "consentStatus")
+				}
+				print("consentStutus = @%",self.consentState)
+				
                 //if PACConsentInformation.sharedInstance.consentStatus == PACConsentStatus.unknown {
+				if self.consentState == 0 {
                     print("Consent status unknown")
                     /* Google-rendered consent form */
                     /* PACConsentForm with all three form options */
@@ -129,7 +167,7 @@ class InformationsTableViewController: UITableViewController, MFMailComposeViewC
                     // Collect consent
                     
                     var url = ""
-                    if(UserDefaults.standard.string(forKey: "phoneLanguage") == "fr"){
+                    if(self.langue == "fr"){
                         url = "https://drive.google.com/open?id=1TTrsdtYb2yPHBm2ki4fdm1s1Z65rnz8Q"
                     }else{
                         url = "https://drive.google.com/open?id=1tF8Vb9mi5moFjJapUoQyy9snIcprvZeV"
@@ -159,19 +197,34 @@ class InformationsTableViewController: UITableViewController, MFMailComposeViewC
                                     // Handle error.
                                 } else if userPrefersAdFree {
                                     // User prefers to use a paid version of the app.
+									print("user prefers adFree")
                                 }else{
-                                    
+                                    print("user don't prefer adFree")
                                     // Check the user's consent choice.
-                                    let status = PACConsentInformation.sharedInstance.consentStatus
-                                    
-                                    // TODO: show ads
-                                }
+									let status = PACConsentInformation.sharedInstance.consentStatus
+									if status == PACConsentStatus.nonPersonalized {
+										UserDefaults.standard.set(1, forKey: "consentStatus")
+										self.consentState = 1
+									}
+									if status == PACConsentStatus.personalized {
+										UserDefaults.standard.set(2, forKey: "consentStatus")
+										self.consentState = 2
+									}
+									if status == PACConsentStatus.unknown {
+										UserDefaults.standard.set(0, forKey: "consentStatus")
+										self.consentState = 0
+									}
+									
+									//UserDefaults.standard.set(PACConsentInformation.sharedInstance.consentStatus, forKey: "consentStatus")
+									print(status.rawValue)
+								}
                             }
                         }
                     }
                 }
-                if (PACConsentInformation.sharedInstance.consentStatus == PACConsentStatus.nonPersonalized || PACConsentInformation.sharedInstance.consentStatus == PACConsentStatus.personalized){
-                    
+				
+                //if (PACConsentInformation.sharedInstance.consentStatus == PACConsentStatus.nonPersonalized || PACConsentInformation.sharedInstance.consentStatus == PACConsentStatus.personalized){
+				if(self.consentState == 1 || self.consentState == 2){
                     print("The user has granted consent for personalized ads.")
                     
                     self.bannerView.isHidden = false
@@ -179,7 +232,8 @@ class InformationsTableViewController: UITableViewController, MFMailComposeViewC
                     self.bannerView.rootViewController = self
                     let request = GADRequest()
                     
-                    if PACConsentInformation.sharedInstance.consentStatus == PACConsentStatus.nonPersonalized {
+                    //if PACConsentInformation.sharedInstance.consentStatus == PACConsentStatus.nonPersonalized {
+					if(self.consentState == 1){
                         print("The user has granted consent for non-personalized ads.")
                         // Forward consent to the Google Mobile Ads SDK
                         let extras = GADExtras()
@@ -191,7 +245,7 @@ class InformationsTableViewController: UITableViewController, MFMailComposeViewC
                     }
                     self.bannerView.load(request)
                 }
-            //}
+            }
         }
         let adProviders = PACConsentInformation.sharedInstance.adProviders
         print("adProviders",adProviders)
@@ -267,6 +321,7 @@ class InformationsTableViewController: UITableViewController, MFMailComposeViewC
     override func viewDidLoad() {
         super.viewDidLoad()
 
+		
         animateTable()
         
         GADMobileAds.configure(withApplicationID: "ca-app-pub-8249099547869316~4988744906")
@@ -282,9 +337,7 @@ class InformationsTableViewController: UITableViewController, MFMailComposeViewC
         let get = UserDefaults.standard
         
         editFieldCurrency?.setTitle("€", for: .normal)
-        
         editFieldDistance?.setTitle("km", for: .normal)
-        
         editFieldVol?.setTitle("L", for: .normal)
         
         if(settingsDataAlreadyExist(Key: "devise")){
@@ -294,9 +347,25 @@ class InformationsTableViewController: UITableViewController, MFMailComposeViewC
             editFieldDistance?.setTitle(get.object(forKey: "distance") as? String, for: .normal)
         }
         if(settingsDataAlreadyExist(Key: "volume")){
+			
             editFieldVol?.setTitle(get.object(forKey: "volume") as? String, for: .normal)
         }
-        
+		
+		/* Remplaissage du profil utilisateur */
+		self.labelMail.text = UserDefaults.standard.string(forKey: "usrEmail")
+		self.labelPseudo.text = UserDefaults.standard.string(forKey: "usrPseudo")
+//		self.labelNbPoints.text = UserDefaults.standard.string(forKey: "usrPoints")
+		self.labelDateInscription.text = UserDefaults.standard.string(forKey: "usrLastConnection") //usrDateInscription
+		self.labelDerniereConnexion.text = UserDefaults.standard.string(forKey: "usrLastConnection")
+		self.labelSWVersion.text = "1.2"
+		self.labelDatePublication.text = "13/09/2019"
+		
+		if(UserDefaults.standard.object(forKey: "consentStatus") != nil){
+			self.consentState = UserDefaults.standard.integer(forKey: "consentStatus")
+		}
+		print("consentStutus = @%",self.consentState)
+		loadAds()
+		
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -329,7 +398,7 @@ class InformationsTableViewController: UITableViewController, MFMailComposeViewC
 
     override func viewWillAppear(_ animated: Bool){
         super.viewWillAppear(true)
-        animateTable()
+		
     }
     
     
@@ -425,3 +494,16 @@ class InformationsTableViewController: UITableViewController, MFMailComposeViewC
     */
 
 }
+
+/*extension UIView {
+    func fadeIn(_ duration: TimeInterval = 1.0, delay: TimeInterval = 0.0, completion: @escaping ((Bool) -> Void) = {(finished: Bool) -> Void in}) {
+		UIView.animate(withDuration: duration, delay: delay, options: UIView.AnimationOptions.curveEaseIn, animations: {
+            self.alpha = 1.0
+        }, completion: completion)  }
+    
+    func fadeOut(_ duration: TimeInterval = 1.0, delay: TimeInterval = 0.0, completion: @escaping (Bool) -> Void = {(finished: Bool) -> Void in}) {
+		UIView.animate(withDuration: duration, delay: delay, options: UIView.AnimationOptions.curveEaseIn, animations: {
+            self.alpha = 0.0
+        }, completion: completion)
+    }
+}*/

@@ -11,14 +11,17 @@ import MapKit
 import CoreLocation
 import Foundation
 import RealmSwift
+import Firebase
+import FirebaseDatabase
+import RSLoadingView
+import CWProgressHUD
 
-class StationsSearchTableViewController: UITableViewController {
+class StationsSearchTableViewController: UITableViewController, CLLocationManagerDelegate {
 
     @IBOutlet var tableViewStations: UITableView!
     var matchingItems:[MKMapItem] = []
-    var sv:UIView?
-    var addConsoVC:AddConsoViewController?
-    var locations = [LocationObject]()
+    var addConsoVC:addConsoVC?
+    var locations = [stationObject]()
     var coordGPS:CLLocation?
     var stationName:String?
     var stationAdresse:String?
@@ -26,60 +29,86 @@ class StationsSearchTableViewController: UITableViewController {
     var searchString:String?
     let locationManager = CLLocationManager()
     var car:Car?
+    var carName:String?
     var station:Station?
     var oConso:Conso?
     var realm:Realm?
     var coord:CLLocationCoordinate2D?
     var senderVC:String?
+    var sv:UIView?
+    var localisationOK:Bool?
+	var searchedStation:String?
+	var searchedAddress:String?
+	var searchedVille:String?
+	var searchedCP:String?
+	var stationCoordGPS:CLLocation?
+	var loadingView:RSLoadingView?
+	var currentCoordGPS:CLLocation?
+	var longitudeDistance:Double?
+	var latitudeDistance:Double?
+	var waitpopup:CWProgressHUD?
+	var currentAddress:String?
+	var mklocalSearchRequest:MKLocalSearch.Request?
+	var mklocalSearch:MKLocalSearch?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.sv = UITableViewController.displaySpinner(onView: self.view)
-        
-        /*let adresse = self.stationVille! + ", FRANCE"   //self.stationAdresse! + " " + self.stationVille!
-        //let address = "8787 Snouffer School Rd, Montgomery Village, MD 20879"
-        */
-        
-        
-        
-        /*geocoder.geocodeAddressString(adresse, completionHandler: {(placemarks, error) -> Void in
-            if((error) != nil){
-                print("Error", error ?? "")
-            }
-            if let placemark = placemarks?.first {
-                let coordinates:CLLocationCoordinate2D = placemark.location!.coordinate
-                print("Lat: \(coordinates.latitude) -- Long: \(coordinates.longitude)")
-            }
-        })*/
-        
-        
-        locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestWhenInUseAuthorization()
-        locationManager.requestLocation()
-        
-        performSearchRequest()
-        animateTable()
-        
-        
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+		
+		guard let topWindow = UIApplication.shared.windows.last else {return}
+		let overlayView = UIView(frame: topWindow.bounds)
+		overlayView.backgroundColor = UIColor.clear
+		topWindow.addSubview(overlayView)
+		print("viewDidLoad")
+		self.loadingView = RSLoadingView(effectType: RSLoadingView.Effect.twins)
+		self.loadingView?.speedFactor = 2.0
+		self.loadingView?.mainColor = UIColor.green
+		self.loadingView?.lifeSpanFactor = 2.0
+		self.loadingView!.show(on: overlayView)
+		
+		/*CWProgressHUD.setStyle(.dark)
+		CWProgressHUD.show(withMessage: "Veuillez patienter")*/
+		self.searchString = ""
+		
+        self.localisationOK = false
+        checkUsersLocationServicesAuthorization()
+		//self.tableView.reloadData()
+		/*delayWithSeconds(5) {
+			print("delayWithSeconds")
+			self.mklocalSearch?.cancel()
+		}*/
     }
+    
+	
     
     func getLocation(forPlaceCalled name: String,
                      completion: @escaping(CLLocation?) -> Void) {
+        /*NVActivityIndicatorView(frame: frame, type: type, color: color, padding: padding)
+        .startAnimating()
         
+        
+        
+        let yAxis = self.view.center.y
+        
+        let frame = CGRect(x: (xAxis - 50), y: (yAxis - 50), width: 45, height: 45)
+        activityIndicator = NVActivityIndicatorView(frame: frame)
+        activityIndicator.type = . ballScale // add your type
+        activityIndicator.color = UIColor.red // add your color*/
+        //self.view.addSubview(activityIndicator) // or use  webView.addSubview(activityIndicator)
+        //ProgressBarNotification.progressBarDisplayer(msg: "Geolocalisation", indicator: true)
+        print("getLocation")
         let geocoder = CLGeocoder()
         geocoder.geocodeAddressString(name) { placemarks, error in
-            
+			
             guard error == nil else {
                 print("*** Error in \(#function): \(error!.localizedDescription)")
                 completion(nil)
+				print("getLocation:error")
+				let titleNoData = NSLocalizedString("Aucune station", comment: "titleNoData")
+				let messageNoData = NSLocalizedString("Votre recherche n'a donné aucun résultat. Veuillez réessayer avec un autre critère de recherche.", comment: "messageNoData")
+				let btnOK = NSLocalizedString("OK", comment: "btnOK")
+				
+				//SweetAlert().showAlert(titleNoData, subTitle: messageNoData, style: AlertStyle.error, buttonTitle:btnOK, buttonColor:self.UIColorFromRGB(rgbValue: 0xD0D0D0))
+				
                 return
             }
             
@@ -99,66 +128,7 @@ class StationsSearchTableViewController: UITableViewController {
         }
     }
 
-    // MARK: - Table view data source
-
-    /*override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }*/
-
-    /*override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return matchingItems.count
-    }*/
-
-    
-    /*override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "StationsSearchTableViewCell", for: indexPath) as! StationsSearchTableViewCell
-
-        //performSearchRequest()
-        let location = locations[indexPath.row]
-        
-        // Configure the cell...
-        cell.configureLocationCell(locationName: location.locationName, location: location.location)
-        return cell
-    }*/
-    
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
+	
     
     // MARK: - Navigation
 
@@ -172,17 +142,28 @@ class StationsSearchTableViewController: UITableViewController {
             /* On créer l'id de la station à sélectionner */
             let vc = segue.destination as? AddConsoViewController
             
-            /* Envoi de la recherche */
-            //vc!.station =
-            vc!.car = self.car
+			/* Recherche de l'id dans Firebase */
+			let databaseRef = Database.database().reference(withPath: "Stations")
+			let dbRef = Database.database().reference()
+			
+			databaseRef.observe(.value, with: { (snapshot) in
+				if let result = snapshot.children.allObjects as? [DataSnapshot] {
+					for child in result {
+						var orderID = child.key as! String
+						print(orderID)
+					}
+				}
+			})
+            
+            //vc!.idCar = self.car!.idCar
             let station = Station()
             let selectedLocation = locations[indexPath.row]
-            station.nomStation = selectedLocation.locationName
-            station.adresse = selectedLocation.location
-            station.codePostal = selectedLocation.codePostal
+            station.nomStation = selectedLocation.nom
+            station.adresse = selectedLocation.adresse
+			station.codePostal = selectedLocation.codePostal
             station.ville = selectedLocation.ville
-            station.coordGPS = selectedLocation.coordGPS
-            
+            //station.coordGPS = selectedLocation.latitude
+        
             self.station = station
         }
         
@@ -198,13 +179,15 @@ class StationsSearchTableViewController: UITableViewController {
             vc!.car = self.car
             let station = Station()
             let selectedLocation = locations[indexPath.row]
-            station.nomStation = selectedLocation.locationName
-            station.adresse = selectedLocation.location
-            station.codePostal = selectedLocation.codePostal
+            station.nomStation = selectedLocation.nom
+            station.adresse = selectedLocation.adresse
+			station.codePostal = selectedLocation.codePostal
             station.ville = selectedLocation.ville
-            station.coordGPS = selectedLocation.coordGPS
-            
+			station.coordGPS = "(" + selectedLocation.latitude.description + ";" + selectedLocation.longitude.description + ")"
+            vc!.source = "StationsVC"
             self.station = station
+            print("stationsVC","GPS = "+station.coordGPS)
+            vc!.station = self.station
             //vc!.station = sender.
             //vc.addConsoVC = self // Je lie les 2 viewControllers pour que quand je sélectionne une donnée de vc, je puisse appeler une fonction de addConso
         }
@@ -222,16 +205,16 @@ class StationsSearchTableViewController: UITableViewController {
             let consoItem = self.oConso
             
             let selectedLocation = locations[indexPath.row]
-            station.nomStation = selectedLocation.locationName
-            station.adresse = selectedLocation.location
-            station.codePostal = selectedLocation.codePostal
+            station.nomStation = selectedLocation.nom
+            station.adresse = selectedLocation.adresse
+			station.codePostal = selectedLocation.codePostal
             station.ville = selectedLocation.ville
-            station.coordGPS = selectedLocation.coordGPS
+			station.coordGPS = "(" + selectedLocation.latitude.description + ";" + selectedLocation.longitude.description + ")"
             
             self.station = station
             let realm = try! Realm()
             try! realm.write {
-                consoItem!.adresseStation = selectedLocation.locationName
+                consoItem!.adresseStation = selectedLocation.nom
                 consoItem!.CPStation = selectedLocation.codePostal
                 consoItem!.villeStation = selectedLocation.ville
                 realm.add(consoItem!)
@@ -239,14 +222,12 @@ class StationsSearchTableViewController: UITableViewController {
             vc!.station = self.station
             vc!.consoItem = consoItem
             vc!.source = "StationsVC"
-            //self.navigationController?.popToViewController(self, animated: true)
-            //vc.addConsoVC = self // Je lie les 2 viewControllers pour que quand je sélectionne une donnée de vc, je puisse appeler une fonction de addConso
         }
     }
     
     func animateTable() {
         self.tableViewStations.reloadData()
-        
+        print("animateTable")
         let cells = tableViewStations.visibleCells
         let tableHeight: CGFloat = tableViewStations.bounds.size.height
         
@@ -267,218 +248,336 @@ class StationsSearchTableViewController: UITableViewController {
         }
     }
     
-    
-    func getCoordinateFrom(address: String, completion: @escaping(_ coordinate: CLLocationCoordinate2D?, _ error: Error?) -> () ) {
-        CLGeocoder().geocodeAddressString(address, completionHandler: { (placemarks, error) -> Void in
-            if error != nil {
-                print(error!)
-                return
-            }
-            if placemarks!.count > 0 {
-                let placemark = placemarks?[0]
-                let location = placemark?.location
-                //self.coordinates = location?.coordinate
-                
-                if let subAdminArea = placemark?.subAdministrativeArea {
-                    //self.address.county = subAdminArea
-                }
-            }
-        })
-        /*CLGeocoder().geocodeAddressString(address) { placemarks, error in
-            completion(placemarks?.first?.location?.coordinate, error)
-        }*/
-    }
-    
     @IBAction func goBackToOneButtonTapped(_ sender: Any) {
         performSegue(withIdentifier: "unwindSegueToVC1", sender: self)
     }
+	
+	
+	/**
+	->>> FONCTIONS <<<-
+	**/
+	
+	/* Construction de l'adresse */
+	func buildAddress(){
+		print("buildAddress")
+		print("searchString-debut buildAddress",self.searchString)
+		let addressArray = self.currentAddress?.split(separator: ",")
+		
+		if(self.stationName == "")||(self.stationName == nil){
+			let titleNoStationSelected = NSLocalizedString("Aucune station sélectionnée", comment: "titleNoStationSelected")
+			let messageNoStationSelected = NSLocalizedString("Vous n'avez pas sélectionné de station. Relancez votre recherche.", comment: "messageNoStationSelected")
+			let btnOK = NSLocalizedString("OK", comment: "btnOK")
+			
+			SweetAlert().showAlert(titleNoStationSelected, subTitle: messageNoStationSelected, style: AlertStyle.customImage(imageFile: "icon_station"), buttonTitle:btnOK, buttonColor:self.UIColorFromRGB(rgbValue: 0xD0D0D0))
+			self.stationName = "Station"
+			self.searchString = "Station"
+		}else{
+			self.searchString = self.stationName!
+		}
+		
+		if((self.searchedAddress != nil)&&(self.searchedAddress != "")){
+			self.searchString = self.searchString! + ", " + self.searchedAddress!
+		}
+		
+		if((self.searchedCP != nil)&&(self.searchedCP != "")){
+			//self.searchedCP = addressArray![2].description
+			self.searchString = self.searchString! + ", " + self.searchedCP!
+		}
+		
+		if((self.searchedVille != nil)&&(self.searchedVille != "")){
+			self.searchString = self.searchString! + ", " + self.searchedVille!
+		}
+		
+		/*if(self.searchedVille == nil)||(self.searchedVille == ""){
+			self.searchedVille = addressArray![3].description
+			self.searchString = self.searchString! + " " + self.searchedVille!
+		}*/
+		
+		var nomPays = ""
+		let locale = Locale.current.identifier
+		if(locale.contains("FR")){
+			nomPays = "France"
+		}
+		self.searchString = self.searchString! + ", " + nomPays
+		print("buildAddress : searchString",self.searchString)
+	}
+	
+	/* Cette fonction vérifie les autorisations pour le GPS, si tout est OK, lance une recherche des stations */
+	func checkUsersLocationServicesAuthorization(){
+		/// Check if user has authorized Total Plus to use Location Services
+		//if CLLocationManager.locationServicesEnabled() {
+		let titleEnableGPS = NSLocalizedString("Autorisation GPS", comment: "titleEnableGPS")
+		let messageEnableGPS = NSLocalizedString("L'app AutoConso a besoin d'accéder à votre localisation. Activer les permissions de localisation dans le menu Réglages de votre iPhone", comment: "messageEnableGPS")
+		let settingsButton = NSLocalizedString("Réglages", comment: "settingsButton")
+		switch CLLocationManager.authorizationStatus() {
+			
+		case .notDetermined:
+			// Request when-in-use authorization initially
+			// This is the first and the ONLY time you will be able to ask the user for permission
+			self.locationManager.delegate = self
+			locationManager.requestWhenInUseAuthorization()
+			self.localisationOK = false
+			break
+			
+		case .restricted, .denied:
+			// Disable location features
+			//switchAutoTaxDetection.isOn = false
+			
+			SweetAlert().showAlert(titleEnableGPS, subTitle: messageEnableGPS, style: AlertStyle.customImage(imageFile: "icon_location"), buttonTitle:settingsButton, buttonColor:self.UIColorFromRGB(rgbValue: 0xD0D0D0))
+			{ action in
+				guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else {
+					return
+				}
+				if UIApplication.shared.canOpenURL(settingsUrl) {
+					UIApplication.shared.open(settingsUrl, completionHandler: { (success) in
+						print("Settings opened: \(success)")
+					})
+				}
+				
+			}
+			
+			break
+			
+		case .authorizedWhenInUse, .authorizedAlways:
+			// Enable features that require aaaation services here.
+			print("Full Access")
+			self.localisationOK = true
+			buildAddress()
+			//ARSLineProgress.
+			getCoordinatesFromAddress(Address: self.searchString!)
+			performSearchRequest()
+			CWProgressHUD.dismiss()
+			print("On sort de authorizedWhenInUse")
+			break
+		}
+		/*}else{
+		
+		}*/
+	}
+	
+	/* Cette fonction lance une recherche des stations */
+	func performSearchRequest() {
+		print("performSearchRequest")
+		self.mklocalSearchRequest = MKLocalSearch.Request()
+		
+		let locationManager = CLLocationManager()
+		//let lieu = self.stationName! + " " + self.stationAdresse! + " " + self.stationVille!
+		
+		/*getLocation(forPlaceCalled: self.searchString!) { location in
+			guard let location = location else {
+				print("getLocation")
+				let titleNoData = NSLocalizedString("Aucune station", comment: "titleNoData")
+				let messageNoData = NSLocalizedString("Votre recherche n'a donné aucun résultat. Veuillez réessayer avec un autre critère de recherche.", comment: "messageNoData")
+				let btnOK = NSLocalizedString("OK", comment: "btnOK")
+				print("pas de resultat")
+				//SweetAlert().showAlert(titleNoData, subTitle: messageNoData, style: AlertStyle.error, buttonTitle:btnOK, buttonColor:self.UIColorFromRGB(rgbValue: 0xD0D0D0))
+				//ARSLineProgress.showFail()
+				return
+				
+			}
+		}*///ARSLineProgress.showSuccess()
+		var coord:CLLocation?
+		
+		if self.stationCoordGPS != nil {
+			coord = self.stationCoordGPS
+		}else{
+			coord = self.currentCoordGPS
+		}
+		
+		print(self.searchString)
+		
+		let center = CLLocationCoordinate2D(latitude: (coord?.coordinate.latitude)!, longitude:(coord?.coordinate.longitude)!)
+		print("Coordinates",coord?.coordinate)
+		
+		let region = MKCoordinateRegion(center: coord!.coordinate, latitudinalMeters: self.latitudeDistance!, longitudinalMeters: self.longitudeDistance!)
+			
+		let naturalLanguageQuery = self.searchString!
+		self.mklocalSearchRequest!.naturalLanguageQuery = naturalLanguageQuery
+		self.mklocalSearchRequest!.region = region
+			
+		print("naturalLanguageQuery",naturalLanguageQuery)
+		self.mklocalSearch = MKLocalSearch(request: self.mklocalSearchRequest!)
+		self.mklocalSearch!.start { (response, error) in
+			guard error == nil else { return }
+			guard let response = response else {
+				print("mklocalsearch, pas de résultat")
+				return
+			}
+			guard response.mapItems.count > 0 else { return }
+			//
+			print("MKLocalSearch")
+			let randomIndex = Int(arc4random_uniform(UInt32(response.mapItems.count)))
+			_ = response.mapItems[randomIndex]
+			
+			for locationItem in response.mapItems {
+					
+				let loc = CLLocation(latitude: locationItem.placemark.coordinate.latitude, longitude:locationItem.placemark.coordinate.longitude)
+					
+				let distanceBrute = (coord?.distance(from: loc))!/1000
+				let distance = String(format: "%.2f", distanceBrute)
+				let nom = locationItem.name
+				var adresse = ""
+				var codePostal = ""
+				var Ville = ""
+				
+				if(locationItem.placemark.subThoroughfare) != nil{
+					adresse = locationItem.placemark.subThoroughfare!
+				}
+				if(locationItem.placemark.thoroughfare) != nil {
+					adresse = adresse + " " + locationItem.placemark.thoroughfare!
+				}
+				if(locationItem.placemark.postalCode) != nil {
+					codePostal = locationItem.placemark.postalCode!
+					print("codePostal : %@",codePostal)
+				}
+				if(locationItem.placemark.locality) != nil {
+					Ville =  locationItem.placemark.locality!
+					print("Ville : %@",Ville)
+				}
+				
+				let strDistance = distance.description
+				print("strDistance ",strDistance)
+				let loklak = loc.coordinate.latitude.description + ", " + loc.coordinate.longitude.description
+				let dbRef = Database.database().reference()
+				let StationRef = Database.database().reference(withPath: "Station")
+				dbRef.child("Station").observe(.value, with: { (snapshot) in
+					if let result = snapshot.children.allObjects as? [DataSnapshot] {
+						for child in result {
+							var orderID = child.key as! String
+							print(orderID)
+						}
+					}
+				})
+				let location = stationObject(idStation: "", nom: nom!, marque: "-", adresse: adresse, codePostal: codePostal, ville: Ville, distance: strDistance + " km", latitude: loc.coordinate.latitude, longitude: loc.coordinate.longitude, services: "-", prixEssPlus: "0.00", majEssPlus: "", ruptureEssPlus: "Non", prixSP95E10: "0.00", majSP95E10: "", ruptureSP95E10: "Non", prixSP95: "0.00", majSP95: "", ruptureSP95: "Non", prixSP98: "0.00", majSP98: "", ruptureSP98: "Non", prixSUPER: "0.00", majSUPER: "", ruptureSUPER: "Non", prixDieselPlus: "0.00", majDieselPlus: "", ruptureDieselPlus: "Non", prixDiesel: "0.00", majDiesel: "", ruptureDiesel: "Non", prixGPL: "0.00", majGPL: "", ruptureGPL: "Non", prixEthanol: "0.00", majEthanol: "", ruptureEthanol: "Non")
+				self.locations.append(location)
+				self.matchingItems = response.mapItems
+				self.tableView.reloadData()
+			}
+		}
+	}
 
-    func performSearchRequest() {
-        let request = MKLocalSearch.Request()
-        let locationManager = CLLocationManager()
-        //let lieu = self.stationName! + " " + self.stationAdresse! + " " + self.stationVille!
-        getLocation(forPlaceCalled: /*self.stationVille!*/ "Total Neuilly-sur-marne") { location in
-            guard let location = location else { return }
-            
-            let center = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
-            print("Coordinates",location.coordinate)
-            let region = MKCoordinateRegionMakeWithDistance(location.coordinate, 3200, 3200)
-            request.naturalLanguageQuery = self.stationName             //self.searchString
-            request.region = region
-        
-        //guard let coordinate = locationManager.location?.coordinate else { return }
-        //print(self.searchString)
-        //request.naturalLanguageQuery = self.stationName! //"\(myTextField.text)"
-        //request.region = MKCoordinateRegionMakeWithDistance(coordinate, 3200, 3200)
-        // about a couple miles around you
-        
-            MKLocalSearch(request: request).start { (response, error) in
-                guard error == nil else { return }
-                guard let response = response else { return }
-                guard response.mapItems.count > 0 else { return }
-                
-                let randomIndex = Int(arc4random_uniform(UInt32(response.mapItems.count)))
-                _ = response.mapItems[randomIndex]
-                
-                for locationItem in response.mapItems {
-                    
-                    let loc = CLLocation(latitude: locationItem.placemark.coordinate.latitude, longitude: locationItem.placemark.coordinate.longitude)
-                    
-                    let distanceBrute = (locationManager.location?.distance(from: loc))!/1000
-                    let distance = String(format: "%.2f", distanceBrute)
-                    let nom = locationItem.name
-                    var adresse = ""
-                    var codePostal = ""
-                    var Ville = ""
-                    
-                    if(locationItem.placemark.subThoroughfare) != nil{
-                        adresse = locationItem.placemark.subThoroughfare!
-                    }
-                    if(locationItem.placemark.thoroughfare) != nil {
-                        adresse = adresse + " " + locationItem.placemark.thoroughfare!
-                    }
-                    if(locationItem.placemark.postalCode) != nil {
-                        codePostal = locationItem.placemark.postalCode!
-                        print("codePostal : %@",codePostal)
-                    }
-                    if(locationItem.placemark.locality) != nil {
-                        Ville =  locationItem.placemark.locality!
-                        print("Ville : %@",Ville)
-                    }
-                    
-                    let strDistance = distance.description
-                    print("strDistance ",strDistance)
-                    let loklak = loc.coordinate.latitude.description + ", " + loc.coordinate.longitude.description
-                    let location = LocationObject(locationName: nom!, location: adresse, codePostal: codePostal, ville: Ville, Distance: strDistance + " km", coordGPS: loklak)
-                    
-                    self.locations.append(location)
-                    self.matchingItems = response.mapItems
-                    self.tableView.reloadData()
-                }
-            }
-        }
-    }
-}
-
-extension StationsSearchTableViewController: CLLocationManagerDelegate{
-    
-    func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
-        if status == .authorizedWhenInUse {
-            locationManager.requestLocation()
-        }
-    }
-    
-    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        print("error:: \(error.localizedDescription)")
-    }
-    
-    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        if status == .authorizedWhenInUse {
-            locationManager.requestLocation()
-        }
-    }
-    
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        
-        if let location = locations.first {
-            let span = MKCoordinateSpanMake(0.05, 0.05)
-            let region = MKCoordinateRegion(center: location.coordinate, span: span)
-            print("Localisation OK : ",location.coordinate.latitude.description + ", " + location.coordinate.longitude.description)
-            //mapView.setRegion(region, animated: true)
-            /*self.coordGPS = CLLocation(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)*/
-        }
-    }
-    
+	
+	/* Cette fonction renvoie les coordonnées GPS d'une adresse donnée */
+	func getCoordinateFrom(address: String, completion: @escaping(_ coordinate: CLLocationCoordinate2D?, _ error: Error?) -> () ) {
+		CLGeocoder().geocodeAddressString(address, completionHandler: { (placemarks, error) -> Void in
+			if error != nil {
+				print(error!)
+				return
+			}
+			if placemarks!.count > 0 {
+				let placemark = placemarks?[0]
+				let location = placemark?.location
+				//self.coordinates = location?.coordinate
+				
+				if let subAdminArea = placemark?.subAdministrativeArea {
+					//self.address.county = subAdminArea
+				}
+			}
+		})
+	}
+	
+	/* Cette fonction renvoie les coordonnées GPS d'une adresse donnée */
+	func getCoordinatesFromAddress(Address:String){
+		let geocoder = CLGeocoder()
+		geocoder.geocodeAddressString(Address) { (placemarks, error) in
+			if let placemarks = placemarks {
+				if placemarks.count != 0 {
+					/*let annotation = CLPlacemark(placemark: placemarks.first!)
+					self.mapView.addAnnotation(annotation)*/
+					let coordinates = placemarks.first!.location
+					print("getCoordinatesFromAddress",coordinates?.description)
+					self.stationCoordGPS = coordinates
+				}
+			}
+		}
+	}
+	
+	/* Fonctions utilitaires */
+	
+	func UIColorFromRGB(rgbValue: UInt) -> UIColor {
+		return UIColor(
+			red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
+			green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
+			blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
+			alpha: CGFloat(1.0)
+		)
+	}
+	
+	override func viewWillDisappear(_ animated: Bool){
+		super.viewWillAppear(true)
+		//fadeOut()
+		//self.mklocalSearch?.cancel()
+		self.loadingView?.hide()
+		RSLoadingView.hideFromKeyWindow()
+	}
+	
+	func delayWithSeconds(_ seconds: Double, completion: @escaping () -> ()) {
+		DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+			completion()
+		}
+	}
 }
 
 extension StationsSearchTableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         print("LocationSearchTable : numberOfRowsInSection",matchingItems.count)
-        UITableViewController.removeSpinner(spinner: self.sv!)
+        if(matchingItems.count == 0){
+			print("numberOfRowsInSection = 0")
+			
+		}
         return matchingItems.count
     }
-    
-    /*override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "stationSearchTableViewCell") as! stationSearchTableViewCell
-        let selectedItem = matchingItems[indexPath.row].placemark
-        
-        let coordinates = selectedItem.coordinate
-        //let loc1 = CLLocation(latitude: coordinates.latitude, longitude: coordinates.longitude)
-        //let loc2 = stationsSearchViewController()
-        
-        //let distance = loc1.distance(from: coordGPS!)
-        
-        cell.labelObjectName?.text = selectedItem.name
-        cell.labelObjectAddress?.text = parseAddress(selectedItem: selectedItem)
-        cell.labelObjectDistance?.text = ""
-        return cell
-    }*/
-    
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "stationSearchTableViewCell") as! stationsSearchTableViewCell
         
         if(locations.count == 0){
-            cell.configureLocationCell(locationName: "Aucun résultat à afficher", location: "Toucher pour revenir à l'écran précédent", codePostal: "", ville: "", distance: "")
+			cell.configureLocationCell(locationId: "", locationName: "Aucun résultat à afficher", marque: "", location: "Toucher pour revenir à l'écran précédent", codePostal: "", ville: "", distance: "", prixEssPlus: "", majEssPlus: "",  prixDieselPlus: "", majDieselPlus: "", prixGazole: "", majGazole: "", prixSP95E10: "", majSP95E10: "", prixSP95: "", majSP95: "", prixSP98: "", majSP98: "", prixSUP: "", majSUP: "", prixEthanol: "", majEthanol: "", prixGPL: "", majGPL: "")
+			let titleNoData = NSLocalizedString("Aucune station", comment: "titleNoData")
+			let messageNoData = NSLocalizedString("Votre recherche n'a donné aucun résultat. Veuillez réessayer avec un autre critère de recherche.", comment: "messageNoData")
+			let btnOK = NSLocalizedString("OK", comment: "btnOK")
+			
+			SweetAlert().showAlert(titleNoData, subTitle: messageNoData, style: AlertStyle.error, buttonTitle:btnOK, buttonColor:self.UIColorFromRGB(rgbValue: 0xD0D0D0))
         }else{
             //performSearchRequest() 
             let location = locations[indexPath.row]
             // Configure the cell...
-            cell.configureLocationCell(locationName: location.locationName, location: location.location, codePostal: location.codePostal, ville: location.ville, distance: location.distance)
+			cell.configureLocationCell(locationId: location.idStation, locationName: location.marque, marque: location.marque, location: location.adresse, codePostal: location.codePostal, ville: location.ville, distance: location.distance, prixEssPlus: location.prixEssPlus, majEssPlus: "", prixDieselPlus: location.prixDieselPlus, majDieselPlus: "", prixGazole: location.prixDiesel, majGazole: "", prixSP95E10: location.prixSP95E10, majSP95E10: "", prixSP95: location.prixSP95, majSP95: "", prixSP98: location.prixSP98, majSP98: "", prixSUP: "", majSUP: "", prixEthanol: "", majEthanol: "", prixGPL: "", majGPL: "")
         }
-        
         return cell
     }
-}
-
-extension StationsSearchTableViewController {
-    /*override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        let station = Station()
-        
-        if (locations.count == 0){  // Aucun résultat
-            
-            station.nomStation = ""
-            station.adresse = ""
-            station.codePostal = ""
-            station.ville = ""
-            station.coordGPS = ""
-            
-        }else{
-            
-            let selectedLocation = locations[indexPath.row]
-            station.nomStation = selectedLocation.locationName
-            station.adresse = selectedLocation.location
-            station.codePostal = selectedLocation.codePostal
-            station.ville = selectedLocation.ville
-            station.coordGPS = selectedLocation.coordGPS
-    
-            /*self.addConsoVC?.onStationServiceSelected(station: station)
-            self.navigationController?.popToRootViewController(animated: true)*/
-            
+	
+	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		let loc = locations[indexPath.row]
+		//print("Nom : " + loc + ", coordGPS : " + loc.coordGPS)
+		var stat: Station?
+		
+		if let myImage = UIImage(named: stat!.marque) {
+			loc.image.image = UIImage(named: stat!.marque)
         }
-        
-        // Create an instance of PlayerTableViewController and pass the variable
-        /*let addConsoVC = AddConsoViewController()
-        addConsoVC.station = station
-        addConsoVC.car = self.car*/
-        
-        // Let's assume that the segue name is called playerSegue
-        // This will perform the segue and pre-load the variable for you to use
-        //addConsoVC.performSegue(withIdentifier: "unwindStationsVCtoAddConsoVC", sender: self)
-        //self.dismiss(animated: true, completion: nil)
-        /*let addConsoVC = storyboard?.instantiateViewController(withIdentifier: "consoDetail") as! AddConsoViewController
-        addConsoVC.station = station
-        addConsoVC.car = self.car
-        self.navigationController?.dismiss(animated: true, completion: nil)*/
-    }*/
+        else {
+            loc.image.image = UIImage(named: "icon_fuels")
+        }
+		
+		self.addConsoVC!.stationSelected(data: loc)
+		self.navigationController?.popViewController(animated: true)
+	}
+	
+	override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+		if let lastVisibleIndexPath = tableView.indexPathsForVisibleRows?.last {
+			if indexPath == lastVisibleIndexPath {
+				
+			}
+		}
+	}
 }
 
 extension UITableViewController {
     class func displaySpinner(onView : UIView) -> UIView {
         let spinnerView = UIView.init(frame: onView.bounds)
         spinnerView.backgroundColor = UIColor.init(red: 0.5, green: 0.5, blue: 0.5, alpha: 0.5)
-        let ai = UIActivityIndicatorView.init(activityIndicatorStyle: .whiteLarge)
+		let ai = UIActivityIndicatorView.init(style: .whiteLarge)
         ai.startAnimating()
         ai.center = spinnerView.center
         
@@ -486,7 +585,6 @@ extension UITableViewController {
             spinnerView.addSubview(ai)
             onView.addSubview(spinnerView)
         }
-        
         return spinnerView
     }
     
@@ -496,3 +594,5 @@ extension UITableViewController {
         }
     }
 }
+
+

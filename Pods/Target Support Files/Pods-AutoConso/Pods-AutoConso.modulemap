@@ -1,0 +1,6 @@
+framework module Pods_AutoConso {
+  umbrella header "Pods-AutoConso-umbrella.h"
+
+  export *
+  module * { export * }
+}
